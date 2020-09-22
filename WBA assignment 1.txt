@@ -3,22 +3,10 @@ Gabriela Bayabos (31256120)
 Teh Jian Xiang (31192084)
 
 
-Deliverable
-	Produced By
-	Reviewed By
-	Complete By
-	UML Class Diagram
-	Gabriela Bayabos
-	Teh Jian Xiang
-	18 Sep 2020
-	UML Interaction Diagram
-	Teh Jian Xiang
-	Gabriela Bayabos
-	23 Sep 2020
-	Design Rationale
-	Gabriela Bayabos
-	Teh Jian Xiang
-	24 Sep 2020
+Deliverable		Produced By		Reviewed By		Complete By
+UML Class Diagram	Gabriela Bayabos	Teh Jian Xiang		18 Sep 2020
+UML Interaction Diagram	Teh Jian Xiang		Gabriela Bayabos	23 Sep 2020
+Design Rationale	Gabriela Bayabos	Teh Jian Xiang		24 Sep 2020
 	
 
 * All deliverables will be inspected once more before the submission on 25 Sep 2020.
