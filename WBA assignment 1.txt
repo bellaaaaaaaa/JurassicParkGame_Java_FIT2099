@@ -1,4 +1,4 @@
-﻿Assignment 1: Work Breakdown Agreements
+Assignment 1: Work Breakdown Agreements
 Gabriela Bayabos (31256120)
 Teh Jian Xiang (31192084)
 
@@ -11,4 +11,5 @@ Design Rationale	Gabriela Bayabos	Teh Jian Xiang		24 Sep 2020
 
 * All deliverables will be inspected once more before the submission on 25 Sep 2020.
 
+I accept this WBA.
 I accept this WBA.
