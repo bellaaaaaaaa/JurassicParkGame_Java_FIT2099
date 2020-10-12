@@ -116,6 +116,32 @@ public class Location implements Printable {
 			item.tick(this);
 		}
 	}
+	// Get adjacent locations
+	public Location getNorth(){
+		try {
+			map.at(x, y - 1);
+		} catch (Exception e){
+			throw new ArrayIndexOutOfBoundsException("Location not within gameMap");
+		}
+		return this;
+	}
+
+	public Location getSouth(){
+		return map.at(x, y+1);
+	}
+
+	public Location getEast(){
+		return map.at(x+1, y);
+	}
+
+	public Location getWest(){
+		return map.at(x-1, y);
+	}
+
+	// Check location valid based on NSEW
+	public boolean locationValid(int x, int y){
+		return ((x < 0) || (y < 0) || (x > map.getXRange().max()) || (y > map.getYRange().max()));
+	}
 
 	/**
 	 * Accessor to determine whether there is an Actor at this location.

@@ -73,13 +73,13 @@ public class World {
 		while (stillRunning()) {
 			GameMap playersMap = actorLocations.locationOf(player).map();
 			playersMap.draw(display);
-
 			// Process all the actors.
 			for (Actor actor : actorLocations) {
 				if (stillRunning())
 					processActorTurn(actor);
 			}
 
+			System.out.println(stillRunning());
 			// Tick over all the maps. For the map stuff.
 			for (GameMap gameMap : gameMaps) {
 				gameMap.tick();
@@ -113,7 +113,6 @@ public class World {
 			// Game rule. If you're carrying it, you can drop it.
 			actions.add(item.getDropAction());
 		}
-
 		for (Exit exit : here.getExits()) {
 			Location destination = exit.getDestination();
 
@@ -133,10 +132,11 @@ public class World {
 			actions.add(item.getPickUpAction());
 		}
 		actions.add(new DoNothingAction());
-
 		Action action = actor.playTurn(actions, lastActionMap.get(actor), map, display);
+
 		lastActionMap.put(actor, action);
-		
+
+
 		String result = action.execute(actor, map);
 		display.println(result);
 	}

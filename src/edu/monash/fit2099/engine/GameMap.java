@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
 /**
  * Class representing one map within the system.
@@ -193,6 +194,22 @@ public class GameMap {
 			}
 		}
 	}
+
+	public void growInitialGrass(char grassChar, NumberRange xs, NumberRange ys) {
+		for (int x : xs) {
+			for (int y : ys) {
+				Random rand = new Random();
+				int num = rand.nextInt(10) + 1;
+				if(num <= 2){
+					at(x, y).setGround(groundFactory.newGround(grassChar));
+				}
+			}
+		}
+	}
+
+	public void growChangingGrass(char grassChar, NumberRange xs, NumberRange ys){
+
+	}
 	
 	/**
 	 * Returns an enumerable NumberRange representing the valid X values of the game map. 
@@ -230,6 +247,8 @@ public class GameMap {
 				this.at(x, y).tick();
 			}
 		}
+
+		//
 	}
 
 	/**

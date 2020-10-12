@@ -1,6 +1,13 @@
 package edu.monash.fit2099.engine;
 
 import edu.monash.fit2099.interfaces.GroundInterface;
+import game.Dirt;
+import game.Grass;
+import game.Tree;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Class representing terrain type
@@ -50,6 +57,36 @@ public abstract class Ground implements GroundInterface, Capable, Printable {
 	 * @param location The location of the Ground 
 	 */
 	public void tick(Location location) {
+		Grass grass = new Grass();
+		int numAdjGrass = 0;
+		// Get adjacent locations
+		ArrayList<Location> adjacents = new ArrayList();
+		adjacents.add(location.getNorth());
+		adjacents.add(location.getSouth());
+		adjacents.add(location.getEast());
+		adjacents.add(location.getWest());
+
+		if (location.getGround() instanceof Dirt){
+			// Check has tree
+			for (Location l : adjacents){
+				Random rand = new Random();
+				int num = rand.nextInt(100) + 1;
+				if (l.getGround() instanceof Tree){
+					if(num <= 2){
+						location.setGround(grass);
+					}
+				} else if (l.getGround() instanceof Grass){
+					numAdjGrass += 1;
+				}
+			}
+			if(numAdjGrass > 2){
+				Random rand = new Random();
+				int num = rand.nextInt(100) + 1;
+				if (num <= 10){
+					location.setGround(grass);
+				}
+			}
+		}
 	}
 	
 	/**
