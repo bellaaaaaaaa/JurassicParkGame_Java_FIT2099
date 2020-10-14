@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="" />
+    <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/GameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/GameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Ground.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Ground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Stegosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Stegosaur.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602668931234</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-COMMITED WITH WRONG ACCOUNT, PREVIOUS COMMIT WAS BY BELLA-&#10;Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented.">
+      <created>1602669037565</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602669037565</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -130,41 +143,42 @@
     <MESSAGE value="Tree can drop fruit at location. Fruit can rot after 20 turns." />
     <MESSAGE value="Stegosaurs have min and max food level. Stegosaur food level decreases, stegosaur can become unconcious.&#10;Need to implement: &#10;1) If unconcious stegosaur cant move&#10;2) What happens when stegosaur dies" />
     <MESSAGE value="Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented." />
+    <MESSAGE value="-COMMITED WITH WRONG ACCOUNT, PREVIOUS COMMIT WAS BY BELLA-&#10;Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="-COMMITED WITH WRONG ACCOUNT, PREVIOUS COMMIT WAS BY BELLA-&#10;Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1602665172517">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1602682604070">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1602665172517" />
-    <state x="342" y="56" key="CommitChangelistDialog2" timestamp="1602668931050">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1602682604070" />
+    <state x="342" y="56" key="CommitChangelistDialog2" timestamp="1602669037376">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="342" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602668931050" />
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1602668495952">
+    <state x="342" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602669037376" />
+    <state width="1398" height="163" key="GridCell.Tab.0.bottom" timestamp="1602684734926">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602668495952" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1602668495950">
+    <state width="1398" height="163" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602684734926" />
+    <state width="1398" height="163" key="GridCell.Tab.0.center" timestamp="1602684734925">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602668495950" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1602668495949">
+    <state width="1398" height="163" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602684734925" />
+    <state width="1398" height="163" key="GridCell.Tab.0.left" timestamp="1602684734925">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602668495949" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1602668495951">
+    <state width="1398" height="163" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602684734925" />
+    <state width="1398" height="163" key="GridCell.Tab.0.right" timestamp="1602684734926">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602668495951" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602668933163">
+    <state width="1398" height="163" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602684734926" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602669041396">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602668933163" />
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1602668945607">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602669041396" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1602669051252">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1602668945607" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1602669051252" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1602514468917">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

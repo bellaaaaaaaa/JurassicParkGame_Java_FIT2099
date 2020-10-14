@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/GameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/GameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Stegosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Stegosaur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,42 +97,101 @@
       <option name="project" value="LOCAL" />
       <updated>1602520250159</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Grass works. Moving onto fruit next.">
+      <created>1602658394989</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602658394989</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tree can drop fruit at location. Fruit can rot after 20 turns.">
+      <created>1602661981550</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602661981550</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Stegosaurs have min and max food level. Stegosaur food level decreases, stegosaur can become unconcious.&#10;Need to implement: &#10;1) If unconcious stegosaur cant move&#10;2) What happens when stegosaur dies">
+      <created>1602665782649</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602665782649</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented.">
+      <created>1602668931234</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602668931234</updated>
+    </task>
+    <task id="LOCAL-00006" summary="-COMMITED WITH WRONG ACCOUNT, PREVIOUS COMMIT WAS BY BELLA-&#10;Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented.">
+      <created>1602669037565</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602669037565</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working on grass class - bella" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on grass class - bella" />
+    <MESSAGE value="Grass works. Moving onto fruit next." />
+    <MESSAGE value="Tree can drop fruit at location. Fruit can rot after 20 turns." />
+    <MESSAGE value="Stegosaurs have min and max food level. Stegosaur food level decreases, stegosaur can become unconcious.&#10;Need to implement: &#10;1) If unconcious stegosaur cant move&#10;2) What happens when stegosaur dies" />
+    <MESSAGE value="Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented." />
+    <MESSAGE value="-COMMITED WITH WRONG ACCOUNT, PREVIOUS COMMIT WAS BY BELLA-&#10;Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="-COMMITED WITH WRONG ACCOUNT, PREVIOUS COMMIT WAS BY BELLA-&#10;Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="342" y="66" key="CommitChangelistDialog2" timestamp="1602520249537">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1602682604070">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="342" y="66" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602520249537" />
-    <state width="1398" height="184" key="GridCell.Tab.0.bottom" timestamp="1602520287771">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1602682604070" />
+    <state x="342" y="56" key="CommitChangelistDialog2" timestamp="1602669037376">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="184" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602520287771" />
-    <state width="1398" height="184" key="GridCell.Tab.0.center" timestamp="1602520287771">
+    <state x="342" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602669037376" />
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1602671748605">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="184" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602520287771" />
-    <state width="1398" height="184" key="GridCell.Tab.0.left" timestamp="1602520287770">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602671748605" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1602671748604">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="184" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602520287770" />
-    <state width="1398" height="184" key="GridCell.Tab.0.right" timestamp="1602520287771">
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602671748604" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1602671748604">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="184" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602520287771" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602520256762">
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602671748604" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1602671748604">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602520256762" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602671748604" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602669041396">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602669041396" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1602669051252">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1602669051252" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1602514468917">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1602514468917" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/game/Player.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/src$Application.ic" NAME="Application Coverage Results" MODIFIED="1602510929213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

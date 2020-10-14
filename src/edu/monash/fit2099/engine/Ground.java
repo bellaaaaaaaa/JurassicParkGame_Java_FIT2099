@@ -85,7 +85,6 @@ public abstract class Ground implements GroundInterface, Capable, Printable {
 				int num = rand.nextInt(100) + 1;
 				if (l.getGround() instanceof Tree){
 					if(num <= 2){
-						System.out.println("hits here");
 						location.setGround(grass);
 					}
 				} else if (l.getGround() instanceof Grass){

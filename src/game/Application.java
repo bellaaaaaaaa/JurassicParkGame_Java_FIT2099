@@ -55,11 +55,8 @@ public class Application {
 		gameMap.at(32, 12).addActor(new Stegosaur("Stegosaur"));
 
 		// Each square of dirt has a small 2% chance to grow grass.
-		System.out.println("bella");
 		Grass g = new Grass();
 		gameMap.growInitialGrass(g.getDisplayChar(), gameMap.getXRange(), gameMap.getYRange());
-
-
 		world.run();
 	}
 }

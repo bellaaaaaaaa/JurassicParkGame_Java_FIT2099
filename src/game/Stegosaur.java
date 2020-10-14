@@ -19,6 +19,8 @@ public class Stegosaur extends Actor {
 	int maxFoodLvl = 100;
 	int numTurnsUnconscious = 0;
 	boolean isUnconscious = false;
+	boolean isDead = false;
+	int numTurnsDead = 0;
 
 	/** 
 	 * Constructor.
@@ -91,5 +93,13 @@ public class Stegosaur extends Actor {
 	public void setUnconscious(boolean unconscious) {
 		isUnconscious = unconscious;
 	}
+
+	public boolean isDead() { return isDead; }
+
+	public void setDead(boolean dead) { isDead = dead; }
+
+	public int getNumTurnsDead() { return numTurnsDead; }
+
+	public void setNumTurnsDead(int numTurnsDead) { this.numTurnsDead = numTurnsDead; }
 
 }

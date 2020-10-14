@@ -1,5 +1,6 @@
 package edu.monash.fit2099.engine;
 
+import game.Dirt;
 import game.Stegosaur;
 
 import java.io.IOException;
@@ -240,15 +241,29 @@ public class GameMap {
 
 				// Tick Stegosaur
 				if (actor instanceof Stegosaur){
+					Stegosaur s = (Stegosaur) actor;
 					// Decrease foodLvl if conscious
-					int currentFoodLvl = ((Stegosaur) actor).getFoodLvl();
+					int currentFoodLvl = s.getFoodLvl();
 					if (currentFoodLvl > 0){
-						((Stegosaur) actor).tick();
+						s.tick();
+						int updatedFoodLvl = s.getFoodLvl();
+						if (updatedFoodLvl <= 10){
+							System.out.println("Stegosaur is getting hungry!");
+						}
+
 					} else {
-						((Stegosaur) actor).setUnconscious(true);
-						((Stegosaur) actor).setNumTurnsUnconscious(((Stegosaur) actor).getNumTurnsUnconscious() + 1);
-						if (((Stegosaur) actor).getNumTurnsUnconscious() == 20){
-							/// put what happens to dead stegosaur here.
+						s.setUnconscious(true);
+						s.setNumTurnsUnconscious(s.getNumTurnsUnconscious() + 1);
+						if (s.getNumTurnsUnconscious() >= 20){
+							s.setDead(true);
+							s.setNumTurnsDead(s.getNumTurnsDead() + 1);
+							if(s.getNumTurnsDead() >= 20){
+								Dirt d = new Dirt();
+								int sx = actorLocations.locationOf(s).x();
+								int sy = actorLocations.locationOf(s).y();
+								this.removeActor(actor);
+								this.at(sx, sy).setGround(d);
+							}
 						}
 					}
 
