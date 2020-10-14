@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/Fruit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Ground.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Ground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Ground.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Ground.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Location.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,42 +99,69 @@
       <option name="project" value="LOCAL" />
       <updated>1602520250159</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Grass works. Moving onto fruit next.">
+      <created>1602658394989</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602658394989</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working on grass class - bella" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on grass class - bella" />
+    <MESSAGE value="Grass works. Moving onto fruit next." />
+    <option name="LAST_COMMIT_MESSAGE" value="Grass works. Moving onto fruit next." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="342" y="66" key="CommitChangelistDialog2" timestamp="1602520249537">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1602660305806">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="342" y="66" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602520249537" />
-    <state width="1398" height="13" key="GridCell.Tab.0.bottom" timestamp="1602658238391">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1602660305806" />
+    <state x="342" y="66" key="CommitChangelistDialog2" timestamp="1602658394657">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="13" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602658238391" />
-    <state width="1398" height="13" key="GridCell.Tab.0.center" timestamp="1602658238391">
+    <state x="342" y="66" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602658394657" />
+    <state width="1398" height="84" key="GridCell.Tab.0.bottom" timestamp="1602661098025">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="13" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602658238391" />
-    <state width="1398" height="13" key="GridCell.Tab.0.left" timestamp="1602658238390">
+    <state width="1398" height="84" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602661098025" />
+    <state width="1398" height="84" key="GridCell.Tab.0.center" timestamp="1602661098024">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="13" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602658238390" />
-    <state width="1398" height="13" key="GridCell.Tab.0.right" timestamp="1602658238391">
+    <state width="1398" height="84" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602661098024" />
+    <state width="1398" height="84" key="GridCell.Tab.0.left" timestamp="1602661098022">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="13" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602658238391" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602520256762">
+    <state width="1398" height="84" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602661098022" />
+    <state width="1398" height="84" key="GridCell.Tab.0.right" timestamp="1602661098024">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602520256762" />
+    <state width="1398" height="84" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602661098024" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602658398602">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602658398602" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1602658430924">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1602658430924" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1602514468917">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1602514468917" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/game/Player.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/src$Application.ic" NAME="Application Coverage Results" MODIFIED="1602510929213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

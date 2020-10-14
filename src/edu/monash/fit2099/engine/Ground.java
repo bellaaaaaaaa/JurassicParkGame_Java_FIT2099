@@ -2,6 +2,7 @@ package edu.monash.fit2099.engine;
 
 import edu.monash.fit2099.interfaces.GroundInterface;
 import game.Dirt;
+import game.Fruit;
 import game.Grass;
 import game.Tree;
 
@@ -76,6 +77,7 @@ public abstract class Ground implements GroundInterface, Capable, Printable {
 			adjacents.add(location.getWest());
 		}
 
+		// Grow grass
 		if (location.getGround() instanceof Dirt){
 			// Check has tree
 			for (Location l : adjacents){
@@ -98,6 +100,34 @@ public abstract class Ground implements GroundInterface, Capable, Printable {
 				}
 			}
 		}
+
+		// Drop fruit
+		if (location.getGround() instanceof Tree){
+			Random rand = new Random();
+			int num = rand.nextInt(100) + 1;
+			if (num <= 5){
+				Fruit f = new Fruit();
+				location.addItem(f);
+			}
+		}
+		tickItemsAtLocation(location);
+	}
+
+	public void tickItemsAtLocation(Location location){
+		// Tick fruits
+		for(Item i : location.getItems()){
+			if (i instanceof Fruit){
+				int expiry = ((Fruit) i).getExpiryTurns();
+				expiry -= 1;
+
+				if(expiry == 0){
+					location.removeItem(i);
+				} else {
+					((Fruit) i).setExpiryTurns(expiry);
+				}
+			}
+		}
+
 	}
 	
 	/**
