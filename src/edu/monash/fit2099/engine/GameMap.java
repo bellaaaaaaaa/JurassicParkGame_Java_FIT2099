@@ -248,7 +248,7 @@ public class GameMap {
 						s.tick();
 						int updatedFoodLvl = s.getFoodLvl();
 						if (updatedFoodLvl <= 10){
-							System.out.println("Stegosaur is getting hungry!");
+							System.out.println("Stegosaur at (" + Integer.toString(actorLocations.locationOf(s).x()) + ", " +  Integer.toString(actorLocations.locationOf(s).y()) + ") is getting hungry!");
 						}
 
 					} else {
