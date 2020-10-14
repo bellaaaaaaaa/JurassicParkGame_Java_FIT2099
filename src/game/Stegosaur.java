@@ -60,7 +60,11 @@ public class Stegosaur extends Actor {
 	}
 
 	public void setFoodLvl(int foodLvl) {
-		this.foodLvl = foodLvl;
+		if (foodLvl >= maxFoodLvl){
+			this.foodLvl = maxFoodLvl;
+		} else {
+			this.foodLvl = foodLvl;
+		}
 	}
 
 	/**

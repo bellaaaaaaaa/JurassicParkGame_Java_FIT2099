@@ -1,5 +1,9 @@
 package edu.monash.fit2099.engine;
 
+import game.Dirt;
+import game.Grass;
+import game.Stegosaur;
+
 /**
  * An Action that moves the Actor.
  */
@@ -54,7 +58,16 @@ public class MoveActorAction extends Action {
 	 */
 	@Override
 	public String execute(Actor actor, GameMap map) {
-		map.moveActor(actor, moveToLocation);
+		// BELLA EXTENDED THIS
+		if (actor instanceof Stegosaur== false){
+			map.moveActor(actor, moveToLocation);
+		} else if (((Stegosaur) actor).isUnconscious() == false){
+			map.moveActor(actor, moveToLocation);
+		} else if ((actor instanceof Stegosaur) && (moveToLocation.getGround() instanceof Grass)){
+			((Stegosaur) actor).setFoodLvl(((Stegosaur) actor).getFoodLvl() + 5); // increase foodLvl by 5
+			Dirt d = new Dirt();
+			moveToLocation.setGround(d); // Set new ground to dirt after stegosaur eats.
+		}
 		return menuDescription(actor);
 	}
 
