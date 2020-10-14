@@ -61,10 +61,20 @@ public abstract class Ground implements GroundInterface, Capable, Printable {
 		int numAdjGrass = 0;
 		// Get adjacent locations
 		ArrayList<Location> adjacents = new ArrayList();
-		adjacents.add(location.getNorth());
-		adjacents.add(location.getSouth());
-		adjacents.add(location.getEast());
-		adjacents.add(location.getWest());
+
+		// Append adjacent locations
+		if (location.locationValid(location.x(), location.y()-1)== true){
+			adjacents.add(location.getNorth());
+		}
+		if (location.locationValid(location.x(), location.y()+1) == true){
+			adjacents.add(location.getSouth());
+		}
+		if (location.locationValid(location.x() + 1, location.y()) == true){
+			adjacents.add(location.getEast());
+		}
+		if (location.locationValid(location.x() - 1, location.y()) ==true){
+			adjacents.add(location.getWest());
+		}
 
 		if (location.getGround() instanceof Dirt){
 			// Check has tree
@@ -73,6 +83,7 @@ public abstract class Ground implements GroundInterface, Capable, Printable {
 				int num = rand.nextInt(100) + 1;
 				if (l.getGround() instanceof Tree){
 					if(num <= 2){
+						System.out.println("hits here");
 						location.setGround(grass);
 					}
 				} else if (l.getGround() instanceof Grass){
