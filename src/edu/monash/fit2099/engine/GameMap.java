@@ -1,5 +1,7 @@
 package edu.monash.fit2099.engine;
 
+import game.Stegosaur;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -206,10 +208,6 @@ public class GameMap {
 			}
 		}
 	}
-
-	public void growChangingGrass(char grassChar, NumberRange xs, NumberRange ys){
-
-	}
 	
 	/**
 	 * Returns an enumerable NumberRange representing the valid X values of the game map. 
@@ -239,6 +237,23 @@ public class GameMap {
 				for (Item item : new ArrayList<Item>(actor.getInventory())) { // Copy the list in case the item wants to leave
 					item.tick(actorLocations.locationOf(actor), actor);
 				}
+
+				// Tick Stegosaur
+				if (actor instanceof Stegosaur){
+					// Decrease foodLvl if conscious
+					int currentFoodLvl = ((Stegosaur) actor).getFoodLvl();
+					if (currentFoodLvl > 0){
+						((Stegosaur) actor).tick();
+					} else {
+						((Stegosaur) actor).setUnconscious(true);
+						((Stegosaur) actor).setNumTurnsUnconscious(((Stegosaur) actor).getNumTurnsUnconscious() + 1);
+						if (((Stegosaur) actor).getNumTurnsUnconscious() == 20){
+							/// put what happens to dead stegosaur here.
+						}
+					}
+
+				}
+
 			}
 		}
 

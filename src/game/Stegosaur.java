@@ -15,6 +15,10 @@ import edu.monash.fit2099.engine.GameMap;
 public class Stegosaur extends Actor {
 	// Will need to change this to a collection if Stegosaur gets additional Behaviours.
 	private Behaviour behaviour;
+	int foodLvl = 50;
+	int maxFoodLvl = 100;
+	int numTurnsUnconscious = 0;
+	boolean isUnconscious = false;
 
 	/** 
 	 * Constructor.
@@ -48,6 +52,40 @@ public class Stegosaur extends Actor {
 			return wander;
 		
 		return new DoNothingAction();
+	}
+
+	// BELLA ADDED METHODS
+	public int getFoodLvl() {
+		return foodLvl;
+	}
+
+	public void setFoodLvl(int foodLvl) {
+		this.foodLvl = foodLvl;
+	}
+
+	/**
+	 * Decrease Stegosaur food level by 1 each turn.
+	 */
+	public void tick(){
+		int foodLvl = this.getFoodLvl();
+		foodLvl -= 1;
+		this.setFoodLvl(foodLvl);
+	}
+
+	public int getNumTurnsUnconscious() {
+		return numTurnsUnconscious;
+	}
+
+	public void setNumTurnsUnconscious(int numTurnsUnconcious) {
+		this.numTurnsUnconscious = numTurnsUnconcious;
+	}
+
+	public boolean isUnconscious() {
+		return isUnconscious;
+	}
+
+	public void setUnconscious(boolean unconscious) {
+		isUnconscious = unconscious;
 	}
 
 }
