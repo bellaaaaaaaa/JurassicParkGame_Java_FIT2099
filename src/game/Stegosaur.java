@@ -8,6 +8,8 @@ import edu.monash.fit2099.engine.Display;
 import edu.monash.fit2099.engine.DoNothingAction;
 import edu.monash.fit2099.engine.GameMap;
 
+import java.util.Random;
+
 /**
  * A herbivorous dinosaur.
  *
@@ -21,6 +23,10 @@ public class Stegosaur extends Actor {
 	boolean isUnconscious = false;
 	boolean isDead = false;
 	int numTurnsDead = 0;
+	String gender;
+	int numTurnsPregnant = 0;
+	boolean isPregnant = false;
+	String stage;
 
 	/** 
 	 * Constructor.
@@ -30,6 +36,14 @@ public class Stegosaur extends Actor {
 	 */
 	public Stegosaur(String name) {
 		super(name, 'd', 100);
+		Random rand = new Random();
+		int num = rand.nextInt(2) + 1; //either 1 or 2
+		if (num == 1){
+			setGender("female");
+		} else {
+			setGender("male");
+		}
+		this.setStage("adult");
 		
 		behaviour = new WanderBehaviour();
 	}
@@ -102,4 +116,19 @@ public class Stegosaur extends Actor {
 
 	public void setNumTurnsDead(int numTurnsDead) { this.numTurnsDead = numTurnsDead; }
 
+	public String getGender() { return gender; }
+
+	public void setGender(String gender) { this.gender = gender; }
+
+	public int getNumTurnsPregnant() { return numTurnsPregnant; }
+
+	public void setNumTurnsPregnant(int numTurnsPregnant) { this.numTurnsPregnant = numTurnsPregnant; }
+
+	public boolean isPregnant() { return isPregnant; }
+
+	public void setPregnant(boolean pregnant) { isPregnant = pregnant; }
+
+	public String getStage() { return stage; }
+
+	public void setStage(String stage) { this.stage = stage; }
 }

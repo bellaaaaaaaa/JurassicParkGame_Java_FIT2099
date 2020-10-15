@@ -1,6 +1,7 @@
 package edu.monash.fit2099.engine;
 
 import game.Dirt;
+import game.Egg;
 import game.Stegosaur;
 
 import java.io.IOException;
@@ -239,16 +240,55 @@ public class GameMap {
 					item.tick(actorLocations.locationOf(actor), actor);
 				}
 
-				// Tick Stegosaur
+				// Tick Stegosaur Foodlvl
 				if (actor instanceof Stegosaur){
 					Stegosaur s = (Stegosaur) actor;
-					// Decrease foodLvl if conscious
+					int sx = actorLocations.locationOf(s).x();
+					int sy = actorLocations.locationOf(s).y();
+
 					int currentFoodLvl = s.getFoodLvl();
 					if (currentFoodLvl > 0){
+
+						// Decrease foodLvl if conscious
 						s.tick();
 						int updatedFoodLvl = s.getFoodLvl();
+
+						// If stegosaur getting hungry
 						if (updatedFoodLvl <= 10){
 							System.out.println("Stegosaur at (" + Integer.toString(actorLocations.locationOf(s).x()) + ", " +  Integer.toString(actorLocations.locationOf(s).y()) + ") is getting hungry!");
+						}
+
+						// If stegosaur can breed
+						if (updatedFoodLvl > 50){
+							String gender = s.getGender();
+							ArrayList<Location> locations = actorLocations.locationOf(s).validAdjacentLocations();
+
+							// Check locations for breedable stegosaurs
+							for(Location l : locations){
+								if (l.containsAnActor() == true){
+									Actor a = l.getActor();
+									if (a instanceof Stegosaur){
+										if ( (((Stegosaur) a).getGender() != s.getGender()) && (((Stegosaur) a).isPregnant() == false) && s.isPregnant() == false){
+											if(((Stegosaur) a).getGender() == "female"){
+												((Stegosaur) a).setNumTurnsPregnant(((Stegosaur) a).getNumTurnsPregnant() + 1);
+												((Stegosaur) a).setPregnant(true);
+											} else if (s.getGender() == "female"){
+												s.setNumTurnsPregnant(s.getNumTurnsPregnant() + 1);
+												s.setPregnant(true);
+											}
+										}
+									}
+								}
+							}
+						}
+
+						// If stegosaur ready to lay egg
+						if (s.isPregnant() == true){
+							s.setNumTurnsPregnant(s.getNumTurnsPregnant() + 1);
+							if (s.getNumTurnsPregnant() >= 10){
+								Egg e = new Egg(10, 200, 100, "Stegosaur Egg", 'e', true, "stegosaur");
+								actorLocations.locationOf(s).addItem(e); // Lays egg at current location
+							}
 						}
 
 					} else {
@@ -259,8 +299,6 @@ public class GameMap {
 							s.setNumTurnsDead(s.getNumTurnsDead() + 1);
 							if(s.getNumTurnsDead() >= 20){
 								Dirt d = new Dirt();
-								int sx = actorLocations.locationOf(s).x();
-								int sy = actorLocations.locationOf(s).y();
 								this.removeActor(actor);
 								this.at(sx, sy).setGround(d);
 							}
@@ -278,7 +316,6 @@ public class GameMap {
 			}
 		}
 
-		//
 	}
 
 	/**

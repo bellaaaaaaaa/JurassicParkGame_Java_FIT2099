@@ -1,5 +1,8 @@
 package edu.monash.fit2099.engine;
 
+import game.Egg;
+import game.Stegosaur;
+
 import java.util.*;
 
 
@@ -114,6 +117,22 @@ public class Location implements Printable {
 		ground.tick(this);
 		for(Item item :  new ArrayList<>(items)) {
 			item.tick(this);
+
+			// Hatch eggs
+			if (item instanceof Egg){
+				Egg e = (Egg) item;
+				e.setNumTurnsOnGround(e.getNumTurnsOnGround() + 1);
+				if (e.getNumTurnsOnGround() > 10){
+					this.removeItem(item);
+					if (e.getType() == "stegosaur"){
+						Stegosaur s = new Stegosaur("stegosaur");
+						s.setStage("baby");
+						this.addActor(s);
+					}
+					item = null;
+					e = null; // delete egg and item
+				}
+			}
 		}
 	}
 	// Get adjacent locations
@@ -132,6 +151,24 @@ public class Location implements Printable {
 		} else {
 			return true;
 		}
+	}
+
+	// Return list of valid adjacent locations
+	public ArrayList<Location> validAdjacentLocations(){
+		ArrayList<Location> locations = new ArrayList();
+		if (locationValid(x, y-1) == true){
+			locations.add(this.getNorth());
+		}
+		if (locationValid(x, y+1) == true){
+			locations.add(this.getSouth());
+		}
+		if (locationValid(x+1, y) == true){
+			locations.add(this.getEast());
+		}
+		if (locationValid(x-1, y) == true){
+			locations.add(this.getWest());
+		}
+		return locations;
 	}
 
 	/**
