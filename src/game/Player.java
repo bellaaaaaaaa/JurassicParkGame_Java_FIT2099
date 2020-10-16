@@ -13,6 +13,7 @@ import edu.monash.fit2099.engine.Menu;
 public class Player extends Actor {
 
 	private Menu menu = new Menu();
+	int ecoPoints = 250; // Lets say starting ecoPooints.
 
 	/**
 	 * Constructor.
