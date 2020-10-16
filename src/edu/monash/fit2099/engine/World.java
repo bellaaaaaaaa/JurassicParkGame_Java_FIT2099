@@ -1,5 +1,8 @@
 package edu.monash.fit2099.engine;
 
+import game.Player;
+import game.VendingMachine;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -68,15 +71,15 @@ public class World {
 		for (Actor actor : actorLocations) {
 			lastActionMap.put(actor, new DoNothingAction());
 		}
-
 		// This loop is basically the whole game
 		while (stillRunning()) {
 			GameMap playersMap = actorLocations.locationOf(player).map();
 			playersMap.draw(display);
 			// Process all the actors.
 			for (Actor actor : actorLocations) {
-				if (stillRunning())
+				if (stillRunning()) {
 					processActorTurn(actor);
+				}
 			}
 
 			System.out.println(stillRunning());
@@ -108,6 +111,19 @@ public class World {
 		GameMap map = here.map();
 
 		Actions actions = new Actions();
+		if(actor instanceof Player){
+			ArrayList<Location> validLocations = actorLocations.locationOf(actor).validAdjacentLocations();
+			for(Location vl : validLocations){
+				if(vl.getGround() instanceof VendingMachine){
+					VendingMachine vm = new VendingMachine();
+					ArrayList<Item> merchandise = vm.getMerchandise();
+					for(Item i : merchandise){
+						buyItemAction bia = new buyItemAction(i);
+						actions.add(bia);
+					}
+				}
+			}
+		}
 		for (Item item : actor.getInventory()) {
 			actions.add(item.getAllowableActions());
 			// Game rule. If you're carrying it, you can drop it.

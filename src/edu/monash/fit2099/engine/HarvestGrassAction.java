@@ -10,10 +10,10 @@ public class HarvestGrassAction extends Action {
         if (actor instanceof Player) {
             Dirt d = new Dirt();
             map.locationOf(actor).setGround(d); // Set ground to dirt
-            Hay h = new Hay(20, 20, 10, "Hay", 'h', true);
+            Hay h = new Hay();
             actor.addItemToInventory(h); // Add hay to player inventory
         }
-        return "";
+        return "Player harvests grass";
     }
 
 

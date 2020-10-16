@@ -4,6 +4,7 @@ public class Food extends Item {
     int foodLvl;
     int price;
     int gainPoints;
+    String name;
 
     public Food(int foodLvl, int price, int gainPoints, String name, char displayChar, boolean portable){
         super(name, displayChar, portable);

@@ -2,12 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/game/Allosaur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/Dinosaur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/VendingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/LaserGun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/buyItemAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/useVendingMachineAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/MealKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/META-INF/A_Group.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/LaserGun.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/useVendingMachineAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/game/MealKit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/GameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/GameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/HarvestGrassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/HarvestGrassAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Allosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Allosaur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Egg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Hay.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Hay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/VendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Food.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/GameMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/GameMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/HarvestGrassAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/HarvestGrassAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Egg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Egg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Hay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Hay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/VendingMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/VendingMachine.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +180,35 @@
       <option name="project" value="LOCAL" />
       <updated>1602775703717</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added documentation for grass, tree, fruit, stegosaur and some other classes.&#10;Created new classes which will be needed later.">
+      <created>1602839226409</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602839226409</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Moved most stegosaur methods to a dinosaur class that stegosaur and allosaur will inherit from/ have in common.">
+      <created>1602841438460</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602841438460</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Made vending machines impassable by every actor type EXCEPT player.">
+      <created>1602841622487</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602841622487</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Working on purchasing from vending machine in players menu. Not working fully.">
+      <created>1602858058560</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602858058560</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -170,56 +221,49 @@
     <MESSAGE value="Stegosaur can die after being unconcious and can be removed from the GameMap :)!" />
     <MESSAGE value="Unsure how to add harvest grass to the menu. But created the functionality of harvesting in an action class." />
     <MESSAGE value="Done: Breeding if stegosaur if at adjacent location.&#10;Created egg with type&#10;Egg hatches after 10 turns&#10;When egg hatches, egg gets deleted, specific baby dinosaur created at same location." />
-    <option name="LAST_COMMIT_MESSAGE" value="Done: Breeding if stegosaur if at adjacent location.&#10;Created egg with type&#10;Egg hatches after 10 turns&#10;When egg hatches, egg gets deleted, specific baby dinosaur created at same location." />
+    <MESSAGE value="Added documentation for grass, tree, fruit, stegosaur and some other classes.&#10;Created new classes which will be needed later." />
+    <MESSAGE value="Moved most stegosaur methods to a dinosaur class that stegosaur and allosaur will inherit from/ have in common." />
+    <MESSAGE value="Made vending machines impassable by every actor type EXCEPT player." />
+    <MESSAGE value="Working on purchasing from vending machine in players menu. Not working fully." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on purchasing from vending machine in players menu. Not working fully." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1602837358037">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1602859738935">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1602837358037" />
-    <state x="342" y="56" key="CommitChangelistDialog2" timestamp="1602775703264">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1602859738935" />
+    <state x="323" y="56" key="CommitChangelistDialog2" timestamp="1602858058211">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="342" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602775703264" />
-    <state width="1398" height="225" key="GridCell.Tab.0.bottom" timestamp="1602784595908">
+    <state x="323" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602858058211" />
+    <state width="1398" height="204" key="GridCell.Tab.0.bottom" timestamp="1602858211260">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="225" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602784595908" />
-    <state width="1398" height="225" key="GridCell.Tab.0.center" timestamp="1602784595899">
+    <state width="1398" height="204" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602858211260" />
+    <state width="1398" height="204" key="GridCell.Tab.0.center" timestamp="1602858211260">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="225" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602784595899" />
-    <state width="1398" height="225" key="GridCell.Tab.0.left" timestamp="1602784595898">
+    <state width="1398" height="204" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602858211260" />
+    <state width="1398" height="204" key="GridCell.Tab.0.left" timestamp="1602858211259">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="225" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602784595898" />
-    <state width="1398" height="225" key="GridCell.Tab.0.right" timestamp="1602784595905">
+    <state width="1398" height="204" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602858211259" />
+    <state width="1398" height="204" key="GridCell.Tab.0.right" timestamp="1602858211260">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="225" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602784595905" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602775706514">
+    <state width="1398" height="204" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602858211260" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602858060299">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602775706514" />
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1602834106294">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602858060299" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1602858075348">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1602834106294" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1602858075348" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1602514468917">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1602514468917" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/game/Player.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/src$Application.ic" NAME="Application Coverage Results" MODIFIED="1602510929213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

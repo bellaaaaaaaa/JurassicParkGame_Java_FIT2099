@@ -286,7 +286,7 @@ public class GameMap {
 						if (s.isPregnant() == true){
 							s.setNumTurnsPregnant(s.getNumTurnsPregnant() + 1);
 							if (s.getNumTurnsPregnant() >= 10){
-								Egg e = new Egg(10, 200, 100, "Stegosaur Egg", 'e', true, "stegosaur");
+								Egg e = new Egg("stegosaur");
 								actorLocations.locationOf(s).addItem(e); // Lays egg at current location
 							}
 						}

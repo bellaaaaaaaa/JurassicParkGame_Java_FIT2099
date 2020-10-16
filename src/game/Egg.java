@@ -8,17 +8,16 @@ public class Egg extends Food {
 
     /**
      * Constructor for Egg which extends Food.
-     * @param foodLvl How much eating this will increase a dinosaurs food level by
-     * @param price The cost to purchase this item from the vending machine.
-     * @param gainPoints Number of eco points players gain when an egg hatches
-     * @param name Name of egg
-     * @param displayChar How Eggs can be visualised on a map
-     * @param portable Whether egg items are portable and can be added to the players inventory
      * @param type Indicates whether the egg is a stegosaur or allosaur egg
      */
-    public Egg(int foodLvl, int price, int gainPoints, String name, char displayChar, boolean portable, String type) {
-        super(foodLvl, price, gainPoints, name, displayChar, portable);
+    public Egg(String type) {
+        super(10, 200, 100, "Stegosaur Egg", 'e', true);
         this.type = type;
+        this.setPrice(200);
+        if(this.type == "allosaur"){
+            this.setName("Allosaur Egg");
+            this.setPrice(1000);
+        }
     }
 
     /**

@@ -48,7 +48,7 @@ public class Application {
 		world.addGameMap(gameMap);
 		
 		Actor player = new Player("Player", '@', 100);
-		world.addPlayer(player, gameMap.at(9, 4));
+		world.addPlayer(player, gameMap.at(40, 11));
 		VendingMachine v = new VendingMachine();
 		
 		// Place a pair of stegosaurs in the middle of the map

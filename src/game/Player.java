@@ -32,5 +32,14 @@ public class Player extends Actor {
 		if (lastAction.getNextAction() != null)
 			return lastAction.getNextAction();
 		return menu.showMenu(this, actions, display);
+
+	}
+
+	public int getEcoPoints() {
+		return ecoPoints;
+	}
+
+	public void setEcoPoints(int ecoPoints) {
+		this.ecoPoints = ecoPoints;
 	}
 }

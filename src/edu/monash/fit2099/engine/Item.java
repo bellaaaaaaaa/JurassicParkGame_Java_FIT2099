@@ -15,6 +15,7 @@ public abstract class Item implements ItemInterface, Printable, Capable {
 	protected char displayChar;
 	protected Actions allowableActions;
 	protected Capabilities capabilities = new Capabilities();
+	protected int price;
 
 	/***
 	 * Constructor.
@@ -28,6 +29,7 @@ public abstract class Item implements ItemInterface, Printable, Capable {
 		this.displayChar = displayChar;
 		this.portable = portable;
 		allowableActions = new Actions();
+		this.price = price;
 	}
 
     /**
@@ -129,5 +131,21 @@ public abstract class Item implements ItemInterface, Printable, Capable {
 	 */
 	public void removeCapability(Enum<?> capability) {
 		capabilities.removeCapability(capability);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
 	}
 }

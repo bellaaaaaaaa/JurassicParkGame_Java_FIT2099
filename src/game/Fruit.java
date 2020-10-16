@@ -10,6 +10,7 @@ public class Fruit extends Food {
     public Fruit(){
         super(30, 30, 15, "Fruit", 'f', true);
         this.expiryTurns = 20;
+        this.setPrice(30);
     }
 
     /**

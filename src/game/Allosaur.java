@@ -2,7 +2,7 @@ package game;
 
 import edu.monash.fit2099.engine.*;
 
-public class Allosaur extends Actor {
+public class Allosaur extends Dinosaur {
     /**
      * Constructor.
      *
@@ -17,5 +17,9 @@ public class Allosaur extends Actor {
     @Override
     public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
         return null;
+    }
+
+    public void eatStegosaur(Stegosaur s){
+        this.setFoodLvl(50);
     }
 }

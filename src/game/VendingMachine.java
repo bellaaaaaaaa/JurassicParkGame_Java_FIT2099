@@ -2,14 +2,28 @@ package game;
 
 import edu.monash.fit2099.engine.Actor;
 import edu.monash.fit2099.engine.Ground;
+import edu.monash.fit2099.engine.Item;
+import edu.monash.fit2099.engine.LaserGun;
+
+import java.util.ArrayList;
 
 public class VendingMachine extends Ground {
+    ArrayList<Item> merchandise;
     /**
      * Constructor.
      *
      */
     public VendingMachine() {
         super('V');
+        this.merchandise = new ArrayList<Item>();
+        this.merchandise = new ArrayList<Item>();
+        this.merchandise.add(new Hay());
+        this.merchandise.add(new Fruit());
+        this.merchandise.add(new MealKit("vegetarian"));
+        this.merchandise.add(new MealKit("carnivore"));
+        this.merchandise.add(new Egg("stegosaur"));
+        this.merchandise.add(new Egg("allosaur"));
+        this.merchandise.add(new LaserGun());
     }
 
     /**
@@ -19,10 +33,18 @@ public class VendingMachine extends Ground {
      */
     @Override
     public boolean canActorEnter(Actor actor) {
-        if(actor instanceof Player){
-            return true;
-        } else {
-            return false;
-        }
+        return false;
     }
+
+    public ArrayList<Item> getMerchandise() {
+        return merchandise;
+    }
+
+    public void setMerchandise(ArrayList<Item> merchandise) {
+        this.merchandise = merchandise;
+    }
+    /**
+    String msg = "Buy ";
+    msg += item.getName() + " from Vending Machine (" + Integer.toString(item.getPrice()) + " points)";
+    return msg;*/
 }
