@@ -118,20 +118,10 @@ public class Location implements Printable {
 		for(Item item :  new ArrayList<>(items)) {
 			item.tick(this);
 
-			// Hatch eggs
+			// Manage eggs
 			if (item instanceof Egg){
 				Egg e = (Egg) item;
-				e.setNumTurnsOnGround(e.getNumTurnsOnGround() + 1);
-				if (e.getNumTurnsOnGround() > 10){
-					this.removeItem(item);
-					if (e.getType() == "stegosaur"){
-						Stegosaur s = new Stegosaur("stegosaur");
-						s.setStage("baby");
-						this.addActor(s);
-					}
-					item = null;
-					e = null; // delete egg and item
-				}
+				e.manageEggs(this);
 			}
 		}
 	}
@@ -146,26 +136,22 @@ public class Location implements Printable {
 
 	// Check location valid based on NSEW
 	public boolean locationValid(int x, int y){
-		if ((x < 0) || (y < 0) || (x > map.getXRange().max()) || (y > map.getYRange().max())){
-			return false;
-		} else {
-			return true;
-		}
+		return (x >= 0) && (y >= 0) && (x <= map.getXRange().max()) && (y <= map.getYRange().max());
 	}
 
 	// Return list of valid adjacent locations
 	public ArrayList<Location> validAdjacentLocations(){
 		ArrayList<Location> locations = new ArrayList();
-		if (locationValid(x, y-1) == true){
+		if (locationValid(x, y - 1)){
 			locations.add(this.getNorth());
 		}
-		if (locationValid(x, y+1) == true){
+		if (locationValid(x, y + 1)){
 			locations.add(this.getSouth());
 		}
-		if (locationValid(x+1, y) == true){
+		if (locationValid(x + 1, y)){
 			locations.add(this.getEast());
 		}
-		if (locationValid(x-1, y) == true){
+		if (locationValid(x - 1, y)){
 			locations.add(this.getWest());
 		}
 		return locations;

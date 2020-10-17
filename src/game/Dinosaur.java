@@ -17,6 +17,7 @@ public class Dinosaur extends Actor {
     int numTurnsPregnant = 0;
     boolean isPregnant = false;
     String stage;
+    int numTurnsAlive = 0; // Only needed for babies for now, assuming adult dinosaurs never die unless killed or starving.
     /**
      * Constructor.
      *
@@ -37,12 +38,9 @@ public class Dinosaur extends Actor {
         return foodLvl;
     }
 
-    public void setFoodLvl(int foodLvl) {
-        if (foodLvl >= maxFoodLvl){
-            this.foodLvl = maxFoodLvl;
-        } else {
-            this.foodLvl = foodLvl;
-        }
+    public void setFoodLvl(int foodRaisingPoints) {
+        int checkLevel = foodRaisingPoints + this.getFoodLvl();
+        this.foodLvl = Math.min(checkLevel, maxFoodLvl);
     }
 
     /**
@@ -155,7 +153,7 @@ public class Dinosaur extends Actor {
     public void setStage(String stage) { this.stage = stage; }
 
     public static boolean breed(Dinosaur d1, Dinosaur d2){
-        if(d1.getFoodLvl() > 50 && d2.getFoodLvl() > 50 && (!d1.getGender().equals(d2.getGender())) && (d1.name.equals(d2.name))){
+        if(d1.getFoodLvl() > 50 && d2.getFoodLvl() > 50 && (!d1.getGender().equals(d2.getGender())) && (d1.name.equals(d2.name)) && (!d1.getStage().equals("baby")) && (!d2.getStage().equals("baby"))){
             if(d1.getGender().equals("female")){
                 d1.setNumTurnsPregnant(d1.getNumTurnsPregnant() + 1);
                 d1.setPregnant(true);
@@ -169,9 +167,15 @@ public class Dinosaur extends Actor {
     }
 
     public static void newTick(Dinosaur d, Location l, GameMap gameMap){
-        d.setFoodLvl(d.getFoodLvl() - 1);
         int currentFoodLvl = d.getFoodLvl();
+        d.setFoodLvl(currentFoodLvl - 1);
         ArrayList<Location> adjacents = l.validAdjacentLocations();
+
+        // Baby dinosaurs grow up
+        if(d.getStage().equals("baby")){
+            d.babyDinosaurGrows();
+        }
+
         if (currentFoodLvl > 0) {
 
             // If stegosaur getting hungry
@@ -240,6 +244,8 @@ public class Dinosaur extends Actor {
             if (d.getNumTurnsUnconscious() >= 20){
                 d.setDead(true);
                 d.setNumTurnsDead(d.getNumTurnsDead() + 1);
+
+                // Carcass of dead dinosaur still remains for 20 turns
                 if(d.getNumTurnsDead() >= 20){
                     gameMap.removeActor(d);
                     gameMap.at(l.x(), l.y()).setGround(new Dirt());
@@ -253,6 +259,21 @@ public class Dinosaur extends Actor {
         if (d.getNumTurnsPregnant() >= 10){
             Egg e = new Egg(d.name);
             l.addItem(e); // Lays egg at current location
+        }
+    }
+
+    public int getNumTurnsAlive() {
+        return numTurnsAlive;
+    }
+
+    public void setNumTurnsAlive(int numTurnsAlive) {
+        this.numTurnsAlive = numTurnsAlive;
+    }
+
+    private void babyDinosaurGrows(){
+        this.setNumTurnsAlive(this.getNumTurnsAlive() + 1);
+        if(this.getNumTurnsAlive() >= 30){
+            this.setStage("adult");
         }
     }
 }

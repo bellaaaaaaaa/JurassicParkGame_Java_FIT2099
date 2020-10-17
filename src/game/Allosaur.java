@@ -6,12 +6,9 @@ public class Allosaur extends Dinosaur {
     /**
      * Constructor.
      *
-     * @param name        the name of the Actor
-     * @param displayChar the character that will represent the Actor in the display
-     * @param hitPoints   the Actor's starting hit points
      */
-    public Allosaur(String name, char displayChar, int hitPoints) {
-        super("allosaur", 'a', hitPoints);
+    public Allosaur() {
+        super("allosaur", 'a', 100);
     }
 
     @Override

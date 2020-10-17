@@ -8,10 +8,8 @@ public class HarvestGrassAction extends Action {
     @Override
     public String execute(Actor actor, GameMap map) {
         if (actor instanceof Player) {
-            Dirt d = new Dirt();
-            map.locationOf(actor).setGround(d); // Set ground to dirt
-            Hay h = new Hay();
-            actor.addItemToInventory(h); // Add hay to player inventory
+            map.locationOf(actor).setGround(new Dirt()); // Set ground to dirt
+            actor.addItemToInventory(new Hay()); // Add hay to player inventory
         }
         return "Player harvests grass";
     }

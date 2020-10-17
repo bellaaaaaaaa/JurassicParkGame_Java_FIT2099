@@ -1,6 +1,7 @@
 package game;
 
 import edu.monash.fit2099.engine.Food;
+import edu.monash.fit2099.engine.Location;
 
 public class Egg extends Food {
     String type;
@@ -14,7 +15,7 @@ public class Egg extends Food {
         super(10, 200, 100, "Stegosaur Egg", 'e', true);
         this.type = type;
         this.setPrice(200);
-        if(this.type == "allosaur"){
+        if(this.type.equals("allosaur")){
             this.setName("Allosaur Egg");
             this.setPrice(1000);
         }
@@ -43,4 +44,20 @@ public class Egg extends Food {
      * @param type string type
      */
     public void setType(String type) { this.type = type; }
+
+    public void manageEggs(Location location){
+        this.setNumTurnsOnGround(this.getNumTurnsOnGround() + 1);
+        if (this.getNumTurnsOnGround() > 10){
+            location.removeItem(this);
+            Dinosaur baby;
+            if (this.getType().equals("stegosaur")){
+                baby = new Stegosaur();
+            } else {
+                baby = new Allosaur();
+            }
+            baby.setStage("baby");
+            baby.setFoodLvl(10);
+            location.addActor(baby);
+        }
+    }
 }
