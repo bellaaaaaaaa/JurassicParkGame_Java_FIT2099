@@ -2,38 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/LaserGun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/buyItemAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/MealKit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/A_Group/META-INF/A_Group.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/LaserGun.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/A_Group/game/MealKit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/laserStegosaurAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Food.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/GameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/GameMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/HarvestGrassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/HarvestGrassAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/buyItemAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/buyItemAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/Allosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Allosaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Egg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Fruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Hay.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Hay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/VendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Dinosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Dinosaur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/GameMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/GameMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/HarvestGrassAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/HarvestGrassAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Egg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Egg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Fruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Fruit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Hay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Hay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/VendingMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/VendingMachine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/buyItemAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/buyItemAction.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602858058560</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="PLAYER CAN FINALLY BUY FROM VENDINGMACHINE!!! (Might be buggy for non food items)">
+      <created>1602861901841</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602861901841</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,45 +211,46 @@
     <MESSAGE value="Moved most stegosaur methods to a dinosaur class that stegosaur and allosaur will inherit from/ have in common." />
     <MESSAGE value="Made vending machines impassable by every actor type EXCEPT player." />
     <MESSAGE value="Working on purchasing from vending machine in players menu. Not working fully." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on purchasing from vending machine in players menu. Not working fully." />
+    <MESSAGE value="PLAYER CAN FINALLY BUY FROM VENDINGMACHINE!!! (Might be buggy for non food items)" />
+    <option name="LAST_COMMIT_MESSAGE" value="PLAYER CAN FINALLY BUY FROM VENDINGMACHINE!!! (Might be buggy for non food items)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1602861666147">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1602924583400">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1602861666147" />
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1602924583400" />
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602860311636">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1602860311636" />
-    <state x="323" y="56" key="CommitChangelistDialog2" timestamp="1602858058211">
+    <state x="323" y="56" key="CommitChangelistDialog2" timestamp="1602861901466">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="323" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602858058211" />
-    <state width="1398" height="187" key="GridCell.Tab.0.bottom" timestamp="1602861779098">
+    <state x="323" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602861901466" />
+    <state width="1398" height="186" key="GridCell.Tab.0.bottom" timestamp="1602933120558">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602861779098" />
-    <state width="1398" height="187" key="GridCell.Tab.0.center" timestamp="1602861779097">
+    <state width="1398" height="186" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602933120558" />
+    <state width="1398" height="186" key="GridCell.Tab.0.center" timestamp="1602933120558">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602861779097" />
-    <state width="1398" height="187" key="GridCell.Tab.0.left" timestamp="1602861779096">
+    <state width="1398" height="186" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602933120558" />
+    <state width="1398" height="186" key="GridCell.Tab.0.left" timestamp="1602933120557">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602861779096" />
-    <state width="1398" height="187" key="GridCell.Tab.0.right" timestamp="1602861779097">
+    <state width="1398" height="186" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602933120557" />
+    <state width="1398" height="186" key="GridCell.Tab.0.right" timestamp="1602933120558">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602861779097" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602858060299">
+    <state width="1398" height="186" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602933120558" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602861903860">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602858060299" />
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1602861848550">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602861903860" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1602933154329">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1602861848550" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1602933154329" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1602514468917">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

@@ -78,7 +78,12 @@ public class Dinosaur extends Actor {
      * Returns a boolean indicating whether a dinosaur is dead.
      * @return boolean type.
      */
-    public boolean isDead() { return isDead; }
+    public boolean isDead() {
+        if(this.hitPoints <= 0){
+            this.setDead(true);
+        }
+        return isDead;
+    }
 
     /**
      * Sets isDead to true if a dinosaur has had its foodLvl be 0 for 20 or more turns. Lets us now that a dinosaur should be deleted from the game.
@@ -145,4 +150,15 @@ public class Dinosaur extends Actor {
      * @param stage String type.
      */
     public void setStage(String stage) { this.stage = stage; }
+
+    public static void breed(Dinosaur d1, Dinosaur d2){
+        //
+        if(d1.getGender() == "female"){
+            d1.setNumTurnsPregnant(d1.getNumTurnsPregnant() + 1);
+            d1.setPregnant(true);
+        } else if (d2.getGender() == "female"){
+            d2.setNumTurnsPregnant(d2.getNumTurnsPregnant() + 1);
+            d2.setPregnant(true);
+        }
+    }
 }

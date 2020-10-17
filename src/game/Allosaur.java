@@ -19,7 +19,7 @@ public class Allosaur extends Dinosaur {
         return null;
     }
 
-    public void eatStegosaur(Stegosaur s){
+    public void eatCarcass(){
         this.setFoodLvl(50);
     }
 }
