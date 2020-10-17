@@ -1,5 +1,6 @@
 package edu.monash.fit2099.engine;
 import game.Dinosaur;
+import game.Player;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -323,5 +324,15 @@ public class GameMap {
 	 */
 	public boolean contains(Actor actor) {
 		return actorLocations.contains(actor) && actorLocations.locationOf(actor).map() == this;
+	}
+
+	public ArrayList<Player> getPlayers(){
+		ArrayList<Player> players = new ArrayList();
+		for(Actor actor : actorLocations){
+			if(actor instanceof Player){
+				players.add((Player) actor);
+			}
+		}
+		return players;
 	}
 }

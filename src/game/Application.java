@@ -48,12 +48,13 @@ public class Application {
 		world.addGameMap(gameMap);
 		
 		Actor player = new Player("Player", '@', 100);
-		world.addPlayer(player, gameMap.at(40, 11));
+		player.addItemToInventory(new Hay());
+		world.addPlayer(player, gameMap.at(11, 11));
 		VendingMachine v = new VendingMachine();
 		
 		// Place a pair of stegosaurs in the middle of the map
 		gameMap.at(79, 24).addActor(new Stegosaur());
-		gameMap.at(32, 12).addActor(new Stegosaur());
+		gameMap.at(11, 12).addActor(new Stegosaur());
 		gameMap.at(40, 12).setGround(v);
 
 		// Each square of dirt has a small 2% chance to grow grass.

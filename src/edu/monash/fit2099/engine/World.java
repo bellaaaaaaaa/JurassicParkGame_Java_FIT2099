@@ -1,12 +1,10 @@
 package edu.monash.fit2099.engine;
 
+import game.Dinosaur;
 import game.Player;
 import game.VendingMachine;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * Class representing the game world, including the locations of all Actors, the
@@ -120,6 +118,15 @@ public class World {
 					for(Item i : merchandise){
 						buyItemAction bia = new buyItemAction(i);
 						actions.add(bia);
+					}
+				}
+				if(vl.getActor() instanceof Dinosaur){
+					List<Item> items = actor.getInventory();
+					for(Item i : items){
+						if(i instanceof Food){
+							feedDinosaurAction fda = new feedDinosaurAction((Food) i, (Dinosaur) vl.getActor(), vl);
+							actions.add(fda);
+						}
 					}
 				}
 			}

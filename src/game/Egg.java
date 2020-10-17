@@ -45,9 +45,9 @@ public class Egg extends Food {
      */
     public void setType(String type) { this.type = type; }
 
-    public void manageEggs(Location location){
+    public boolean anyEggsToHatch(Location location){
         this.setNumTurnsOnGround(this.getNumTurnsOnGround() + 1);
-        if (this.getNumTurnsOnGround() > 10){
+        if (this.getNumTurnsOnGround() > 15){
             location.removeItem(this);
             Dinosaur baby;
             if (this.getType().equals("stegosaur")){
@@ -58,6 +58,9 @@ public class Egg extends Food {
             baby.setStage("baby");
             baby.setFoodLvl(10);
             location.addActor(baby);
+            return true;
+        } else {
+            return false;
         }
     }
 }

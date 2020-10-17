@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/feedDinosaurAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/buyItemAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/buyItemAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/GameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/GameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Egg.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +193,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602861901841</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Created separate breed function for dinosaurs.&#10;Dinosaurs can breed">
+      <created>1602933200211</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602933200211</updated>
+    </task>
+    <task id="LOCAL-00016" summary="HEAVILY Refactored Gamemap, Dinosaur, Stegosaur. Moved all dinosaur related functions to dinosaur class. Tick now within dinosaur class.">
+      <created>1602937012999</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1602937012999</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Eggs can hatch, moved egg functionality into egg cclass, removed from Location class. better organisation this way. Improved some code by refactoring.">
+      <created>1602944619953</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1602944619953</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -206,45 +232,50 @@
     <MESSAGE value="Made vending machines impassable by every actor type EXCEPT player." />
     <MESSAGE value="Working on purchasing from vending machine in players menu. Not working fully." />
     <MESSAGE value="PLAYER CAN FINALLY BUY FROM VENDINGMACHINE!!! (Might be buggy for non food items)" />
-    <option name="LAST_COMMIT_MESSAGE" value="PLAYER CAN FINALLY BUY FROM VENDINGMACHINE!!! (Might be buggy for non food items)" />
+    <MESSAGE value="Created separate breed function for dinosaurs.&#10;Dinosaurs can breed" />
+    <MESSAGE value="HEAVILY Refactored Gamemap. Moved all dinosaur related functions to dinosaur class. Tick now within dinosaur class." />
+    <MESSAGE value="HEAVILY Refactored Gamemap, Dinosaur, Stegosaur. Moved all dinosaur related functions to dinosaur class. Tick now within dinosaur class." />
+    <MESSAGE value="Eggs can hatch, moved egg functionality into egg cclass, removed from Location class. better organisation this way." />
+    <MESSAGE value="Eggs can hatch, moved egg functionality into egg cclass, removed from Location class. better organisation this way. Improved some code by refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Eggs can hatch, moved egg functionality into egg cclass, removed from Location class. better organisation this way. Improved some code by refactoring." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1602861666147">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1602955637657">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1602861666147" />
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1602955637657" />
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602860311636">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1602860311636" />
-    <state x="323" y="56" key="CommitChangelistDialog2" timestamp="1602861901466">
+    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1602944619623">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="323" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602861901466" />
-    <state width="1398" height="187" key="GridCell.Tab.0.bottom" timestamp="1602868680858">
+    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1602944619623" />
+    <state width="1398" height="178" key="GridCell.Tab.0.bottom" timestamp="1602938104979">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602868680858" />
-    <state width="1398" height="187" key="GridCell.Tab.0.center" timestamp="1602868680857">
+    <state width="1398" height="178" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602938104979" />
+    <state width="1398" height="178" key="GridCell.Tab.0.center" timestamp="1602938104979">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602868680857" />
-    <state width="1398" height="187" key="GridCell.Tab.0.left" timestamp="1602868680856">
+    <state width="1398" height="178" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602938104979" />
+    <state width="1398" height="178" key="GridCell.Tab.0.left" timestamp="1602938104978">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602868680856" />
-    <state width="1398" height="187" key="GridCell.Tab.0.right" timestamp="1602868680857">
+    <state width="1398" height="178" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602938104978" />
+    <state width="1398" height="178" key="GridCell.Tab.0.right" timestamp="1602938104979">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602868680857" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602861903860">
+    <state width="1398" height="178" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602938104979" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1602944621717">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602861903860" />
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1602924284932">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1602944621717" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1602944631304">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1602924284932" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1602944631304" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1602514468917">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

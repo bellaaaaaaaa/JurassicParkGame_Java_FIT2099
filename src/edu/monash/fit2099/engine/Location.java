@@ -1,6 +1,7 @@
 package edu.monash.fit2099.engine;
 
 import game.Egg;
+import game.Player;
 import game.Stegosaur;
 
 import java.util.*;
@@ -121,7 +122,17 @@ public class Location implements Printable {
 			// Manage eggs
 			if (item instanceof Egg){
 				Egg e = (Egg) item;
-				e.manageEggs(this);
+				boolean anEggHatched = e.anyEggsToHatch(this);
+				if(anEggHatched){
+					ArrayList<Player> players = map.getPlayers();
+					for(Player p : players){
+						if(e.getType().equals("stegosaur")){
+							p.setEcoPoints(p.getEcoPoints() + 100);
+						} else if (e.getType().equals("allosaur")){
+							p.setEcoPoints(p.getEcoPoints() + 1000);
+						}
+					}
+				}
 			}
 		}
 	}
