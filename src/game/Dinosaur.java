@@ -2,6 +2,9 @@ package game;
 
 import edu.monash.fit2099.engine.*;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Dinosaur extends Actor {
     private Behaviour behaviour;
     int foodLvl = 50;
@@ -87,7 +90,7 @@ public class Dinosaur extends Actor {
 
     /**
      * Sets isDead to true if a dinosaur has had its foodLvl be 0 for 20 or more turns. Lets us now that a dinosaur should be deleted from the game.
-     * @param dead
+     * @param dead boolean to indicate if a dinosaur is dead or not.
      */
     public void setDead(boolean dead) { isDead = dead; }
 
@@ -99,13 +102,13 @@ public class Dinosaur extends Actor {
 
     /**
      * Sets the number of turns a dinosaur carcass has been on the ground. Since a dinosaur carcass is still edible for a certain number of turns, we need to track this.
-     * @param numTurnsDead
+     * @param numTurnsDead updated number of times carcass has remained on ground
      */
     public void setNumTurnsDead(int numTurnsDead) { this.numTurnsDead = numTurnsDead; }
 
     /**
      * Indicates the dinosaurs gender to let us know whether two dinosaurs can mate or not.
-     * @return
+     * @return string type indicating dinosaur gender
      */
     public String getGender() { return gender; }
 
@@ -123,7 +126,7 @@ public class Dinosaur extends Actor {
 
     /**
      * Increases by 1 each turn since the female dinosaur has mated
-     * @param numTurnsPregnant
+     * @param numTurnsPregnant new value to be set to
      */
     public void setNumTurnsPregnant(int numTurnsPregnant) { this.numTurnsPregnant = numTurnsPregnant; }
 
@@ -135,7 +138,7 @@ public class Dinosaur extends Actor {
 
     /**
      * This is set to true for a female dinosaur once it has mated with another male dinosaur.
-     * @param pregnant
+     * @param pregnant boolean type
      */
     public void setPregnant(boolean pregnant) { isPregnant = pregnant; }
 
@@ -151,14 +154,105 @@ public class Dinosaur extends Actor {
      */
     public void setStage(String stage) { this.stage = stage; }
 
-    public static void breed(Dinosaur d1, Dinosaur d2){
-        //
-        if(d1.getGender() == "female"){
-            d1.setNumTurnsPregnant(d1.getNumTurnsPregnant() + 1);
-            d1.setPregnant(true);
-        } else if (d2.getGender() == "female"){
-            d2.setNumTurnsPregnant(d2.getNumTurnsPregnant() + 1);
-            d2.setPregnant(true);
+    public static boolean breed(Dinosaur d1, Dinosaur d2){
+        if(d1.getFoodLvl() > 50 && d2.getFoodLvl() > 50 && (!d1.getGender().equals(d2.getGender())) && (d1.name.equals(d2.name))){
+            if(d1.getGender().equals("female")){
+                d1.setNumTurnsPregnant(d1.getNumTurnsPregnant() + 1);
+                d1.setPregnant(true);
+            } else if (d2.getGender().equals("female")){
+                d2.setNumTurnsPregnant(d2.getNumTurnsPregnant() + 1);
+                d2.setPregnant(true);
+            }
+            return true;
+        }
+        return false;
+    }
+
+    public static void newTick(Dinosaur d, Location l, GameMap gameMap){
+        d.setFoodLvl(d.getFoodLvl() - 1);
+        int currentFoodLvl = d.getFoodLvl();
+        ArrayList<Location> adjacents = l.validAdjacentLocations();
+        if (currentFoodLvl > 0) {
+
+            // If stegosaur getting hungry
+            if (d.getFoodLvl() <= 10) {
+                System.out.println(d.name + " at (" + l.x() + ", " + l.y() + ") is getting hungry!");
+            }
+
+            // If dinosaur can breed
+            if (d.getFoodLvl() > 50) {
+                // Check locations for breedable stegosaurs
+                for (Location adj : adjacents) {
+                    if (l.containsAnActor()) {
+                        Actor a = adj.getActor();
+                        if (a instanceof Dinosaur) {
+                            boolean bred = breed((Dinosaur) a, d);
+                            if (bred) {
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Potentially lay egg
+            if (d.isPregnant()) {
+                layEgg(d, l);
+            }
+
+            // Allosaur Attacks Stegosaur
+            if (d instanceof Allosaur) {
+                boolean hasKilled = false;
+                for (Location adj : adjacents) {
+                    if (hasKilled) {
+                        break; // To only eat 1 dead dinosaur per turn.
+                    }
+                    if (adj.containsAnActor()) {
+                        if (adj.getActor() instanceof Stegosaur) {
+                            Stegosaur s = (Stegosaur) adj.getActor();
+                            while (!s.isDead()) {
+                                int[] array = {50, 100}; // Allosaur kills stegosaur in 1 or 2 hits.
+                                Random generator = new Random();
+                                int randomIndex = generator.nextInt(array.length);
+                                int hitPoints = array[randomIndex];
+                                s.hurt(hitPoints);
+                            }
+                            // Jumps here if stegosaur already dead or if allosaur attacked and killed stegosaur.
+                            ((Allosaur) d).eatCarcass();
+                            gameMap.removeActor(s);
+                            hasKilled = true;
+                        } else if (adj.getActor() instanceof Allosaur) {
+                            Allosaur ar2 = (Allosaur) adj.getActor();
+                            if (ar2.isDead()) {
+                                // Eat dead allosaur
+                                ((Allosaur) d).eatCarcass();
+                                gameMap.removeActor(ar2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // For unconscious dinosaurs
+        else {
+            d.setUnconscious(true);
+            d.setNumTurnsUnconscious(d.getNumTurnsUnconscious() + 1);
+            if (d.getNumTurnsUnconscious() >= 20){
+                d.setDead(true);
+                d.setNumTurnsDead(d.getNumTurnsDead() + 1);
+                if(d.getNumTurnsDead() >= 20){
+                    gameMap.removeActor(d);
+                    gameMap.at(l.x(), l.y()).setGround(new Dirt());
+                }
+            }
+        }
+    }
+
+    private static void layEgg(Dinosaur d, Location l){
+        d.setNumTurnsPregnant(d.getNumTurnsPregnant() + 1);
+        if (d.getNumTurnsPregnant() >= 10){
+            Egg e = new Egg(d.name);
+            l.addItem(e); // Lays egg at current location
         }
     }
 }

@@ -17,25 +17,14 @@ import java.util.Random;
 public class Stegosaur extends Dinosaur {
 	// Will need to change this to a collection if Stegosaur gets additional Behaviours.
 	private Behaviour behaviour;
-	int foodLvl = 50;
-	int maxFoodLvl = 100;
-	int numTurnsUnconscious = 0;
-	boolean isUnconscious = false;
-	boolean isDead = false;
-	int numTurnsDead = 0;
-	String gender;
-	int numTurnsPregnant = 0;
-	boolean isPregnant = false;
-	String stage;
 
 	/** 
 	 * Constructor.
 	 * All Stegosaurs are represented by a 'd' and have 100 hit points.
 	 * 
-	 * @param name the name of this Stegosaur
 	 */
-	public Stegosaur(String name) {
-		super(name, 'd', 100);
+	public Stegosaur() {
+		super("stegosaur", 'd', 100);
 		Random rand = new Random();
 		int num = rand.nextInt(2) + 1; //either 1 or 2
 		if (num == 1){
@@ -68,14 +57,5 @@ public class Stegosaur extends Dinosaur {
 			return wander;
 		
 		return new DoNothingAction();
-	}
-
-	/**
-	 * Decreases the Stegosaurs foodLvl by 1 each turn.
-	 */
-	public void tick(){
-		int foodLvl = this.getFoodLvl();
-		foodLvl -= 1;
-		this.setFoodLvl(foodLvl);
 	}
 }

@@ -52,8 +52,8 @@ public class Application {
 		VendingMachine v = new VendingMachine();
 		
 		// Place a pair of stegosaurs in the middle of the map
-		gameMap.at(79, 24).addActor(new Stegosaur("Stegosaur"));
-		gameMap.at(32, 12).addActor(new Stegosaur("Stegosaur"));
+		gameMap.at(79, 24).addActor(new Stegosaur());
+		gameMap.at(32, 12).addActor(new Stegosaur());
 		gameMap.at(40, 12).setGround(v);
 
 		// Each square of dirt has a small 2% chance to grow grass.

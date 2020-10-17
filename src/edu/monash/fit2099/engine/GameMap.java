@@ -1,9 +1,4 @@
 package edu.monash.fit2099.engine;
-
-import game.Allosaur;
-import game.Dirt;
-import game.Egg;
-import game.Stegosaur;
 import game.Dinosaur;
 
 import java.io.IOException;
@@ -238,121 +233,14 @@ public class GameMap {
 		// Tick over all the items in inventories.
 		for (Actor actor : actorLocations) {
 			if (this.contains(actor)) {
-				for (Item item : new ArrayList<Item>(actor.getInventory())) { // Copy the list in case the item wants to leave
+				for (Item item : new ArrayList<>(actor.getInventory())) { // Copy the list in case the item wants to leave
 					item.tick(actorLocations.locationOf(actor), actor);
 				}
 
-				// Tick Stegosaur Foodlvl
-				if (actor instanceof Stegosaur){
-					Stegosaur s = (Stegosaur) actor;
-					int sx = actorLocations.locationOf(s).x();
-					int sy = actorLocations.locationOf(s).y();
-
-					int currentFoodLvl = s.getFoodLvl();
-					if (currentFoodLvl > 0){
-
-						// Decrease foodLvl if conscious
-						s.tick();
-						int updatedFoodLvl = s.getFoodLvl();
-
-						// If stegosaur getting hungry
-						if (updatedFoodLvl <= 10){
-							System.out.println("Stegosaur at (" + Integer.toString(actorLocations.locationOf(s).x()) + ", " +  Integer.toString(actorLocations.locationOf(s).y()) + ") is getting hungry!");
-						}
-
-						// If stegosaur can breed
-						if (updatedFoodLvl > 50){
-							String gender = s.getGender();
-							ArrayList<Location> locations = actorLocations.locationOf(s).validAdjacentLocations();
-
-							// Check locations for breedable stegosaurs
-							for(Location l : locations){
-								if (l.containsAnActor() == true){
-									Actor a = l.getActor();
-									if (a instanceof Stegosaur){
-										if ( (((Stegosaur) a).getGender() != s.getGender()) && (((Stegosaur) a).isPregnant() == false) && s.isPregnant() == false){
-											Dinosaur.breed(((Stegosaur) a), s);
-										}
-									}
-								}
-							}
-						}
-
-						// If stegosaur ready to lay egg
-						if (s.isPregnant() == true){
-							s.setNumTurnsPregnant(s.getNumTurnsPregnant() + 1);
-							if (s.getNumTurnsPregnant() >= 10){
-								Egg e = new Egg("stegosaur");
-								actorLocations.locationOf(s).addItem(e); // Lays egg at current location
-							}
-						}
-
-					} else {
-						s.setUnconscious(true);
-						s.setNumTurnsUnconscious(s.getNumTurnsUnconscious() + 1);
-						if (s.getNumTurnsUnconscious() >= 20){
-							s.setDead(true);
-							s.setNumTurnsDead(s.getNumTurnsDead() + 1);
-							if(s.getNumTurnsDead() >= 20){
-								Dirt d = new Dirt();
-								this.removeActor(actor);
-								this.at(sx, sy).setGround(d);
-							}
-						}
-					}
-
+				// Tick Dinosaurs: Stegosaur and Allosaur
+				if (actor instanceof Dinosaur){
+					Dinosaur.newTick((Dinosaur) actor, locationOf(actor), this);
 				}
-
-				// Allosaur Attacks Stegosaur
-				if(actor instanceof Allosaur){
-					Allosaur ar = (Allosaur) actor;
-					ArrayList<Location> adjacents = locationOf(ar).validAdjacentLocations();
-					boolean hasKilled = false;
-					for(Location adj : adjacents){
-						if(hasKilled == true){
-							break; // To only eat 1 dead dinosaur per turn.
-						}
-						if (adj.containsAnActor()){
-							if (adj.getActor() instanceof Stegosaur){
-								Stegosaur s = (Stegosaur) actor;
-								while(s.isDead() == false){
-									int[] array = {50, 100}; // Allosaur kills stegosaur in 1 or 2 hits.
-									Random generator = new Random();
-									int randomIndex = generator.nextInt(array.length);
-									int hit =  array[randomIndex];
-									s.hurt(hit);
-								}
-								// Jumps here if stegosaur already dead or if allosaur attacked and killed stegosaur.
-								ar.eatCarcass();
-								this.removeActor(s);
-								s = null;
-								hasKilled = true;
-							}
-						}
-					}
-				}
-
-				// Allosaur Eats/Breeds with another Allosaur
-				if(actor instanceof Allosaur){
-					Allosaur ar = (Allosaur) actor;
-					ArrayList<Location> adjacents = locationOf(ar).validAdjacentLocations();
-					for(Location adj : adjacents){
-						if (adj.containsAnActor()){
-							if(adj.getActor() instanceof Allosaur){
-								Allosaur ar2 = (Allosaur) adj.getActor();
-								if (ar2.isDead()){
-									// Eat dead allosaur
-									ar.eatCarcass();
-									this.removeActor(ar2);
-									ar2 = null;
-								} else if ((ar.getGender() != ar2.getGender()) && (ar.isPregnant() == false) && (ar2.isPregnant() == false)){
-									Dinosaur.breed(ar, ar2);
-								}
-							}
-						}
-					}
-				}
-
 			}
 		}
 
