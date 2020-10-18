@@ -1,7 +1,5 @@
 package edu.monash.fit2099.engine;
 
-import game.Dirt;
-import game.Hay;
 import game.Player;
 import game.Stegosaur;
 
