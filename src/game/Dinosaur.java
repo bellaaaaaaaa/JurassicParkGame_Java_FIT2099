@@ -5,6 +5,10 @@ import edu.monash.fit2099.engine.*;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * This class is abstract and inherits and overrides some methods from the Actor class.
+ * This class includes all shared behaviours and functions between Stegosaur and Allosaur instances
+ */
 public abstract class Dinosaur extends Actor {
     private Behaviour behaviour;
     int foodLvl = 50;
