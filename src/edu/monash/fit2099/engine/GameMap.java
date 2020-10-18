@@ -197,6 +197,12 @@ public class GameMap {
 		}
 	}
 
+	/**
+	 * This method grows the initial grass at the beginning of the game.
+	 * @param grassChar A display char which represents grass on the display
+	 * @param xs The range of x coordinates for the locations across the entire map
+	 * @param ys The range of y coordinates for the locations across the entire map
+	 */
 	public void growInitialGrass(char grassChar, NumberRange xs, NumberRange ys) {
 		for (int x : xs) {
 			for (int y : ys) {
@@ -326,6 +332,11 @@ public class GameMap {
 		return actorLocations.contains(actor) && actorLocations.locationOf(actor).map() == this;
 	}
 
+	/**
+	 * Created by Gabriela.
+	 * This method returns an array list of all the player type actors which exist in a give game map
+	 * @return an array list of current players
+	 */
 	public ArrayList<Player> getPlayers(){
 		ArrayList<Player> players = new ArrayList();
 		for(Actor actor : actorLocations){

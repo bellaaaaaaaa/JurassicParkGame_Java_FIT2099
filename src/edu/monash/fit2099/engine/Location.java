@@ -126,21 +126,46 @@ public class Location implements Printable {
 			}
 		}
 	}
-	// Get adjacent locations
+
+	/**
+	 * This method returns the location instance directly north of the current one
+	 * @return a location instance
+	 */
 	public Location getNorth(){ return map.at(x, y - 1); }
 
+	/**
+	 * This method returns the location instance directly south of the current one
+	 * @return a location instance
+	 */
 	public Location getSouth(){ return map.at(x, y+1); }
 
+	/**
+	 * This method returns the location instance directly east of the current one
+	 * @return a location instance
+	 */
 	public Location getEast(){ return map.at(x+1, y); }
 
+	/**
+	 * This method returns the location instance directly west of the current one
+	 * @return a location instance
+	 */
 	public Location getWest(){ return map.at(x-1, y); }
 
-	// Check location valid based on NSEW
+	/**
+	 * This method checks the locations north, south, east and west of the current one.
+	 * If one of these locations is out of bounds of the gameMap area, it will not be returned
+	 * @param x The x coordinate of the location you are trying to retrieve
+	 * @param y The y coordinate of the location you are trying to retrieve
+	 * @return A boolean value indicating whether the location you want to retrieve exists within the game map
+	 */
 	public boolean locationValid(int x, int y){
 		return (x >= 0) && (y >= 0) && (x <= map.getXRange().max()) && (y <= map.getYRange().max());
 	}
 
-	// Return list of valid adjacent locations
+	/**
+	 * Generates an array list of locations N,S,E and W of the current one. Only returned if they are valid
+	 * @return An array list of location instances which are valid and exist within the game map and world
+	 */
 	public ArrayList<Location> validAdjacentLocations(){
 		ArrayList<Location> locations = new ArrayList();
 		if (locationValid(x, y - 1)){
