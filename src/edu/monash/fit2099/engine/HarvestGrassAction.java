@@ -4,7 +4,18 @@ import game.Dirt;
 import game.Hay;
 import game.Player;
 
+/**
+ * An action which allows users to harvest hay from a Grass Ground type.
+ */
 public class HarvestGrassAction extends Action {
+
+    /**
+     * This method checks whether a player is standing on Grass. If a player is, they can choose to harvest the grass
+     * producing hay in their inventory, and leaving bare dirt behind on the ground at the current location
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return A string message indicating that the player has performed the action
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         if (actor instanceof Player) {
@@ -15,6 +26,11 @@ public class HarvestGrassAction extends Action {
         return "Player harvests grass";
     }
 
+    /**
+     * A message indicating if a player would like to harvest the grass they are currently standing on.
+     * @param actor The actor performing the action.
+     * @return A string
+     */
     @Override
     public String menuDescription(Actor actor) {
         return "Harvest grass at current location";

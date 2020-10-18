@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/HarvestGrassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/HarvestGrassAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,11 +259,17 @@
       <option name="project" value="LOCAL" />
       <updated>1603019753854</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added documentation for Food class">
+      <created>1603022368168</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603022368168</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Grass works. Moving onto fruit next." />
     <MESSAGE value="Tree can drop fruit at location. Fruit can rot after 20 turns." />
     <MESSAGE value="Stegosaurs have min and max food level. Stegosaur food level decreases, stegosaur can become unconcious.&#10;Need to implement: &#10;1) If unconcious stegosaur cant move&#10;2) What happens when stegosaur dies" />
     <MESSAGE value="Stegosaur can't move if unconcious. Stegosaur eats grass it grazes on. Grass returns to Dirt once eaten.&#10;Stegosaur has limits for it's max food level - wont increase once max is reached.&#10;Stegosaur dies functionality not implemented." />
@@ -288,7 +294,8 @@
     <MESSAGE value="Bella testing git push again." />
     <MESSAGE value="Commented the dinosaur class." />
     <MESSAGE value="Added documentation to buyItemAction and feedDinosaurAction and some in Stegosaur." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation to buyItemAction and feedDinosaurAction and some in Stegosaur." />
+    <MESSAGE value="Added documentation for Food class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added documentation for Food class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1603012094421">
@@ -299,10 +306,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1602860311636" />
-    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1603019753689">
+    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1603022367990">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1603019753689" />
+    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1603022367990" />
     <state width="699" height="260" key="GridCell.Tab.0.bottom" timestamp="1603013696558">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -319,14 +326,14 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="699" height="260" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1603013696557" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1603019755564">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1603022369717">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1603019755564" />
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1603022344768">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1603022369717" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1603022530342">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1603022344768" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1603022530342" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1602514468917">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
