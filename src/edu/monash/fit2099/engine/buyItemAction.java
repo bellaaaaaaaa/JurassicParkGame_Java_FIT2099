@@ -16,6 +16,7 @@ public class buyItemAction extends Action {
      * If so, the chose item will be added to its inventory.
      * @param actor The actor performing the action.
      * @param map The map the actor is on.
+     * @throws IllegalArgumentException if the actor parameter is not of type Player
      * @return a String type indicating either the bought item or that the user has insufficient funds.
      */
     @Override
@@ -28,6 +29,8 @@ public class buyItemAction extends Action {
             } else {
                 return ("Not enough eco points to purchase " + i.getName());
             }
+        } else {
+            throw new IllegalArgumentException("Actor must be an instance of type player to perform this action");
         }
         return menuDescription(actor);
     }

@@ -321,6 +321,7 @@ public abstract class Dinosaur extends Actor {
 
     /**
      * This method returns the number of turns a dinosaur has been alive. This is only relevant for baby dinosaurs and so the starting herd of stegosaurs ignore this attribute entirely.
+     * @return an integer indicating how long a dinosaur has been alive. Only applicable to baby dinosaurs which have hatched from eggs.
      */
     public int getNumTurnsAlive() {
         return numTurnsAlive;

@@ -28,6 +28,7 @@ public class feedDinosaurAction extends Action{
      * The dinosaurs food level will be raised based on the type of food chosen.
      * @param actor The actor performing the action.
      * @param map The map the actor is on.
+     * @throws IllegalArgumentException if the actor parameter is not of type Player
      * @return A string indicating the chosen dinosaur to feed and its location
      */
     @Override
@@ -63,7 +64,7 @@ public class feedDinosaurAction extends Action{
 
     /**
      * Sets the food for this specific action. It is based off of the food the player has in its possession
-     * @param food
+     * @param food an instance of type food eg. Fruit, Hay
      */
     public void setFood(Food food) {
         this.food = food;

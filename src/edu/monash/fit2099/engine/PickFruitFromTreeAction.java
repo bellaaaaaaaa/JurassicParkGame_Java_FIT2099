@@ -14,6 +14,7 @@ public class PickFruitFromTreeAction extends Action{
      * A player may attempt to pick fruit from a tree with 60% of success
      * @param actor The actor performing the action.
      * @param map The map the actor is on.
+     * @throws IllegalArgumentException if the actor parameter is not of type Player
      * @return A message indicating whether a player successfully or unsuccessfully picked fruit from a tree
      */
     @Override

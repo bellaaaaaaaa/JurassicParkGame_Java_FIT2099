@@ -10,12 +10,10 @@ import java.util.ArrayList;
 public class VendingMachine extends Ground {
     ArrayList<Item> merchandise;
     /**
-     * Constructor.
-     *
+     * Constructor for vending machine. Initially created with merandise that is a list of items it can sell.
      */
     public VendingMachine() {
         super('V');
-        this.merchandise = new ArrayList<Item>();
         this.merchandise = new ArrayList<Item>();
         this.merchandise.add(new Hay());
         this.merchandise.add(new Fruit());
@@ -27,7 +25,7 @@ public class VendingMachine extends Ground {
     }
 
     /**
-     *
+     * Checks whether an actor can enter this specific ground location or not
      * @param actor the Actor to check. Only players can enter a vending machine as they can purchase from it. Everything else can't.
      * @return boolean type.
      */
@@ -36,10 +34,18 @@ public class VendingMachine extends Ground {
         return false;
     }
 
+    /**
+     * This method accesses a vending machines merchandise
+     * @return All of the items which are available for purchase at a vending machine
+     */
     public ArrayList<Item> getMerchandise() {
         return merchandise;
     }
 
+    /**
+     * Sets the arraylist of items that will be sold at a vending machine
+     * @param merchandise an array list of Items to be sold
+     */
     public void setMerchandise(ArrayList<Item> merchandise) {
         this.merchandise = merchandise;
     }

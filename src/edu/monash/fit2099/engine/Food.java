@@ -35,7 +35,7 @@ public abstract class Food extends Item {
 
     /**
      * Sets the foodlvl of a food child instance
-     * @return integer type
+     * @param foodLvl the foodLvl increasing points assigned to a specific food child class
      */
     public void setFoodLvl(int foodLvl) {
         this.foodLvl = foodLvl;

@@ -45,7 +45,7 @@ public class Player extends Actor {
 
 	/**
 	 * Sets the number of EcoPoints that the player has
-	 * @param ecoPoints
+	 * @param ecoPoints initially the number of starting ecopoints a player will have. Then this can succeed based on occurences in the game.
 	 */
 	public void setEcoPoints(int ecoPoints) {
 		this.ecoPoints = ecoPoints;

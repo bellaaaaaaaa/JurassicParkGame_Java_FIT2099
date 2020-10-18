@@ -1,5 +1,8 @@
 package edu.monash.fit2099.engine;
 
+/**
+ * A type of weapon that players can own and zap stegosaurs with
+ */
 public class LaserGun extends WeaponItem {
     /**
      * A constructor for a WeaponItem called LaserGun.

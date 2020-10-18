@@ -16,6 +16,7 @@ public class laserStegosaurAction extends Action {
      * If a Stegosaur gets killed in one blow, its carcass will remain at the location it was last at.
      * @param actor The actor performing the action.
      * @param map The map the actor is on.
+     * @throws IllegalArgumentException if the actor parameter is not of type Player
      * @return A String message indicating whether a stegosaur was killed or simply hurt. If hurt the Stegosaurs new hitPoint value will be shown.
      */
     @Override
