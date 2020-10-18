@@ -43,8 +43,4 @@ public class VendingMachine extends Ground {
     public void setMerchandise(ArrayList<Item> merchandise) {
         this.merchandise = merchandise;
     }
-    /**
-    String msg = "Buy ";
-    msg += item.getName() + " from Vending Machine (" + Integer.toString(item.getPrice()) + " points)";
-    return msg;*/
 }
