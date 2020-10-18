@@ -16,7 +16,7 @@ public class Player extends Actor {
 	int ecoPoints = 250; // Lets say starting ecoPooints.
 
 	/**
-	 * Constructor.
+	 * Constructor for player class
 	 *
 	 * @param name        Name to call the player in the UI
 	 * @param displayChar Character to represent the player in the UI
@@ -35,10 +35,18 @@ public class Player extends Actor {
 
 	}
 
+	/**
+	 * gets the number of EcoPoints that the player currently has
+	 * @return ecoPoints
+	 */
 	public int getEcoPoints() {
 		return ecoPoints;
 	}
 
+	/**
+	 * Sets the number of EcoPoints that the player has
+	 * @param ecoPoints
+	 */
 	public void setEcoPoints(int ecoPoints) {
 		this.ecoPoints = ecoPoints;
 	}
