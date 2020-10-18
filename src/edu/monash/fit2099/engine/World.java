@@ -78,7 +78,6 @@ public class World {
 				}
 			}
 
-			System.out.println(stillRunning());
 			// Tick over all the maps. For the map stuff.
 			for (GameMap gameMap : gameMaps) {
 				gameMap.tick();
@@ -153,6 +152,7 @@ public class World {
 				}
 
 			}
+			actions.add(new EndGameAction());
 		}
 		for (Item item : actor.getInventory()) {
 			actions.add(item.getAllowableActions());

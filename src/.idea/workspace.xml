@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/EndGameAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/HarvestGrassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/HarvestGrassAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/PickFruitFromTreeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/PickFruitFromTreeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/feedDinosaurAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/feedDinosaurAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/laserStegosaurAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/laserStegosaurAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/HarvestGrassAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/HarvestGrassAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/PickFruitFromTreeAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/PickFruitFromTreeAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/feedDinosaurAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/feedDinosaurAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/laserStegosaurAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/laserStegosaurAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,11 +345,17 @@
       <option name="project" value="LOCAL" />
       <updated>1603029861175</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Added throw exceptions for new action classes.&#10;Only a player should be able to perform these updated actions.">
+      <created>1603030745568</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1603030745568</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on purchasing from vending machine in players menu. Not working fully." />
     <MESSAGE value="PLAYER CAN FINALLY BUY FROM VENDINGMACHINE!!! (Might be buggy for non food items)" />
     <MESSAGE value="Created separate breed function for dinosaurs.&#10;Dinosaurs can breed" />
     <MESSAGE value="HEAVILY Refactored Gamemap. Moved all dinosaur related functions to dinosaur class. Tick now within dinosaur class." />
@@ -379,42 +380,43 @@
     <MESSAGE value="Documented Location class" />
     <MESSAGE value="Documented Ground and Location. Documentation mostly completed. Needs reviewing." />
     <MESSAGE value="Added PickFruitFromTreeAction Action." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PickFruitFromTreeAction Action." />
+    <MESSAGE value="Added throw exceptions for new action classes.&#10;Only a player should be able to perform these updated actions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added throw exceptions for new action classes.&#10;Only a player should be able to perform these updated actions." />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1603028389884">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1603031062838">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1603028389884" />
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1603031062838" />
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602860311636">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1602860311636" />
-    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1603029860948">
+    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1603030745361">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1603029860948" />
-    <state width="1398" height="187" key="GridCell.Tab.0.bottom" timestamp="1603030544829">
+    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1603030745361" />
+    <state width="1398" height="176" key="GridCell.Tab.0.bottom" timestamp="1603031234456">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1603030544829" />
-    <state width="1398" height="187" key="GridCell.Tab.0.center" timestamp="1603030544828">
+    <state width="1398" height="176" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1603031234456" />
+    <state width="1398" height="176" key="GridCell.Tab.0.center" timestamp="1603031234455">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1603030544828" />
-    <state width="1398" height="187" key="GridCell.Tab.0.left" timestamp="1603030544826">
+    <state width="1398" height="176" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1603031234455" />
+    <state width="1398" height="176" key="GridCell.Tab.0.left" timestamp="1603031234454">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1603030544826" />
-    <state width="1398" height="187" key="GridCell.Tab.0.right" timestamp="1603030544829">
+    <state width="1398" height="176" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1603031234454" />
+    <state width="1398" height="176" key="GridCell.Tab.0.right" timestamp="1603031234456">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="187" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1603030544829" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1603029866017">
+    <state width="1398" height="176" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1603031234456" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1603030747312">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1603029866017" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1603030747312" />
     <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1603029878064">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
