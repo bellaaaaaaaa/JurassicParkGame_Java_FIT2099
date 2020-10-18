@@ -1,6 +1,7 @@
 package edu.monash.fit2099.engine;
 
 import game.Egg;
+import game.Fruit;
 import game.Player;
 import game.Stegosaur;
 
@@ -123,6 +124,18 @@ public class Location implements Printable {
 			if (item instanceof Egg){
 				Egg e = (Egg) item;
 				e.anyEggsToHatch(this, map); //Check for eggs to hatch, if yes, a baby dinosaur is born.
+			}
+
+			// Tick fruits
+			if (item instanceof Fruit){
+				int expiry = ((Fruit) item).getExpiryTurns();
+				expiry -= 1;
+
+				if(expiry == 0){
+					this.removeItem(item);
+				} else {
+					((Fruit) item).setExpiryTurns(expiry);
+				}
 			}
 		}
 	}

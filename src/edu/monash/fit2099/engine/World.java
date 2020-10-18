@@ -128,7 +128,7 @@ public class World {
 				}
 
 				if(vl.getActor() instanceof Dinosaur){
-					// Feed dinosaur actions
+					// Feed dinosaur action
 					List<Item> items = actor.getInventory();
 					for(Item i : items){
 						if(i instanceof Food){

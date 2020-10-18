@@ -54,7 +54,7 @@ public abstract class Ground implements GroundInterface, Capable, Printable {
 	}
 
 	/**
-	 * Ground can also experience the joy of time.
+	 * Ground can also experience the joy of time. Also handles the dropping of fruit and the growth of grass over time.
 	 * @param location The location of the Ground 
 	 */
 	public void tick(Location location) {
@@ -109,24 +109,6 @@ public abstract class Ground implements GroundInterface, Capable, Printable {
 				location.addItem(f);
 			}
 		}
-		tickItemsAtLocation(location);
-	}
-
-	public void tickItemsAtLocation(Location location){
-		// Tick fruits
-		for(Item i : location.getItems()){
-			if (i instanceof Fruit){
-				int expiry = ((Fruit) i).getExpiryTurns();
-				expiry -= 1;
-
-				if(expiry == 0){
-					location.removeItem(i);
-				} else {
-					((Fruit) i).setExpiryTurns(expiry);
-				}
-			}
-		}
-
 	}
 	
 	/**
