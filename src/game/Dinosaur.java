@@ -5,7 +5,7 @@ import edu.monash.fit2099.engine.*;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Dinosaur extends Actor {
+public abstract class Dinosaur extends Actor {
     private Behaviour behaviour;
     int foodLvl = 50;
     int maxFoodLvl = 100;
@@ -90,7 +90,11 @@ public class Dinosaur extends Actor {
      * Sets isDead to true if a dinosaur has had its foodLvl be 0 for 20 or more turns. Lets us now that a dinosaur should be deleted from the game.
      * @param dead boolean to indicate if a dinosaur is dead or not.
      */
-    public void setDead(boolean dead) { isDead = dead; }
+    public void setDead(boolean dead) {
+        isDead = dead;
+        // Change display char for dead dinosaurs
+        this.displayChar = 'X';
+    }
 
     /**
      * Tells us how many turns a dinosaur has been dead. Initially this is 0 and increases each turn since being unconscious for 20 or more turns.

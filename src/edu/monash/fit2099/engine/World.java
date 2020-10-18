@@ -1,9 +1,6 @@
 package edu.monash.fit2099.engine;
 
-import game.Dinosaur;
-import game.Grass;
-import game.Player;
-import game.VendingMachine;
+import game.*;
 
 import java.util.*;
 
@@ -117,9 +114,10 @@ public class World {
 				actions.add(new HarvestGrassAction());
 			}
 
-			// Vending machine/Feed dinosaur actions
 			ArrayList<Location> validLocations = actorLocations.locationOf(actor).validAdjacentLocations();
 			for(Location vl : validLocations){
+
+				// Vending machine action
 				if(vl.getGround() instanceof VendingMachine){
 					VendingMachine vm = new VendingMachine();
 					ArrayList<Item> merchandise = vm.getMerchandise();
@@ -128,7 +126,9 @@ public class World {
 						actions.add(bia);
 					}
 				}
+
 				if(vl.getActor() instanceof Dinosaur){
+					// Feed dinosaur actions
 					List<Item> items = actor.getInventory();
 					for(Item i : items){
 						if(i instanceof Food){
@@ -136,7 +136,18 @@ public class World {
 							actions.add(fda);
 						}
 					}
+
+					// Laser stegosaur action - if player standing next to a LIVING stegosaur and also owns a laser gun
+					if((vl.getActor() instanceof Stegosaur) && (actor.getWeapon() instanceof LaserGun)){
+						if(!((Stegosaur) vl.getActor()).isDead()){
+							laserStegosaurAction lsa = new laserStegosaurAction();
+							lsa.setStegosaur((Stegosaur) vl.getActor());
+							lsa.setStegosaurMap(map);
+							actions.add(lsa);
+						}
+					}
 				}
+
 			}
 		}
 		for (Item item : actor.getInventory()) {

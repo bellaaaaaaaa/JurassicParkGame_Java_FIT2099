@@ -48,8 +48,8 @@ public class Application {
 		world.addGameMap(gameMap);
 		
 		Actor player = new Player("Player", '@', 100);
-		player.addItemToInventory(new Hay());
-		world.addPlayer(player, gameMap.at(11, 11));
+		player.addItemToInventory(new LaserGun());
+		world.addPlayer(player, gameMap.at(78, 24));
 		VendingMachine v = new VendingMachine();
 		
 		// Place a pair of stegosaurs in the middle of the map
