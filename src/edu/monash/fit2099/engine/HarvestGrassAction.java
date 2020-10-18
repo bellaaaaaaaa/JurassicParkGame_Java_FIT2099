@@ -18,12 +18,16 @@ public class HarvestGrassAction extends Action {
      */
     @Override
     public String execute(Actor actor, GameMap map) {
+        String msg = menuDescription(actor);
         if (actor instanceof Player) {
             map.locationOf(actor).setGround(new Dirt()); // Set ground to dirt
             actor.addItemToInventory(new Hay()); // Add hay to player inventory
             ((Player) actor).setEcoPoints(((Player) actor).getEcoPoints()+1); //gains 1 ecopoint
+            msg =  "Player harvests grass";
+        } else {
+            throw new IllegalArgumentException("Actor must be an instance of type player to perform this action");
         }
-        return "Player harvests grass";
+        return msg;
     }
 
     /**

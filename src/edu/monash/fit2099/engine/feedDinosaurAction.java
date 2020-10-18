@@ -36,6 +36,8 @@ public class feedDinosaurAction extends Action{
             actor.removeItemFromInventory(this.getFood());
             int foodLvlPoints = this.getFood().gainPoints;
             this.getDinosaur().setFoodLvl(this.getDinosaur().getFoodLvl() + foodLvlPoints);
+        } else {
+            throw new IllegalArgumentException("Actor must be an instance of type player to perform this action");
         }
         return menuDescription(actor);
     }

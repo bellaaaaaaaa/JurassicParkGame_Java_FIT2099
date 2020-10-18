@@ -18,7 +18,7 @@ public class PickFruitFromTreeAction extends Action{
      */
     @Override
     public String execute(Actor actor, GameMap map) {
-        String msg = "";
+        String msg;
         if(actor instanceof Player){
             Random rand = new Random();
             int num = rand.nextInt(10) + 1; //either 1 or 2
@@ -28,6 +28,8 @@ public class PickFruitFromTreeAction extends Action{
             } else {
                 msg = "You search the tree for fruit, but you can't find any ripe ones";
             }
+        } else {
+            throw new IllegalArgumentException("Actor must be an instance of type player to perform this action");
         }
         return msg;
     }

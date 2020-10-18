@@ -20,6 +20,7 @@ public class laserStegosaurAction extends Action {
      */
     @Override
     public String execute(Actor actor, GameMap map) {
+        String msg;
         if (actor instanceof Player) {
             // Kill stegosaur in one or two hits. laser attack will be 50, where Dinosaur max health is 100.
             this.getStegosaur().hurt(50);
@@ -27,10 +28,14 @@ public class laserStegosaurAction extends Action {
                 this.getStegosaur().setDead(true);
                 this.getStegosaur().setNumTurnsDead(0);
                 this.getStegosaur().setUnconscious(true);
-                return "Player killed Stegosaur";
+                msg = "Player killed Stegosaur";
+            } else {
+                msg = "Player attacked Stegosaur, it has " + this.getStegosaur().hitPoints + " health remaining";
             }
+        } else {
+            throw new IllegalArgumentException("Actor must be an instance of type player to perform this action");
         }
-        return "Player attacked Stegosaur, it has " + this.getStegosaur().hitPoints + " health remaining";
+        return msg;
     }
 
     /**
