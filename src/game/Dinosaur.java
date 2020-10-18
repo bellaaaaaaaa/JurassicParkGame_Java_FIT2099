@@ -18,8 +18,9 @@ public abstract class Dinosaur extends Actor {
     boolean isPregnant = false;
     String stage;
     int numTurnsAlive = 0; // Only needed for babies for now, assuming adult dinosaurs never die unless killed or starving.
+
     /**
-     * Constructor.
+     * This calls the Actor class constructor.
      *
      * @param name        the name of the Actor
      * @param displayChar the character that will represent the Actor in the display
@@ -29,15 +30,18 @@ public abstract class Dinosaur extends Actor {
         super(name, displayChar, hitPoints);
     }
 
-    @Override
-    public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
-        return null;
-    }
-
+    /**
+     * The current foodLvl of the dinosaur
+     * @return a integer type representing this.
+     */
     public int getFoodLvl() {
         return foodLvl;
     }
 
+    /**
+     * This method increases (eats food) or decreases the foodLvl of a dinosaur. This also is how we decrement the dinosaurs foodLvl by 1 each turn.
+     * @param foodRaisingPoints an integer representing a dinosaurs new food level
+     */
     public void setFoodLvl(int foodRaisingPoints) {
         int checkLevel = foodRaisingPoints + this.getFoodLvl();
         this.foodLvl = Math.min(checkLevel, maxFoodLvl);
@@ -121,6 +125,14 @@ public abstract class Dinosaur extends Actor {
     public void setGender(String gender) { this.gender = gender; }
 
     /**
+     * A method returning a collection of possible actions for this actor.
+     */
+    @Override
+    public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
+        return null;
+    }
+
+    /**
      * Used on female dinosaurs indicating how long its been since breeding with another dinosaur. Once this hits 10, the female dinosaur will lay an egg.
      * @return integer type
      */
@@ -156,6 +168,12 @@ public abstract class Dinosaur extends Actor {
      */
     public void setStage(String stage) { this.stage = stage; }
 
+    /**
+     * This method checks whether both dinosaurs meet the breeding requirements. If they do, the female will get pregnant and eventually lay an egg of the same type.
+     * @param d1 A dinosaur of the same type as d2
+     * @param d2 A dinosaur of the same type as d1
+     * @return A boolean to indicate whether breeding was successful or not.
+     */
     public static boolean breed(Dinosaur d1, Dinosaur d2){
         if(d1.getFoodLvl() > 50 && d2.getFoodLvl() > 50 && (!d1.getGender().equals(d2.getGender())) && (d1.name.equals(d2.name)) && (!d1.getStage().equals("baby")) && (!d2.getStage().equals("baby"))){
             if(d1.getGender().equals("female")){
@@ -170,6 +188,12 @@ public abstract class Dinosaur extends Actor {
         return false;
     }
 
+    /**
+     * This method ticks all the dinosaurs across the gamemap. This includes ageing a baby dinosaur, setting the new food levels, breeding, attacks etc.
+     * @param d The current dinosaur being ticked
+     * @param l The location of the dinosaur at the current moment
+     * @param gameMap The gameMap in which the dinosaur resides in
+     */
     public static void newTick(Dinosaur d, Location l, GameMap gameMap){
         int currentFoodLvl = d.getFoodLvl();
         d.setFoodLvl(currentFoodLvl - 1);
@@ -258,6 +282,11 @@ public abstract class Dinosaur extends Actor {
         }
     }
 
+    /**
+     * This method checks that if a dinosaur has been pregnant for more than 10 turns, it will lay an egg of its same type at its current location.
+     * @param d The pregnant dinosaur
+     * @param l The current location of the dinosaur where it will lay its egg
+     */
     private static void layEgg(Dinosaur d, Location l){
         d.setNumTurnsPregnant(d.getNumTurnsPregnant() + 1);
         if (d.getNumTurnsPregnant() >= 10){
@@ -266,14 +295,24 @@ public abstract class Dinosaur extends Actor {
         }
     }
 
+    /**
+     * This method returns the number of turns a dinosaur has been alive. This is only relevant for baby dinosaurs and so the starting herd of stegosaurs ignore this attribute entirely.
+     */
     public int getNumTurnsAlive() {
         return numTurnsAlive;
     }
 
+    /**
+     * This method increases each turn since a baby dinosaur was born. This attribute only applies to baby dinosaurs which hatched from an egg.
+     * @param numTurnsAlive an incremental integer which increases by 1 each turn
+     */
     public void setNumTurnsAlive(int numTurnsAlive) {
         this.numTurnsAlive = numTurnsAlive;
     }
 
+    /**
+     * This method checks if a current baby dinosaur is >= 30 turns in age. If so, this baby grows into an adult dinosaur.
+     */
     private void babyDinosaurGrows(){
         this.setNumTurnsAlive(this.getNumTurnsAlive() + 1);
         if(this.getNumTurnsAlive() >= 30){
