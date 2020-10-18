@@ -7,6 +7,10 @@ import edu.monash.fit2099.engine.LaserGun;
 
 import java.util.ArrayList;
 
+/**
+ * A player can purchase items from a vending machine.
+ * Only one of these will exist on the map at any give time.
+ */
 public class VendingMachine extends Ground {
     ArrayList<Item> merchandise;
     /**
