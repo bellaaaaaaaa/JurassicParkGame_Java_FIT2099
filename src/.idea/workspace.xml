@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/PickFruitFromTreeAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Allosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Allosaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Dinosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Dinosaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Stegosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Stegosaur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/PickFruitFromTreeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/PickFruitFromTreeAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,11 +329,17 @@
       <option name="project" value="LOCAL" />
       <updated>1603028337873</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added PickFruitFromTreeAction Action.">
+      <created>1603029352449</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1603029352450</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made vending machines impassable by every actor type EXCEPT player." />
     <MESSAGE value="Working on purchasing from vending machine in players menu. Not working fully." />
     <MESSAGE value="PLAYER CAN FINALLY BUY FROM VENDINGMACHINE!!! (Might be buggy for non food items)" />
     <MESSAGE value="Created separate breed function for dinosaurs.&#10;Dinosaurs can breed" />
@@ -362,7 +364,8 @@
     <MESSAGE value="Updated some throws exception logic in Egg.&#10;Documented meal kit and stegosaur" />
     <MESSAGE value="Documented Location class" />
     <MESSAGE value="Documented Ground and Location. Documentation mostly completed. Needs reviewing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Documented Ground and Location. Documentation mostly completed. Needs reviewing." />
+    <MESSAGE value="Added PickFruitFromTreeAction Action." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PickFruitFromTreeAction Action." />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -374,10 +377,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1602860311636" />
-    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1603028337694">
+    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1603029352276">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1603028337694" />
+    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1603029352276" />
     <state width="1398" height="2" key="GridCell.Tab.0.bottom" timestamp="1603029230421">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

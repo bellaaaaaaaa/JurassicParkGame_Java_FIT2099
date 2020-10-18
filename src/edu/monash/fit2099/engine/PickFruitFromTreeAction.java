@@ -5,7 +5,17 @@ import game.Player;
 
 import java.util.Random;
 
+/**
+ * This action allows players to attempt to pick fruit from a tree.
+ */
 public class PickFruitFromTreeAction extends Action{
+
+    /**
+     * A player may attempt to pick fruit from a tree with 60% of success
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return A message indicating whether a player successfully or unsuccessfully picked fruit from a tree
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         String msg = "";
@@ -22,6 +32,11 @@ public class PickFruitFromTreeAction extends Action{
         return msg;
     }
 
+    /**
+     * A string indicating the type of action
+     * @param actor The actor performing the action.
+     * @return a string: Pick fruit from the tree
+     */
     @Override
     public String menuDescription(Actor actor) {
         return "Pick fruit from the tree";
