@@ -210,9 +210,17 @@ public abstract class Dinosaur extends Actor {
 
         if (currentFoodLvl > 0) {
 
-            // If stegosaur getting hungry
+            // If dinosaur getting hungry
             if (d.getFoodLvl() <= 10) {
                 System.out.println(d.name + " at (" + l.x() + ", " + l.y() + ") is getting hungry!");
+            }
+
+            // Stegosaur eats the grass it grazes. Ground resumes to dirt
+            if(d instanceof Stegosaur){
+                if(l.getGround() instanceof Grass){
+                    d.setFoodLvl(d.getFoodLvl() + 5);
+                    l.setGround(new Dirt());
+                }
             }
 
             // If dinosaur can breed
@@ -238,6 +246,15 @@ public abstract class Dinosaur extends Actor {
 
             // Allosaur Attacks Stegosaur
             if (d instanceof Allosaur) {
+                // Eat an egg currently on the ground
+                for (Item i : l.getItems()){
+                    if (i instanceof Egg){
+                        Egg e = (Egg) i;
+                        if(e.isEdible()){
+                            d.setFoodLvl(d.getFoodLvl() + e.getFoodLvl());
+                        }
+                    }
+                }
                 boolean hasKilled = false;
                 for (Location adj : adjacents) {
                     if (hasKilled) {
@@ -253,7 +270,7 @@ public abstract class Dinosaur extends Actor {
                                 int hitPoints = array[randomIndex];
                                 s.hurt(hitPoints);
                             }
-                            // Jumps here if stegosaur already dead or if allosaur attacked and killed stegosaur.
+                            // Jumps here - Eat if stegosaur already dead or if allosaur attacked and killed stegosaur.
                             ((Allosaur) d).eatCarcass();
                             gameMap.removeActor(s);
                             hasKilled = true;
@@ -295,6 +312,9 @@ public abstract class Dinosaur extends Actor {
         d.setNumTurnsPregnant(d.getNumTurnsPregnant() + 1);
         if (d.getNumTurnsPregnant() >= 10){
             Egg e = new Egg(d.name);
+            if(e.getType().equals("allosaur")){
+                e.setEdible(false);
+            }
             l.addItem(e); // Lays egg at current location
         }
     }

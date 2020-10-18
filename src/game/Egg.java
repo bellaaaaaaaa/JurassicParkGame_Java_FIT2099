@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class Egg extends Food {
     String type;
     int numTurnsOnGround;
+    boolean edible = true; // Only changes for allosaur eggs
 
     /**
      * Constructor for Egg which extends Food.
@@ -68,6 +69,11 @@ public class Egg extends Food {
      */
     public boolean anyEggsToHatch(Location location, GameMap map){
         this.setNumTurnsOnGround(this.getNumTurnsOnGround() + 1);
+
+        // Edible is normally true except for allosaur eggs, which we dont want to be eaten as soon as the mother allosaur lays it
+        if(this.getNumTurnsOnGround() > 5){
+            this.setEdible(true);
+        }
         if (this.getNumTurnsOnGround() > 15){
             location.removeItem(this);
             Dinosaur baby;
@@ -101,5 +107,21 @@ public class Egg extends Food {
                 p.setEcoPoints(p.getEcoPoints() + 1000);
             }
         }
+    }
+
+    /**
+     * This method is only applicable to allosaur eggs
+     * @return a boolean indicating whether the egg can be eaten
+     */
+    public boolean isEdible() {
+        return edible;
+    }
+
+    /**
+     * Set to false initially for allosaur eggs to ensure that an adult allosaur doesnt automatically eat an egg if it has just lain one
+     * @param edible a boolean indicating whether the egg can be eaten
+     */
+    public void setEdible(boolean edible) {
+        this.edible = edible;
     }
 }

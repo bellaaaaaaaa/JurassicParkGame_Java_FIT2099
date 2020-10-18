@@ -24,4 +24,20 @@ public abstract class Food extends Item {
         this.price = price;
         this.gainPoints = gainPoints;
     }
+
+    /**
+     * The food level a food child instance will increase a dinosaurs food lvl when eaten
+     * @return integer type
+     */
+    public int getFoodLvl() {
+        return foodLvl;
+    }
+
+    /**
+     * Sets the foodlvl of a food child instance
+     * @return integer type
+     */
+    public void setFoodLvl(int foodLvl) {
+        this.foodLvl = foodLvl;
+    }
 }
