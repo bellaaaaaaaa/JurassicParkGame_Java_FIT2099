@@ -1,6 +1,7 @@
 package edu.monash.fit2099.engine;
 
 import game.Dinosaur;
+import game.Grass;
 import game.Player;
 import game.VendingMachine;
 
@@ -110,6 +111,13 @@ public class World {
 
 		Actions actions = new Actions();
 		if(actor instanceof Player){
+			// Player can harvest grass if standing on some
+			if(here.getGround() instanceof Grass){
+				System.out.println("Player standing on grass");
+				actions.add(new HarvestGrassAction());
+			}
+
+			// Vending machine/Feed dinosaur actions
 			ArrayList<Location> validLocations = actorLocations.locationOf(actor).validAdjacentLocations();
 			for(Location vl : validLocations){
 				if(vl.getGround() instanceof VendingMachine){
@@ -158,7 +166,6 @@ public class World {
 		Action action = actor.playTurn(actions, lastActionMap.get(actor), map, display);
 
 		lastActionMap.put(actor, action);
-
 
 		String result = action.execute(actor, map);
 		display.println(result);

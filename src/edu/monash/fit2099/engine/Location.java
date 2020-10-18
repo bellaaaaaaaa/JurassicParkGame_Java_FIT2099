@@ -122,17 +122,7 @@ public class Location implements Printable {
 			// Manage eggs
 			if (item instanceof Egg){
 				Egg e = (Egg) item;
-				boolean anEggHatched = e.anyEggsToHatch(this);
-				if(anEggHatched){
-					ArrayList<Player> players = map.getPlayers();
-					for(Player p : players){
-						if(e.getType().equals("stegosaur")){
-							p.setEcoPoints(p.getEcoPoints() + 100);
-						} else if (e.getType().equals("allosaur")){
-							p.setEcoPoints(p.getEcoPoints() + 1000);
-						}
-					}
-				}
+				e.anyEggsToHatch(this, map); //Check for eggs to hatch, if yes, a baby dinosaur is born.
 			}
 		}
 	}

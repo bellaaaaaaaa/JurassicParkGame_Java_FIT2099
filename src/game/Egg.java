@@ -1,7 +1,10 @@
 package game;
 
 import edu.monash.fit2099.engine.Food;
+import edu.monash.fit2099.engine.GameMap;
 import edu.monash.fit2099.engine.Location;
+
+import java.util.ArrayList;
 
 public class Egg extends Food {
     String type;
@@ -45,7 +48,7 @@ public class Egg extends Food {
      */
     public void setType(String type) { this.type = type; }
 
-    public boolean anyEggsToHatch(Location location){
+    public boolean anyEggsToHatch(Location location, GameMap map){
         this.setNumTurnsOnGround(this.getNumTurnsOnGround() + 1);
         if (this.getNumTurnsOnGround() > 15){
             location.removeItem(this);
@@ -58,9 +61,22 @@ public class Egg extends Food {
             baby.setStage("baby");
             baby.setFoodLvl(10);
             location.addActor(baby);
+            eggsHatchRewards(map, this);
+            location.removeItem(this); // Get rid of the eggshells
             return true;
         } else {
             return false;
+        }
+    }
+
+    private void eggsHatchRewards(GameMap map, Egg e){
+        ArrayList<Player> players = map.getPlayers();
+        for(Player p : players){
+            if(e.getType().equals("stegosaur")){
+                p.setEcoPoints(p.getEcoPoints() + 100);
+            } else if (e.getType().equals("allosaur")){
+                p.setEcoPoints(p.getEcoPoints() + 1000);
+            }
         }
     }
 }
