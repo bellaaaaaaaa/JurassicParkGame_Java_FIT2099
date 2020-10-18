@@ -12,6 +12,7 @@ public class Allosaur extends Dinosaur {
      */
     public Allosaur() {
         super("allosaur", 'a', 100);
+        this.setGender(this.randomiseGender());
     }
 
 

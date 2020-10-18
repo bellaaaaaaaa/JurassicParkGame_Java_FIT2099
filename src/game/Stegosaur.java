@@ -23,13 +23,7 @@ public class Stegosaur extends Dinosaur {
 	 */
 	public Stegosaur() {
 		super("stegosaur", 'd', 100);
-		Random rand = new Random();
-		int num = rand.nextInt(2) + 1; //either 1 or 2
-		if (num == 1){
-			setGender("female");
-		} else {
-			setGender("male");
-		}
+		this.setGender(this.randomiseGender());
 		this.setStage("adult");
 		
 		behaviour = new WanderBehaviour();

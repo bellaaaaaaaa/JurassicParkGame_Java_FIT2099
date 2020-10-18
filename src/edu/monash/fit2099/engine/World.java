@@ -110,8 +110,12 @@ public class World {
 		if(actor instanceof Player){
 			// Player can harvest grass if standing on some
 			if(here.getGround() instanceof Grass){
-				System.out.println("Player standing on grass");
 				actions.add(new HarvestGrassAction());
+			}
+
+			// Player can pick fruit from a tree if beside one
+			if(here.getGround() instanceof Tree){
+				actions.add(new PickFruitFromTreeAction());
 			}
 
 			ArrayList<Location> validLocations = actorLocations.locationOf(actor).validAdjacentLocations();

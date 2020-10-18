@@ -323,4 +323,18 @@ public abstract class Dinosaur extends Actor {
             this.setStage("adult");
         }
     }
+
+    /**
+     * This method randomises the given gender for a stegosaur or allosaur instance
+     * @return a string of either male or female
+     */
+    public String randomiseGender(){
+        Random rand = new Random();
+        int num = rand.nextInt(2) + 1; //either 1 or 2
+        if (num == 1){
+            return "female";
+        } else {
+            return "male";
+        }
+    }
 }
