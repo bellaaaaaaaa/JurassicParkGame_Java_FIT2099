@@ -19,9 +19,8 @@ public class Stegosaur extends Dinosaur {
 	private Behaviour behaviour;
 
 	/** 
-	 * Constructor.
+	 * Instantiates a Stegosaur with and randomises its gender. It calls the Dinosaur class constructor which in turn calls the Actor class constructor.
 	 * All Stegosaurs are represented by a 'd' and have 100 hit points.
-	 * 
 	 */
 	public Stegosaur() {
 		super("stegosaur", 'd', 100);
