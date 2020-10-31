@@ -22,3 +22,39 @@ Teh Jian Xiang is responsible for updating design documents and commenting.
 
 I accept this WBA.
 I accept this WBA.
+
+-------------------------------------------------------------------------------------
+ASSIGNMENT 3 WBA
+
+We have categorised all the tasks required for Assignment 3 by levels of difficulty where each category is again order in difficulty from easiest to hardest for that category:
+
+Easiest: 
+1. "thirst water"
+2. "agilisaurus"
+3. "archaeopteryx" 
+
+Medium:
+4. Second map
+
+Medium/Harder:
+5. Updating: Uml Class Diagrams, Uml Interaction Diagrams, Design Rationale
+
+Harder:
+6. A more sophisticated game driver
+7. Recommendations for extensions to the game engine
+
+Due to there being 7 tasks, we decided to split them by 3 : 4, and distributed them evenly based on difficulty:
+
+Gabriela Bayabos will be in charge of:
+2. "agilisaurus"
+3. "archaeopteryx" 
+4. Second map
+5. Updating: Uml Class Diagrams, Uml Interaction Diagrams, Design Rationale
+
+Teh Jian Xiang will be in charge of:
+1. "thirst water"
+6. A more sophisticated game driver
+7. Recommendations for extensions to the game engine
+
+Gabriela Bayabos - I accept this WBA.
+
