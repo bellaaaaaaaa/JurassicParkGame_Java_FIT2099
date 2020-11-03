@@ -214,7 +214,7 @@ public class GameMap {
 			}
 		}
 	}
-	
+
 	/**
 	 * Returns an enumerable NumberRange representing the valid X values of the game map. 
 	 * 
@@ -346,4 +346,17 @@ public class GameMap {
 		}
 		return players;
 	}
-}
+
+	public void createPool(char poolChar, NumberRange xs, NumberRange ys) {
+		for (int x : xs) {
+			for (int y : ys) {
+				Random rand = new Random();
+				int num = rand.nextInt(100) + 1;
+				if(num <= 1){
+					at(x, y).setGround(groundFactory.newGround(poolChar));
+				}
+			}
+		}
+	}
+	}
+
