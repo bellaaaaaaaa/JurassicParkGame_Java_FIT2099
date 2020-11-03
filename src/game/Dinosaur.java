@@ -13,6 +13,8 @@ public abstract class Dinosaur extends Actor {
     private Behaviour behaviour;
     int foodLvl = 50;
     int maxFoodLvl = 100;
+    int waterLvl = 50;
+    int maxWaterLvl = 100;
     int numTurnsUnconscious = 0;
     boolean isUnconscious = false;
     boolean isDead = false;
@@ -49,6 +51,22 @@ public abstract class Dinosaur extends Actor {
     public void setFoodLvl(int foodRaisingPoints) {
         int checkLevel = foodRaisingPoints + this.getFoodLvl();
         this.foodLvl = Math.min(checkLevel, maxFoodLvl);
+    }
+    /**
+     * The current waterLvl of the dinosaur
+     * @return a integer type representing this.
+     */
+    public int getWaterLvl() {
+        return waterLvl;
+    }
+
+    /**
+     * This method increases (drinks water) or decreases the waterLvl of a dinosaur. This also is how we decrement the dinosaurs waterLvl by 1 each turn.
+     * @param waterRaisingPoints an integer representing a dinosaurs new water level
+     */
+    public void setWaterLvl(int waterRaisingPoints) {
+        int checkLevel = waterRaisingPoints + this.getWaterLvl();
+        this.waterLvl = Math.min(checkLevel, maxWaterLvl);
     }
 
     /**
@@ -201,6 +219,8 @@ public abstract class Dinosaur extends Actor {
     public static void newTick(Dinosaur d, Location l, GameMap gameMap){
         int currentFoodLvl = d.getFoodLvl();
         d.setFoodLvl(currentFoodLvl - 1);
+        int currentWaterLvl = d.getWaterLvl();
+        d.setWaterLvl(currentWaterLvl - 1);
         ArrayList<Location> adjacents = l.validAdjacentLocations();
 
         // Baby dinosaurs grow up
@@ -208,11 +228,18 @@ public abstract class Dinosaur extends Actor {
             d.babyDinosaurGrows();
         }
 
-        if (currentFoodLvl > 0) {
+        if (currentFoodLvl > 0 && currentWaterLvl> 0) {
 
             // If dinosaur getting hungry
             if (d.getFoodLvl() <= 10) {
                 System.out.println(d.name + " at (" + l.x() + ", " + l.y() + ") is getting hungry!");
+            }
+            if (d.getWaterLvl() <= 10) {
+                System.out.println(d.name + " at (" + l.x() + ", " + l.y() + ") is getting thirsty!");
+            }
+
+            if (l.getGround() instanceof Water){
+                d.setWaterLvl(d.getWaterLvl() + 99);
             }
 
             // Stegosaur eats the grass it grazes. Ground resumes to dirt

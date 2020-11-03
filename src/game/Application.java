@@ -16,8 +16,8 @@ public class Application {
 	public static void main(String[] args) {
 		World world = new World(new Display());
 
-		FancyGroundFactory groundFactory = new FancyGroundFactory(new Dirt(), new Wall(), new Floor(), new Tree(), new Grass(), new VendingMachine());
-		
+		FancyGroundFactory groundFactory = new FancyGroundFactory(new Dirt(), new Wall(), new Floor(), new Tree(), new Grass(), new VendingMachine(), new Water());
+
 		List<String> map = Arrays.asList(
 		"................................................................................",
 		"................................................................................",
@@ -46,12 +46,12 @@ public class Application {
 		"................................................................................");
 		GameMap gameMap = new GameMap(groundFactory, map );
 		world.addGameMap(gameMap);
-		
+
 		Actor player = new Player("Player", '@', 100);
 		player.addItemToInventory(new LaserGun());
 		world.addPlayer(player, gameMap.at(78, 24));
 		VendingMachine v = new VendingMachine();
-		
+
 		// Place a pair of stegosaurs in the middle of the map
 		gameMap.at(79, 24).addActor(new Stegosaur());
 		gameMap.at(11, 12).addActor(new Stegosaur());
@@ -60,6 +60,12 @@ public class Application {
 		// Each square of dirt has a small 2% chance to grow grass.
 		Grass g = new Grass();
 		gameMap.growInitialGrass(g.getDisplayChar(), gameMap.getXRange(), gameMap.getYRange());
+
+//		Each square of dirt has a 1% chance to create pool of water.
+		Water w = new Water();
+		gameMap.createPool(w.getDisplayChar(),gameMap.getXRange(),gameMap.getYRange());
+
 		world.run();
+
 	}
 }
