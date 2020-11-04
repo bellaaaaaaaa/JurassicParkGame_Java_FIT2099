@@ -24,6 +24,7 @@ public abstract class Dinosaur extends Actor {
     boolean isPregnant = false;
     String stage = "adult"; // default
     int numTurnsAlive = 0; // Only needed for babies for now, assuming adult dinosaurs never die unless killed or starving.
+    private int carcassFoodLvl = 50;
 
     /**
      * This calls the Actor class constructor.
@@ -193,25 +194,28 @@ public abstract class Dinosaur extends Actor {
                     if (adj.containsAnActor()) {
                         if ((adj.getActor() instanceof Stegosaur) || (adj.getActor() instanceof Agilisaurus)) {
                             Dinosaur dinoToAttack = (Dinosaur) adj.getActor();
+                            if(dinoToAttack instanceof Stegosaur){
+                                dinoToAttack = (Stegosaur) adj.getActor();
+                            } else if (dinoToAttack instanceof Agilisaurus){
+                                dinoToAttack = (Agilisaurus) adj.getActor();
+                                dinoToAttack.setDead(true); // Agilisaurus should be killed in one hit
+                            }
                             while (!dinoToAttack.isDead()) {
                                 int[] array = {50, 100}; // Allosaur kills stegosaur in 1 or 2 hits.
                                 Random generator = new Random();
                                 int randomIndex = generator.nextInt(array.length);
                                 int hitPoints = array[randomIndex];
-                                dinoToAttack.hurt(hitPoints);
-                                if(dinoToAttack instanceof Agilisaurus){
-                                    dinoToAttack.setDead(true); // Allosaur kills agilisaurus in 1 hit as it is smaller than a stegosaur
-                                }
+                                dinoToAttack.hurt(hitPoints);dinoToAttack.setDead(true);
                             }
-                            // Jumps here - Eat if stegosaur already dead or if allosaur attacked and killed stegosaur.
-                            ((Allosaur) d).eatCarcass();
+                            // Jumps here - Eat carcass of dead stegosaur/agilisaur
+                            ((Allosaur) d).eatCarcass(dinoToAttack.getCarcassFoodLvl());
                             gameMap.removeActor(dinoToAttack);
                             hasKilled = true;
                         } else if (adj.getActor() instanceof Allosaur) {
                             Allosaur ar2 = (Allosaur) adj.getActor();
                             if (ar2.isDead()) {
                                 // Eat dead allosaur
-                                ((Allosaur) d).eatCarcass();
+                                ((Allosaur) d).eatCarcass(ar2.getCarcassFoodLvl());
                                 gameMap.removeActor(ar2);
                             }
                         }
@@ -394,5 +398,13 @@ public abstract class Dinosaur extends Actor {
     @Override
     public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
         return new Actions(new AttackAction(this));
+    }
+
+    public int getCarcassFoodLvl() {
+        return carcassFoodLvl;
+    }
+
+    public void setCarcassFoodLvl(int carcassFoodLvl) {
+        this.carcassFoodLvl = carcassFoodLvl;
     }
 }

@@ -14,6 +14,7 @@ public class Agilisaurus extends Dinosaur {
     public Agilisaurus() {
         super("agilisaurus", 'g', 100);
         this.setGender(this.randomiseGender());
+        this.setCarcassFoodLvl(30);
         behaviour = new WanderBehaviour();
     }
 

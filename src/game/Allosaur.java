@@ -32,7 +32,7 @@ public class Allosaur extends Dinosaur {
     /**
      * This method increases an Allosaur instance's food level by 50 each time it eats a dead dinosaur
      */
-    public void eatCarcass(){
-        this.setFoodLvl(this.getFoodLvl() + 50);
+    public void eatCarcass(int increase){
+        this.setFoodLvl(this.getFoodLvl() + increase);
     }
 }
