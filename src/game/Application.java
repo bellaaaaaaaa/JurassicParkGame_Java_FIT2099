@@ -49,11 +49,13 @@ public class Application {
 
 		Actor player = new Player("Player", '@', 100);
 		player.addItemToInventory(new LaserGun());
+		player.addItemToInventory(new MealKit("carnivore"));
 		world.addPlayer(player, gameMap.at(78, 24));
 		VendingMachine v = new VendingMachine();
 
 		// Place a pair of stegosaurs in the middle of the map
 		gameMap.at(79, 24).addActor(new Stegosaur());
+		gameMap.at(78, 23).addActor(new Agilisaurus());
 		gameMap.at(11, 12).addActor(new Stegosaur());
 		gameMap.at(40, 12).setGround(v);
 

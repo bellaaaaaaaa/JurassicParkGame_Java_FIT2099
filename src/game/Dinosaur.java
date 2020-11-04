@@ -22,7 +22,7 @@ public abstract class Dinosaur extends Actor {
     String gender;
     int numTurnsPregnant = 0;
     boolean isPregnant = false;
-    String stage;
+    String stage = "adult"; // default
     int numTurnsAlive = 0; // Only needed for babies for now, assuming adult dinosaurs never die unless killed or starving.
 
     /**
@@ -242,8 +242,8 @@ public abstract class Dinosaur extends Actor {
                 d.setWaterLvl(d.getWaterLvl() + 99);
             }
 
-            // Stegosaur eats the grass it grazes. Ground resumes to dirt
-            if(d instanceof Stegosaur){
+            // Stegosaurs/Agilisaurus eats the grass it grazes. Ground resumes to dirt
+            if((d instanceof Stegosaur) || d instanceof Agilisaurus){
                 if(l.getGround() instanceof Grass){
                     d.setFoodLvl(d.getFoodLvl() + 5);
                     l.setGround(new Dirt());
@@ -384,5 +384,10 @@ public abstract class Dinosaur extends Actor {
         } else {
             return "male";
         }
+    }
+
+    @Override
+    public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
+        return new Actions(new AttackAction(this));
     }
 }

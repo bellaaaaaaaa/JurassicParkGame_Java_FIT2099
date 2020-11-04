@@ -3,7 +3,6 @@ package game;
 
 import edu.monash.fit2099.engine.Action;
 import edu.monash.fit2099.engine.Actions;
-import edu.monash.fit2099.engine.Actor;
 import edu.monash.fit2099.engine.Display;
 import edu.monash.fit2099.engine.DoNothingAction;
 import edu.monash.fit2099.engine.GameMap;
@@ -27,11 +26,6 @@ public class Stegosaur extends Dinosaur {
 		this.setStage("adult");
 		
 		behaviour = new WanderBehaviour();
-	}
-
-	@Override
-	public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
-		return new Actions(new AttackAction(this));
 	}
 
 	/**

@@ -136,7 +136,17 @@ public class World {
 					for(Item i : items){
 						if(i instanceof Food){
 							feedDinosaurAction fda = new feedDinosaurAction((Food) i, (Dinosaur) vl.getActor(), vl);
-							actions.add(fda);
+							if((Food) i instanceof MealKit){
+								if((Dinosaur) vl.getActor() instanceof Agilisaurus){ actions.add(fda); }
+								else if((Dinosaur) vl.getActor() instanceof Stegosaur && ((MealKit) i).getType().equals("vegetarian")){
+									actions.add(fda);
+								} else if ((Dinosaur) vl.getActor() instanceof Allosaur && ((MealKit) i).getType().equals("carnivore")){
+									actions.add(fda);
+								}
+							} else {
+								actions.add(fda);
+								System.out.println("added");
+							}
 						}
 					}
 

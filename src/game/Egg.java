@@ -23,12 +23,15 @@ public class Egg extends Food {
      */
     public Egg(String type) {
         super(10, 200, 100, "Stegosaur Egg", 'e', true);
-        if(type.equals("allosaur") || type.equals("stegosaur")){
+        if(type.equals("allosaur") || type.equals("stegosaur") || type.equals("agilisaurus")){
             this.type = type;
             this.setPrice(200);
             if(this.type.equals("allosaur")){
                 this.setName("Allosaur Egg");
                 this.setPrice(1000);
+            } else if (this.type.equals("agilisaurus")){ // price of agilisaurus egg should be between stegosaur and allosaur price
+                this.setName("Agilisaurus Egg");
+                this.setPrice(500);
             }
         } else {
             throw new IllegalArgumentException("Eggs must be of type stegosaur or allosaur");
