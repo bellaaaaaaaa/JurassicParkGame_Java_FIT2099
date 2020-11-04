@@ -192,8 +192,13 @@ public class World {
 
 		lastActionMap.put(actor, action);
 
-		String result = action.execute(actor, map);
-		display.println(result);
+
+		try {
+			String result = action.execute(actor, map);
+			display.println(result);
+		} catch (NullPointerException ne){
+			System.out.print("NullPointerException Caught");
+		}
 	}
 
 	/**
