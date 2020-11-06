@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/game/Archaeopteryx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/VendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Allosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Allosaur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Behaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Behaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Dinosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Dinosaur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Egg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Stegosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Stegosaur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Agilisaurus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Agilisaurus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Dinosaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Dinosaur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Egg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Egg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Stegosaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Stegosaur.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +41,14 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="gbay0002 &lt;gbay0002@student.monash.edu&gt;" />
         <option value="Gabriela Bayabos &lt;gbay0002@student.monash.edu&gt;" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -50,6 +70,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -374,13 +395,31 @@
       <option name="project" value="LOCAL" />
       <updated>1603034724620</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="bella - created agilisaurus&#10;agilisaurus can eat both carnivore/vegetarian mealkit&#10;added constraints to which dinosaurs can each which mealkits">
+      <created>1604476897135</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1604476897135</updated>
+    </task>
+    <task id="LOCAL-00042" summary="bella - allosaur will attack agilisaur, kill it in 1 hit and eat it">
+      <created>1604482509117</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1604482509117</updated>
+    </task>
+    <task id="LOCAL-00043" summary="bella - added carcass food level to dinosaurs, for agilisaurus's this will be a lower value compared to stegosaur/allosaur">
+      <created>1604483837934</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1604483837934</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HEAVILY Refactored Gamemap, Dinosaur, Stegosaur. Moved all dinosaur related functions to dinosaur class. Tick now within dinosaur class." />
-    <MESSAGE value="Eggs can hatch, moved egg functionality into egg cclass, removed from Location class. better organisation this way." />
-    <MESSAGE value="Eggs can hatch, moved egg functionality into egg cclass, removed from Location class. better organisation this way. Improved some code by refactoring." />
     <MESSAGE value="Player can feed food to adjacent dinosaurs. So far not buggy." />
     <MESSAGE value="Harvest grass action works" />
     <MESSAGE value="Player can zap stegosaur. Stegosaur will die in one or two hits." />
@@ -403,14 +442,17 @@
     <MESSAGE value="Added an end game action which allows the player to quit playing the game." />
     <MESSAGE value="Fixed a small bug with grass. Ensured that eggs are not directly eaten when an allosaur lays them." />
     <MESSAGE value="Added documentation to VendingMachin (it was missing previously)&#10;Edited the documentation for some classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation to VendingMachin (it was missing previously)&#10;Edited the documentation for some classes." />
+    <MESSAGE value="bella - created agilisaurus&#10;agilisaurus can eat both carnivore/vegetarian mealkit&#10;added constraints to which dinosaurs can each which mealkits" />
+    <MESSAGE value="bella - allosaur will attack agilisaur, kill it in 1 hit and eat it" />
+    <MESSAGE value="bella - added carcass food level to dinosaurs, for agilisaurus's this will be a lower value compared to stegosaur/allosaur" />
+    <option name="LAST_COMMIT_MESSAGE" value="bella - added carcass food level to dinosaurs, for agilisaurus's this will be a lower value compared to stegosaur/allosaur" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1603032318956">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1604483617860">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1603032318956" />
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1604483617860" />
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602860311636">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -419,34 +461,38 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1603034898121" />
-    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1603034724328">
+    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1604483837739">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1603034724328" />
-    <state width="1398" height="141" key="GridCell.Tab.0.bottom" timestamp="1603034898180">
+    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1604483837739" />
+    <state width="1398" height="315" key="GridCell.Tab.0.bottom" timestamp="1604651445528">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="141" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1603034898180" />
-    <state width="1398" height="141" key="GridCell.Tab.0.center" timestamp="1603034898178">
+    <state width="1398" height="315" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604651445528" />
+    <state width="1398" height="315" key="GridCell.Tab.0.center" timestamp="1604651445527">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="141" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1603034898178" />
-    <state width="1398" height="141" key="GridCell.Tab.0.left" timestamp="1603034898178">
+    <state width="1398" height="315" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604651445527" />
+    <state width="1398" height="315" key="GridCell.Tab.0.left" timestamp="1604651445526">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="141" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1603034898178" />
-    <state width="1398" height="141" key="GridCell.Tab.0.right" timestamp="1603034898179">
+    <state width="1398" height="315" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604651445526" />
+    <state width="1398" height="315" key="GridCell.Tab.0.right" timestamp="1604651445527">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="141" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1603034898179" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1603034726511">
+    <state width="1398" height="315" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604651445527" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1604649466378">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1603034726511" />
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1603034974571">
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1604649466378" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1604485523306">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1603034974571" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604485523306" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1604485545794">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1604485545794" />
     <state x="97" y="65" key="new project wizard" timestamp="1603033689164">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

@@ -41,23 +41,21 @@ public class Application {
 		"................................................................................",
 		".........................................................................++.....",
 		"........................................................................++.++...",
-		".........................................................................++++...",
-		"..........................................................................++....",
-		"................................................................................");
+		"........................................................................~~~~~~~~",
+		"........................................................................~~~~~~~~",
+		"........................................................................~~~~~~~.");
 		GameMap gameMap = new GameMap(groundFactory, map );
 		world.addGameMap(gameMap);
 
 		Actor player = new Player("Player", '@', 100);
 		player.addItemToInventory(new LaserGun());
 		player.addItemToInventory(new MealKit("carnivore"));
-		world.addPlayer(player, gameMap.at(78, 24));
+		world.addPlayer(player, gameMap.at(60, 24));
 		VendingMachine v = new VendingMachine();
 
 		// Place a pair of stegosaurs in the middle of the map
-		gameMap.at(79, 22).addActor(new Allosaur());
-		gameMap.at(78, 23).addActor(new Allosaur());
-		gameMap.at(79, 23).addActor(new Agilisaurus());
-		gameMap.at(79, 24).addActor(new Allosaur());
+		gameMap.at(79, 24).addActor(new Archaeopteryx(gameMap));
+		gameMap.at(72, 24).addActor(new Stegosaur());
 		gameMap.at(40, 12).setGround(v);
 
 		// Each square of dirt has a small 2% chance to grow grass.

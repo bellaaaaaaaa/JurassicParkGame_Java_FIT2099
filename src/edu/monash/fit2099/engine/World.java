@@ -145,7 +145,6 @@ public class World {
 								}
 							} else {
 								actions.add(fda);
-								System.out.println("added");
 							}
 						}
 					}

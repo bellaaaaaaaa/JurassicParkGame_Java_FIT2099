@@ -13,20 +13,7 @@ public class Allosaur extends Dinosaur {
     public Allosaur() {
         super("allosaur", 'a', 100);
         this.setGender(this.randomiseGender());
-    }
 
-
-    /**
-     * This method returns the current actions that an allosaur can perform at a given turn
-     * @param actions The allowed actions for an allosaur instance
-     * @param lastAction The last action the allosaur performed
-     * @param map The current map the allosaur exists on
-     * @param display The display of the world the allosaur exists in. Depicts the terrain type and existing actors
-     * @return A collection of actions
-     */
-    @Override
-    public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
-        return null;
     }
 
     /**

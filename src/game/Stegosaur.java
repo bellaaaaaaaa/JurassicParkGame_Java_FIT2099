@@ -13,8 +13,6 @@ import java.util.Random;
  * A herbivorous dinosaur.
  */
 public class Stegosaur extends Dinosaur {
-	// Will need to change this to a collection if Stegosaur gets additional Behaviours.
-	private Behaviour behaviour;
 
 	/** 
 	 * Instantiates a Stegosaur with and randomises its gender. It calls the Dinosaur class constructor which in turn calls the Actor class constructor.
@@ -24,24 +22,5 @@ public class Stegosaur extends Dinosaur {
 		super("stegosaur", 'd', 100);
 		this.setGender(this.randomiseGender());
 		this.setStage("adult");
-		
-		behaviour = new WanderBehaviour();
-	}
-
-	/**
-	 * Figure out what to do next.
-	 * 
-	 * FIXME: Stegosaur wanders around at random, or if no suitable MoveActions are available, it
-	 * just stands there.  That's boring.
-	 * 
-	 * @see edu.monash.fit2099.engine.Actor#playTurn(Actions, Action, GameMap, Display)
-	 */
-	@Override
-	public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
-		Action wander = behaviour.getAction(this, map);
-		if (wander != null)
-			return wander;
-		
-		return new DoNothingAction();
 	}
 }

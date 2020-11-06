@@ -11,6 +11,7 @@ import java.util.Random;
  */
 public abstract class Dinosaur extends Actor {
     private Behaviour behaviour;
+    GameMap map;
     int foodLvl = 50;
     int maxFoodLvl = 100;
     int waterLvl = 50;
@@ -35,6 +36,7 @@ public abstract class Dinosaur extends Actor {
      */
     public Dinosaur(String name, char displayChar, int hitPoints) {
         super(name, displayChar, hitPoints);
+        behaviour = new WanderBehaviour();
     }
 
     /**
@@ -125,6 +127,11 @@ public abstract class Dinosaur extends Actor {
         int currentWaterLvl = d.getWaterLvl();
         d.setWaterLvl(currentWaterLvl - 1);
         ArrayList<Location> adjacents = l.validAdjacentLocations();
+
+        if(d instanceof Archaeopteryx){
+            ((Archaeopteryx) d).flyAround();
+        }
+
         // Baby dinosaurs grow up
         if(d.getStage().equals("baby")){
             d.babyDinosaurGrows();
@@ -265,14 +272,6 @@ public abstract class Dinosaur extends Actor {
     public void setGender(String gender) { this.gender = gender; }
 
     /**
-     * A method returning a collection of possible actions for this actor.
-     */
-    @Override
-    public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
-        return null;
-    }
-
-    /**
      * Used on female dinosaurs indicating how long its been since breeding with another dinosaur. Once this hits 10, the female dinosaur will lay an egg.
      * @return integer type
      */
@@ -323,6 +322,7 @@ public abstract class Dinosaur extends Actor {
                 d2.setNumTurnsPregnant(d2.getNumTurnsPregnant() + 1);
                 d2.setPregnant(true);
             }
+            System.out.println("A pair of " + d1.name + "have just bred");
             return true;
         }
         return false;
@@ -406,5 +406,22 @@ public abstract class Dinosaur extends Actor {
 
     public void setCarcassFoodLvl(int carcassFoodLvl) {
         this.carcassFoodLvl = carcassFoodLvl;
+    }
+
+    /**
+     * Figure out what to do next.
+     *
+     * FIXME: Stegosaur wanders around at random, or if no suitable MoveActions are available, it
+     * just stands there.  That's boring.
+     *
+     * @see edu.monash.fit2099.engine.Actor#playTurn(Actions, Action, GameMap, Display)
+     */
+    @Override
+    public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
+        Action wander = behaviour.getAction(this, map);
+        if (wander != null)
+            return wander;
+
+        return new DoNothingAction();
     }
 }

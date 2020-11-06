@@ -1,9 +1,6 @@
 package edu.monash.fit2099.engine;
 
-import game.Egg;
-import game.Fruit;
-import game.Player;
-import game.Stegosaur;
+import game.*;
 
 import java.util.*;
 
@@ -140,6 +137,10 @@ public class Location implements Printable {
 		}
 	}
 
+	public Location getNorthEast(){ return map.at(x+1, y - 1); }
+	public Location getNorthWest(){ return map.at(x-1, y - 1); }
+	public Location getSouthEast(){ return map.at(x+1, y + 1); }
+	public Location getSouthWest(){ return map.at(x-1, y + 1); }
 	/**
 	 * This method returns the location instance directly north of the current one
 	 * @return a location instance
@@ -235,12 +236,38 @@ public class Location implements Printable {
 	 * @return a MoveActorAction that allows actor to move to location if allowed; otherwise null
 	 */
 	public MoveActorAction getMoveAction(Actor actor, String direction, String hotKey) {
-		if(canActorEnter(actor))
+		if(canActorEnter(actor)) {
 			return new MoveActorAction(this, direction, hotKey);
-		
+		}
 		return null;
 	}
-	
+
+//	public MoveActorAction getNextLocation(Location current, String direction, Actor actor, String hotKey){
+//		Location next = current;
+//		if (direction.equals("North")) {
+//			next = current.getNorth();
+//		} else if (direction.equals("South")) {
+//			next = current.getSouth();
+//		} else if (direction.equals("East")) {
+//			next = current.getEast();
+//		} else if (direction.equals("West")) {
+//			next = current.getWest();
+//		} else if (direction.equals("North-East")) {
+//			next = current.getNorthEast();
+//		} else if (direction.equals("North-West")) {
+//			next = current.getNorthWest();
+//		} else if (direction.equals("South-East")) {
+//			next = current.getSouthEast();
+//		} else if (direction.equals("South-West")) {
+//			next = current.getSouthWest();
+//		}
+//		if (!map.isAnActorAt(next) && (next.getGround().equals('.') || next.getGround().equals('^') || next.getGround().equals('+'))) {
+//			return new MoveActorAction(next, direction, hotKey);
+//		} else {
+//			return getNextLocation(next, direction, actor, hotKey);
+//		}
+//	}
+
 	/**
 	 * Returns true if an Actor can enter this location.
 	 *

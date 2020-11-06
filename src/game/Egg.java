@@ -32,6 +32,9 @@ public class Egg extends Food {
             } else if (this.type.equals("agilisaurus")){ // price of agilisaurus egg should be between stegosaur and allosaur price
                 this.setName("Agilisaurus Egg");
                 this.setPrice(500);
+            } else if (this.type.equals("archaeopteryx")) { // price of archaeopteryx egg closer to agilisaurus
+                this.setName("Archaeopteryx Egg");
+                this.setPrice(600);
             }
         } else {
             throw new IllegalArgumentException("Eggs must be of type stegosaur or allosaur");
@@ -82,8 +85,10 @@ public class Egg extends Food {
             Dinosaur baby;
             if (this.getType().equals("stegosaur")){
                 baby = new Stegosaur();
-            } else {
+            } else if (this.getType().equals("allosaur")) {
                 baby = new Allosaur();
+            } else {
+                baby = new Agilisaurus(); // baby agilisaurus can be born
             }
             baby.setStage("baby");
             baby.setFoodLvl(10);
@@ -108,6 +113,8 @@ public class Egg extends Food {
                 p.setEcoPoints(p.getEcoPoints() + 100);
             } else if (e.getType().equals("allosaur")){
                 p.setEcoPoints(p.getEcoPoints() + 1000);
+            } else if (e.getType().equals("agilisaur")){
+                p.setEcoPoints(p.getEcoPoints() + 500); // reward for birth of agilisaur is between that of stegosaur and allosaur
             }
         }
     }
