@@ -14,8 +14,7 @@ public class Archaeopteryx extends Dinosaur{
 
     public void flyAround() {
         //Get location of arch
-        GameMap map = this.map;
-        Location current = map.locationOf(this);
+        Location current = this.map.locationOf(this);
         boolean foundLand = false;
         Random randomGenerator = new Random();
 
@@ -23,7 +22,7 @@ public class Archaeopteryx extends Dinosaur{
         ArrayList<Location> surroundings = current.validAdjacentLocations();
         ArrayList<String> directions = new ArrayList<>();
 
-        //randomly pick one and remove it from list
+        //Add valid directions
         for (Location l : surroundings) {
             if (l.y() == current.y() - 1) {
                 directions.add("North");
@@ -37,55 +36,45 @@ public class Archaeopteryx extends Dinosaur{
         }
         int index = randomGenerator.nextInt(directions.size());
         String directionToMoveIn = directions.get(index);
-        int step;
-        directionToMoveIn = "West";
 
-        Location starting = map.locationOf(this);
+        Location starting = this.map.locationOf(this);
         if (directionToMoveIn.equals("North")) {
-            step = starting.y();
-            while (step > map.getYRange().min()) {
-                Location next = map.at(starting.x(), step);
-                if ((!next.containsAnActor()) && (next.getGround() instanceof Water == false)) {
-                    map.removeActor(this);
-                    map.getActorLocations().move(this, next);
-                    break;
-                }
-                step -= 1;
-            }
+            flyTo(directionToMoveIn, starting.y(), -1, this.map.getYRange().min(), starting.x());
         } else if (directionToMoveIn.equals("South")) {
-            step = starting.y();
-            while (step < map.getYRange().max()) {
-                Location next = map.at(starting.x(), step);
-                if ((!next.containsAnActor()) && (next.getGround() instanceof Water == false)) {
-                    map.removeActor(this);
-                    map.getActorLocations().move(this, next);
-                    break;
-                }
-                step += 1;
-            }
+            flyTo(directionToMoveIn, starting.y(), 1, this.map.getYRange().max(), starting.x());
         } else if (directionToMoveIn.equals("East")) {
-            step = starting.x();
-            while (step < map.getXRange().max()) {
-                Location next = map.at(step, starting.y());
-                if ((!next.containsAnActor()) && (next.getGround() instanceof Water == false)) {
-                    map.removeActor(this);
-                    map.getActorLocations().move(this, next);
-                    break;
-                }
-                step += 1;
-            }
+            flyTo(directionToMoveIn, starting.x(), 1, this.map.getXRange().max(), starting.y());
         } else if (directionToMoveIn.equals("West")) {
-            step = starting.x();
-            while (step > map.getXRange().min()) {
-                Location next = map.at(step, starting.y());
-                if ((!next.containsAnActor()) && (next.getGround() instanceof Water == false)) {
-                    map.removeActor(this);
-                    map.getActorLocations().move(this, next);
+            flyTo(directionToMoveIn, starting.x(), -1, this.map.getXRange().min(), starting.y());
+        }
+    }
+
+    public void flyTo(String directionToMoveIn, Integer step, Integer increment, Integer rangeLimit, Integer constCo){
+        if(directionToMoveIn.equals("East") || directionToMoveIn.equals("West")){
+            while (step != rangeLimit) {
+                Location next = this.map.at(step, constCo);
+                if(checkLocation(next)){
                     break;
                 }
-                step -= 1;
+                step += increment;
+            }
+        } else if (directionToMoveIn.equals("North") || directionToMoveIn.equals("South")){
+            while (step != rangeLimit) {
+                Location next = this.map.at(constCo, step);
+                if(checkLocation(next)){
+                    break;
+                }
+                step += increment;
             }
         }
     }
-    //public void flyTo()
+
+    public boolean checkLocation(Location next){
+        if ((!next.containsAnActor()) && (next.getGround() instanceof Water == false)) {
+            this.map.removeActor(this);
+            this.map.getActorLocations().move(this, next);
+            return true;
+        }
+        return false;
+    }
 }
