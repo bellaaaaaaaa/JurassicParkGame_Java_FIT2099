@@ -70,11 +70,28 @@ public class World {
 		// This loop is basically the whole game
 		while (stillRunning()) {
 			GameMap playersMap = actorLocations.locationOf(player).map();
+			// If player is at the northern border of map1, display map2
+			boolean displaySecondMap = false;
+			if(this.gameMaps.size() == 2){
+				if(playersMap.equals(this.gameMaps.get(0))){
+					if(actorLocations.locationOf(player).y() == 0){
+						// Display northern map
+						this.gameMaps.get(1).draw(new Display());
+						displaySecondMap = true;
+					}
+				}
+			}
+			// draw out map1
 			playersMap.draw(display);
+
+
 			// Process all the actors.
 			for (Actor actor : actorLocations) {
 				if (stillRunning()) {
 					processActorTurn(actor);
+					if(displaySecondMap){
+						// add capability to move north into second map.
+					}
 				}
 			}
 
