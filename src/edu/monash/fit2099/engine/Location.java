@@ -226,7 +226,6 @@ public class Location implements Printable {
 		map.addActor(actor, this);
 	}
 	
-	
 	/**
 	 * Returns a MoveActorAction that will move actor to location if the terrain type allows.
 	 * @param actor the Actor to move
@@ -241,32 +240,6 @@ public class Location implements Printable {
 		}
 		return null;
 	}
-
-//	public MoveActorAction getNextLocation(Location current, String direction, Actor actor, String hotKey){
-//		Location next = current;
-//		if (direction.equals("North")) {
-//			next = current.getNorth();
-//		} else if (direction.equals("South")) {
-//			next = current.getSouth();
-//		} else if (direction.equals("East")) {
-//			next = current.getEast();
-//		} else if (direction.equals("West")) {
-//			next = current.getWest();
-//		} else if (direction.equals("North-East")) {
-//			next = current.getNorthEast();
-//		} else if (direction.equals("North-West")) {
-//			next = current.getNorthWest();
-//		} else if (direction.equals("South-East")) {
-//			next = current.getSouthEast();
-//		} else if (direction.equals("South-West")) {
-//			next = current.getSouthWest();
-//		}
-//		if (!map.isAnActorAt(next) && (next.getGround().equals('.') || next.getGround().equals('^') || next.getGround().equals('+'))) {
-//			return new MoveActorAction(next, direction, hotKey);
-//		} else {
-//			return getNextLocation(next, direction, actor, hotKey);
-//		}
-//	}
 
 	/**
 	 * Returns true if an Actor can enter this location.

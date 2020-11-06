@@ -140,7 +140,8 @@ public class World {
 								if((Dinosaur) vl.getActor() instanceof Agilisaurus){ actions.add(fda); }
 								else if((Dinosaur) vl.getActor() instanceof Stegosaur && ((MealKit) i).getType().equals("vegetarian")){
 									actions.add(fda);
-								} else if ((Dinosaur) vl.getActor() instanceof Allosaur && ((MealKit) i).getType().equals("carnivore")){
+								// Only allosaurs and archaeopteryx are carnivorous
+								} else if (((Dinosaur) vl.getActor() instanceof Allosaur || (Dinosaur) vl.getActor() instanceof Archaeopteryx) && ((MealKit) i).getType().equals("carnivore")){
 									actions.add(fda);
 								}
 							} else {

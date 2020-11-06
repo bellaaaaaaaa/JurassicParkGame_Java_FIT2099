@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Archaeopteryx extends Dinosaur{
+    /**
+     * Instantiates an Archaeopteryx, abbreviation (ax) and makes use of the constructor in the super class
+     * @param map the map within the Archaeopteryx resides in
+     */
     public Archaeopteryx(GameMap map) {
         super("archaeopteryx", 'r', 100);
         this.setGender(this.randomiseGender());
@@ -12,6 +16,12 @@ public class Archaeopteryx extends Dinosaur{
         this.map = map;
     }
 
+    /**
+     * This method randomises the direction an (ax) may fly in. It ensures that the (ax) flies in a VALID location
+     * ie. If an (ax) is at the bottom of the map, it ensures it does not fly further south.
+     * Then the (ax) will fly in the specified direction
+     * If there is no direction for the (ax) to fly, say the map is made ENTIRELY of water, then the (ax) will stay at its current position
+     */
     public void flyAround() {
         //Get location of arch
         Location current = this.map.locationOf(this);
@@ -49,6 +59,14 @@ public class Archaeopteryx extends Dinosaur{
         }
     }
 
+    /**
+     * This function allows an (ax) to fly in a specific direction, ensuring it does not fly out of the bounds of the gamemap.
+     * @param directionToMoveIn either North, South, East or West
+     * @param step the current relevant coordinate (either x or y) that the (ax) is traversing
+     * @param increment this could be either +1 to move south or east or -1 to move west or north
+     * @param rangeLimit the x or y bounds based on the gamemap
+     * @param constCo the coordinate which remains constant during the (ax) flight. Eg if flying north, the x coordinate remains constant while the y coordinate changes
+     */
     public void flyTo(String directionToMoveIn, Integer step, Integer increment, Integer rangeLimit, Integer constCo){
         if(directionToMoveIn.equals("East") || directionToMoveIn.equals("West")){
             while (step != rangeLimit) {
@@ -69,7 +87,13 @@ public class Archaeopteryx extends Dinosaur{
         }
     }
 
+    /**
+     * This function checks whether a location should be traversed by an archaeopteryx (ax)
+     * @param next the following location the (ax) may want to enter
+     * @return a boolean indicating whether the (ax) can enter the given location
+     */
     public boolean checkLocation(Location next){
+        // The idea is that (ax) can land on anything except water eg. perch on trees or walls etc.
         if ((!next.containsAnActor()) && (next.getGround() instanceof Water == false)) {
             this.map.removeActor(this);
             this.map.getActorLocations().move(this, next);

@@ -26,6 +26,7 @@ public class VendingMachine extends Ground {
         this.merchandise.add(new Egg("stegosaur"));
         this.merchandise.add(new Egg("allosaur"));
         this.merchandise.add(new Egg("agilisaurus")); // agilisaurus eggs available for purchase from VM.
+        this.merchandise.add(new Egg("archaeopteryx")); // archaeopteryx eggs available for purchase from VM.
         this.merchandise.add(new LaserGun());
     }
 

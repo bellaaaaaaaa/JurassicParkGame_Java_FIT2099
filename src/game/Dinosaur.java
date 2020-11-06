@@ -128,6 +128,7 @@ public abstract class Dinosaur extends Actor {
         d.setWaterLvl(currentWaterLvl - 1);
         ArrayList<Location> adjacents = l.validAdjacentLocations();
 
+        // Archaeopteryx flies in a random direction
         if(d instanceof Archaeopteryx){
             ((Archaeopteryx) d).flyAround();
         }
@@ -181,8 +182,8 @@ public abstract class Dinosaur extends Actor {
                 layEgg(d, l);
             }
 
-            // Allosaur Attacks Stegosaur
-            if (d instanceof Allosaur) {
+            // Allosaurs and Archaeopteryx are carnivores
+            if (d instanceof Allosaur || d instanceof Archaeopteryx) {
                 // Eat an egg currently on the ground
                 for (Item i : l.getItems()){
                     if (i instanceof Egg){
@@ -192,38 +193,34 @@ public abstract class Dinosaur extends Actor {
                         }
                     }
                 }
-
-                boolean hasKilled = false;
+                // Allosaur/Archaeopteryx - Attacks any other type of dinosaur
+                boolean hasAttackedOrKilled = false;
                 for (Location adj : adjacents) {
-                    if (hasKilled) {
+                    if (hasAttackedOrKilled) {
                         break; // To only eat 1 dead dinosaur per turn.
                     }
                     if (adj.containsAnActor()) {
-                        if ((adj.getActor() instanceof Stegosaur) || (adj.getActor() instanceof Agilisaurus)) {
+                        if (adj.getActor() instanceof Dinosaur) {
                             Dinosaur dinoToAttack = (Dinosaur) adj.getActor();
-                            if(dinoToAttack instanceof Stegosaur){
-                                dinoToAttack = (Stegosaur) adj.getActor();
-                            } else if (dinoToAttack instanceof Agilisaurus){
-                                dinoToAttack = (Agilisaurus) adj.getActor();
+
+                            if (dinoToAttack instanceof Agilisaurus) {
                                 dinoToAttack.setDead(true); // Agilisaurus should be killed in one hit
-                            }
-                            while (!dinoToAttack.isDead()) {
-                                int[] array = {50, 100}; // Allosaur kills stegosaur in 1 or 2 hits.
+                            } else {
+                                // Aside from agilisaurus which dies in one hit, any other dinosaur can either die in 1 hit or be left injured.
+                                int[] array = {50, 100};
                                 Random generator = new Random();
                                 int randomIndex = generator.nextInt(array.length);
                                 int hitPoints = array[randomIndex];
-                                dinoToAttack.hurt(hitPoints);dinoToAttack.setDead(true);
+                                dinoToAttack.hurt(hitPoints);
+                                if (hitPoints == 100){
+                                    dinoToAttack.setDead(true);
+                                }
                             }
-                            // Jumps here - Eat carcass of dead stegosaur/agilisaur
-                            ((Allosaur) d).eatCarcass(dinoToAttack.getCarcassFoodLvl());
-                            gameMap.removeActor(dinoToAttack);
-                            hasKilled = true;
-                        } else if (adj.getActor() instanceof Allosaur) {
-                            Allosaur ar2 = (Allosaur) adj.getActor();
-                            if (ar2.isDead()) {
-                                // Eat dead allosaur
-                                ((Allosaur) d).eatCarcass(ar2.getCarcassFoodLvl());
-                                gameMap.removeActor(ar2);
+                            hasAttackedOrKilled = true;
+                            // Eat carcass if a dinosaur was killed during battle
+                            if(dinoToAttack.isDead()){
+                                d.eatCarcass(dinoToAttack.getCarcassFoodLvl());
+                                gameMap.removeActor(dinoToAttack);
                             }
                         }
                     }
@@ -423,5 +420,12 @@ public abstract class Dinosaur extends Actor {
             return wander;
 
         return new DoNothingAction();
+    }
+
+    /**
+     * This method increases an Allosaur instance's food level by 50 each time it eats a dead dinosaur
+     */
+    public void eatCarcass(int increase){
+        this.setFoodLvl(this.getFoodLvl() + increase);
     }
 }

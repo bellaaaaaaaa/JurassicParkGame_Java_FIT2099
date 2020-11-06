@@ -15,11 +15,4 @@ public class Allosaur extends Dinosaur {
         this.setGender(this.randomiseGender());
 
     }
-
-    /**
-     * This method increases an Allosaur instance's food level by 50 each time it eats a dead dinosaur
-     */
-    public void eatCarcass(int increase){
-        this.setFoodLvl(this.getFoodLvl() + increase);
-    }
 }
