@@ -15,6 +15,8 @@ public class World {
 	protected ActorLocations actorLocations = new ActorLocations();
 	protected Actor player; // We only draw the particular map this actor is on.
 	protected Map<Actor, Action> lastActionMap = new HashMap<Actor, Action>();
+	boolean canCrossMaps = false;
+	GameMap playersMap;
 
 	/**
 	 * Constructor.
@@ -128,9 +130,24 @@ public class World {
 		}
 		// This loop is basically the whole game
 		while (stillRunning()) {
+			playersMap = actorLocations.locationOf(player).map();
 
-			GameMap playersMap = actorLocations.locationOf(player).map();
-			playersMap.draw(display);
+			//Display both map1 and map2 if the player is at the northern border of map1 or the southern border of map2
+			if(this.gameMaps.size() == 2){
+				if((actorLocations.locationOf(player).y() == 0 && playersMap.equals(gameMaps.get(0))) || (actorLocations.locationOf(player).y() == 24 && playersMap.equals(gameMaps.get(1)))){
+					canCrossMaps = true;
+					this.gameMaps.get(1).draw(new Display());
+					System.out.println("\n");
+					this.gameMaps.get(0).draw(new Display());
+				} else {
+					playersMap.draw(display);
+					canCrossMaps = false;
+				}
+			} else {
+				playersMap.draw(display);
+				canCrossMaps = false;
+			}
+
 			// Process all the actors.
 			for (Actor actor : actorLocations) {
 				if (stillRunning()) {
@@ -170,6 +187,13 @@ public class World {
 
 		Actions actions = new Actions();
 		if(actor instanceof Player){
+			if(canCrossMaps){
+				crossMapsAction cma = new crossMapsAction();
+				cma.setWorld(this);
+				cma.setWorldMaps(gameMaps);
+				actions.add(cma);
+			}
+
 			// Player can harvest grass if standing on some
 			if(here.getGround() instanceof Grass){
 				actions.add(new HarvestGrassAction());
@@ -199,7 +223,17 @@ public class World {
 					for(Item i : items){
 						if(i instanceof Food){
 							feedDinosaurAction fda = new feedDinosaurAction((Food) i, (Dinosaur) vl.getActor(), vl);
-							actions.add(fda);
+							if((Food) i instanceof MealKit){
+								if((Dinosaur) vl.getActor() instanceof Agilisaurus){ actions.add(fda); }
+								else if((Dinosaur) vl.getActor() instanceof Stegosaur && ((MealKit) i).getType().equals("vegetarian")){
+									actions.add(fda);
+								// Only allosaurs and archaeopteryx are carnivorous
+								} else if (((Dinosaur) vl.getActor() instanceof Allosaur || (Dinosaur) vl.getActor() instanceof Archaeopteryx) && ((MealKit) i).getType().equals("carnivore")){
+									actions.add(fda);
+								}
+							} else {
+								actions.add(fda);
+							}
 						}
 					}
 
@@ -245,10 +279,13 @@ public class World {
 
 		lastActionMap.put(actor, action);
 
-		String result = action.execute(actor, map);
 
-		display.println(result);
-
+		try {
+			String result = action.execute(actor, map);
+			display.println(result);
+		} catch (NullPointerException ne){
+			System.out.print("NullPointerException Caught");
+		}
 	}
 	public void setTargetTurn (int TargetTurn){this.TargetTurn = TargetTurn;}
 	public int getTargetTurn(){return TargetTurn;}

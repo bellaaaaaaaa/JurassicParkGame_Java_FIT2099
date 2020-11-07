@@ -5,8 +5,205 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace 2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/allclasses-index 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/allpackages-index 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/edu/monash/fit2099/engine/Actions 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/edu/monash/fit2099/engine/DoNothingAction 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/edu/monash/fit2099/engine/World 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/edu/monash/fit2099/engine/crossMapsActionJavaDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/element-list 2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/AgilisaurusJavaDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Allosaur 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Application 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/ArchaeopteryxJavaDoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/AttackAction 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Behaviour 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Dinosaur 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Dirt 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Egg 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Floor 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/FollowBehaviour 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Fruit 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Grass 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Hay 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/MealKit 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Player 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/PortableItem 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Stegosaur 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/VendingMachine 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/Wall 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/WanderBehaviour 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/package-summary 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/game/package-tree 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/help-doc 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-1 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-10 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-11 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-12 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-13 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-14 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-15 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-16 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-17 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-18 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-19 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-2 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-20 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-3 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-4 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-5 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-6 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-7 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-8 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/index-files/index-9 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/member-search-index 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/resources/glass 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/resources/x 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/external/jquery/jquery 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-bg_glass_55_fbf9ee_1x400 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-bg_glass_65_dadada_1x400 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-bg_glass_75_dadada_1x400 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-bg_glass_75_e6e6e6_1x400 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-bg_glass_95_fef1ec_1x400 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-icons_222222_256x240 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-icons_2e83ff_256x240 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-icons_454545_256x240 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-icons_888888_256x240 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/images/ui-icons_cd0a0a_256x240 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jquery-3.4.1 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jquery-ui 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jquery-ui 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jquery-ui.min 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jquery-ui.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jquery-ui.structure 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jquery-ui.structure.min 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jszip-utils/dist/jszip-utils 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jszip-utils/dist/jszip-utils-ie 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jszip-utils/dist/jszip-utils-ie.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jszip-utils/dist/jszip-utils.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jszip/dist/jszip 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/script-dir/jszip/dist/jszip.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/search 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/stylesheet 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/type-search-index 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/Generated Documentation/type-search-index 2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Location 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/WeaponItem 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/buyItemAction 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/crossMapsAction 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/game/Agilisaurus 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/game/Application 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/game/Archaeopteryx 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/game/Dinosaur 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/game/Egg 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/game/Stegosaur 2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/A_Group/game/Water 2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/VendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Agilisaurus.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Agilisaurus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Allosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Allosaur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Archaeopteryx.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Archaeopteryx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Dinosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Dinosaur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Egg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/.gitignore 3" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/.gitignore 2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/misc 3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/misc 2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/modules 3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/modules 2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/vcs 3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/vcs 2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/META-INF/A_Group.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Application 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Application 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Behaviour 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Behaviour 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/ConwayGameMap 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/ConwayGameMap 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/ConwayLocation 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/ConwayLocation 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/ConwayLocation$NextTurn 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/ConwayLocation$NextTurn 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Floor 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Floor 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Player 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Player 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Player$SleepAction 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Player$SleepAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Status 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Status 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Tree 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/conwayslife/Tree 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Application 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Application 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Bug 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Bug 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Crater 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Crater 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/DemoCapabilities 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/DemoCapabilities 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Floor 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Floor 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/KickAction 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/KickAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/LockedDoor 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/LockedDoor 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/MartianItem 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/MartianItem 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Player 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Player 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/SpitBehaviour 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/SpitBehaviour 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Stick 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Stick 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Wall 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/Wall 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/WindowSmashAction 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/demo/mars/WindowSmashAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Action 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Action 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Actions 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Actions 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Actor 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Actor 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/ActorLocations 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/ActorLocations 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/ActorLocations$ActorIterator 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/ActorLocations$ActorIterator 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Capabilities 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Capabilities 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Capable 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Capable 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Display 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Display 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/DoNothingAction 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/DoNothingAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/DropItemAction 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/DropItemAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/EndGameAction 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/EndGameAction 3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Exit 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Exit 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/FancyGroundFactory 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/FancyGroundFactory 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Food 4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Food 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/GameMap 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/GameMap 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Ground 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Ground 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/GroundFactory 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/GroundFactory 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/HarvestGrassAction 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/HarvestGrassAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/IntrinsicWeapon 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/IntrinsicWeapon 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Item 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Item 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/LaserGun 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/LaserGun 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Location 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Menu 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Menu 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Menu$SortHotkeysFirst 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Menu$SortHotkeysFirst 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/MoveActorAction 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/MoveActorAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/NumberRange 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/NumberRange 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/PickFruitFromTreeAction 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/PickFruitFromTreeAction 3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/PickUpItemAction 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/PickUpItemAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Printable 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Printable 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Weapon 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Weapon 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/buyItemAction 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/crossMapsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/crossMapsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/feedDinosaurAction 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/feedDinosaurAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/laserStegosaurAction 4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/laserStegosaurAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/interfaces/ActionInterface 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/interfaces/ActionInterface 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/interfaces/ActorInterface 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/interfaces/ActorInterface 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/interfaces/GroundInterface 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/interfaces/GroundInterface 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/interfaces/ItemInterface 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/interfaces/ItemInterface 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Agilisaurus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Agilisaurus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Application 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Archaeopteryx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Archaeopteryx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/AttackAction 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/AttackAction 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Behaviour 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Behaviour 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Dinosaur 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Dinosaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Dinosaur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Dirt 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Dirt 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Egg 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Egg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Egg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Floor 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Floor 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/FollowBehaviour 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/FollowBehaviour 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Fruit 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Fruit 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Grass 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Grass 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Hay 4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Hay 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/MealKit 4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/MealKit 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Player 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Player 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/PortableItem 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/PortableItem 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Stegosaur 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Tree 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Tree 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/VendingMachine 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/VendingMachine 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Wall 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Wall 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/WanderBehaviour 3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/WanderBehaviour 2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +224,14 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="gbay0002 &lt;gbay0002@student.monash.edu&gt;" />
         <option value="Gabriela Bayabos &lt;gbay0002@student.monash.edu&gt;" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -50,6 +253,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Generated Documentation/game" />
+      <recent name="$PROJECT_DIR$/Generated Documentation/edu/monash/fit2099/engine" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -93,20 +303,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602501494805</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Working on grass class - bella">
-      <created>1602520250159</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1602520250159</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Grass works. Moving onto fruit next.">
-      <created>1602658394989</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1602658394989</updated>
     </task>
     <task id="LOCAL-00003" summary="Tree can drop fruit at location. Fruit can rot after 20 turns.">
       <created>1602661981550</created>
@@ -374,20 +570,87 @@
       <option name="project" value="LOCAL" />
       <updated>1603034724620</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="bella - created agilisaurus&#10;agilisaurus can eat both carnivore/vegetarian mealkit&#10;added constraints to which dinosaurs can each which mealkits">
+      <created>1604476897135</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1604476897135</updated>
+    </task>
+    <task id="LOCAL-00042" summary="bella - allosaur will attack agilisaur, kill it in 1 hit and eat it">
+      <created>1604482509117</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1604482509117</updated>
+    </task>
+    <task id="LOCAL-00043" summary="bella - added carcass food level to dinosaurs, for agilisaurus's this will be a lower value compared to stegosaur/allosaur">
+      <created>1604483837934</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1604483837934</updated>
+    </task>
+    <task id="LOCAL-00044" summary="bella - Archaeopteryx flies over water !">
+      <created>1604670434408</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1604670434409</updated>
+    </task>
+    <task id="LOCAL-00045" summary="bella - Archaeopteryx flies over water !">
+      <created>1604670478086</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1604670478086</updated>
+    </task>
+    <task id="LOCAL-00046" summary="bella - Flying function re-factored.. more DRY">
+      <created>1604673061069</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1604673061069</updated>
+    </task>
+    <task id="LOCAL-00047" summary="bella - all dinosaurs can breed, lay eggs, eggs can be bought from VM, Archaeopteryx are carnivorous and can attack any type of dinosaur function implemented.&#10;Refactored tick code in dinosaur class alot.">
+      <created>1604677427793</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1604677427793</updated>
+    </task>
+    <task id="LOCAL-00048" summary="bella - second map SEMI functional, needs fixing">
+      <created>1604681734446</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1604681734446</updated>
+    </task>
+    <task id="LOCAL-00049" summary="bella - PLAYER CAN CROSS OVER MAPS!!!!">
+      <created>1604740387533</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1604740387533</updated>
+    </task>
+    <task id="LOCAL-00050" summary="bella - Added javadocs for Agilisaurus, Archaeopteryx and CrossMapsAction&#10;&#10;All dinosaurs can now breed and lay eggs and their eggs will hatch">
+      <created>1604743592102</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1604743592103</updated>
+    </task>
+    <task id="LOCAL-00051" summary="bella - Added the generated html javadocs for Agilisaurus, Archaeopteryx and CrossMapsAction">
+      <created>1604744154768</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1604744154768</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HEAVILY Refactored Gamemap, Dinosaur, Stegosaur. Moved all dinosaur related functions to dinosaur class. Tick now within dinosaur class." />
-    <MESSAGE value="Eggs can hatch, moved egg functionality into egg cclass, removed from Location class. better organisation this way." />
-    <MESSAGE value="Eggs can hatch, moved egg functionality into egg cclass, removed from Location class. better organisation this way. Improved some code by refactoring." />
-    <MESSAGE value="Player can feed food to adjacent dinosaurs. So far not buggy." />
-    <MESSAGE value="Harvest grass action works" />
-    <MESSAGE value="Player can zap stegosaur. Stegosaur will die in one or two hits." />
-    <MESSAGE value="Removed tester file thats not needed." />
-    <MESSAGE value="Bella testing git push again." />
-    <MESSAGE value="Commented the dinosaur class." />
-    <MESSAGE value="Added documentation to buyItemAction and feedDinosaurAction and some in Stegosaur." />
     <MESSAGE value="Added documentation for Food class" />
     <MESSAGE value="Added documentation for HarvestGrassAction." />
     <MESSAGE value="Added documentation for LaserGun" />
@@ -403,50 +666,88 @@
     <MESSAGE value="Added an end game action which allows the player to quit playing the game." />
     <MESSAGE value="Fixed a small bug with grass. Ensured that eggs are not directly eaten when an allosaur lays them." />
     <MESSAGE value="Added documentation to VendingMachin (it was missing previously)&#10;Edited the documentation for some classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation to VendingMachin (it was missing previously)&#10;Edited the documentation for some classes." />
+    <MESSAGE value="bella - created agilisaurus&#10;agilisaurus can eat both carnivore/vegetarian mealkit&#10;added constraints to which dinosaurs can each which mealkits" />
+    <MESSAGE value="bella - allosaur will attack agilisaur, kill it in 1 hit and eat it" />
+    <MESSAGE value="bella - added carcass food level to dinosaurs, for agilisaurus's this will be a lower value compared to stegosaur/allosaur" />
+    <MESSAGE value="bella - Archaeopteryx flies over water !" />
+    <MESSAGE value="bella - Flying function re-factored.. more DRY" />
+    <MESSAGE value="bella - all dinosaurs can breed, lay eggs, eggs can be bought from VM, Archaeopteryx are carnivorous and can attack any type of dinosaur function implemented.&#10;Refactored tick code in dinosaur class alot." />
+    <MESSAGE value="bella - second map SEMI functional, needs fixing" />
+    <MESSAGE value="bella - PLAYER CAN CROSS OVER MAPS!!!!" />
+    <MESSAGE value="bella - Added javadocs for Agilisaurus, Archaeopteryx and CrossMapsAction&#10;&#10;All dinosaurs can now breed and lay eggs and their eggs will hatch" />
+    <MESSAGE value="bella - Added the generated html javadocs for Agilisaurus, Archaeopteryx and CrossMapsAction" />
+    <option name="LAST_COMMIT_MESSAGE" value="bella - Added the generated html javadocs for Agilisaurus, Archaeopteryx and CrossMapsAction" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1603032318956">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1604738550912">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1603032318956" />
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1604738550912" />
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602860311636">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1602860311636" />
-    <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603034898121">
+    <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604743979764">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1603034898121" />
-    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1603034724328">
+    <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1604743979764" />
+    <state x="150" y="27" key="CommitChangelistDialog2" timestamp="1604759743847">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1603034724328" />
-    <state width="1398" height="141" key="GridCell.Tab.0.bottom" timestamp="1603034898180">
+    <state x="150" y="27" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1604759743847" />
+    <state x="100" y="123" width="1240" height="677" key="DiffContextDialog" timestamp="1604735659297">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="141" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1603034898180" />
-    <state width="1398" height="141" key="GridCell.Tab.0.center" timestamp="1603034898178">
+    <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1604735659297" />
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom" timestamp="1604744204451">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="141" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1603034898178" />
-    <state width="1398" height="141" key="GridCell.Tab.0.left" timestamp="1603034898178">
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604744204451" />
+    <state width="1398" height="285" key="GridCell.Tab.0.center" timestamp="1604744204450">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="141" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1603034898178" />
-    <state width="1398" height="141" key="GridCell.Tab.0.right" timestamp="1603034898179">
+    <state width="1398" height="285" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604744204450" />
+    <state width="1398" height="285" key="GridCell.Tab.0.left" timestamp="1604744204449">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="141" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1603034898179" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1603034726511">
+    <state width="1398" height="285" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604744204449" />
+    <state width="1398" height="285" key="GridCell.Tab.0.right" timestamp="1604744204451">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1603034726511" />
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1603034974571">
+    <state width="1398" height="285" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604744204451" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1604744204452">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1603034974571" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604744204452" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1604744204451">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1604744204451" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1604744204451">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1604744204451" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1604744204452">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1604744204452" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1604757334116">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1604757334116" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1604744163140">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604744163140" />
+    <state x="100" y="123" width="1240" height="677" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1604735659298">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="100" y="123" width="1240" height="677" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.877@0.23.1440.877" timestamp="1604735659298" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1604744175488">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1604744175488" />
     <state x="97" y="65" key="new project wizard" timestamp="1603033689164">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -457,7 +758,7 @@
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1602514468917" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/src$Application.ic" NAME="Application Coverage Results" MODIFIED="1602510929213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/src$Application.ic" NAME="Application Coverage Results" MODIFIED="1604737524621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>game.*</FILTER>
     </SUITE>
   </component>

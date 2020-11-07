@@ -1,7 +1,6 @@
 package edu.monash.fit2099.engine;
 
-import game.Dinosaur;
-import game.Player;
+import game.*;
 
 /**
  * Allows a player to feed food type items to a dinosaur
@@ -85,4 +84,9 @@ public class feedDinosaurAction extends Action{
     public void setDinosaur(Dinosaur dinosaur) {
         this.dinosaur = dinosaur;
     }
+
+    /**
+     * Throws an error if a stegosaur tries to eat a carnivore mealkit or an allosaur tries to eat a vegetarian mealkit
+     * Will not throw an error for agilisaurus, as they are omnivores.
+     */
 }

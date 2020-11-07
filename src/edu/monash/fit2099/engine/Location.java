@@ -1,9 +1,6 @@
 package edu.monash.fit2099.engine;
 
-import game.Egg;
-import game.Fruit;
-import game.Player;
-import game.Stegosaur;
+import game.*;
 
 import java.util.*;
 
@@ -140,6 +137,10 @@ public class Location implements Printable {
 		}
 	}
 
+	public Location getNorthEast(){ return map.at(x+1, y - 1); }
+	public Location getNorthWest(){ return map.at(x-1, y - 1); }
+	public Location getSouthEast(){ return map.at(x+1, y + 1); }
+	public Location getSouthWest(){ return map.at(x-1, y + 1); }
 	/**
 	 * This method returns the location instance directly north of the current one
 	 * @return a location instance
@@ -225,7 +226,6 @@ public class Location implements Printable {
 		map.addActor(actor, this);
 	}
 	
-	
 	/**
 	 * Returns a MoveActorAction that will move actor to location if the terrain type allows.
 	 * @param actor the Actor to move
@@ -235,12 +235,12 @@ public class Location implements Printable {
 	 * @return a MoveActorAction that allows actor to move to location if allowed; otherwise null
 	 */
 	public MoveActorAction getMoveAction(Actor actor, String direction, String hotKey) {
-		if(canActorEnter(actor))
+		if(canActorEnter(actor)) {
 			return new MoveActorAction(this, direction, hotKey);
-		
+		}
 		return null;
 	}
-	
+
 	/**
 	 * Returns true if an Actor can enter this location.
 	 *
