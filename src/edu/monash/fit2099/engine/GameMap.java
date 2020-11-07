@@ -25,7 +25,7 @@ public class GameMap {
 	protected NumberRange heights;
 	protected NumberRange widths;
 	protected Location[][] map;
-	protected ActorLocations actorLocations;
+	ActorLocations actorLocations;
 	protected GroundFactory groundFactory;
 
 	/**
@@ -357,6 +357,14 @@ public class GameMap {
 				}
 			}
 		}
+	}
+
+	public ActorLocations getActorLocations() {
+		return actorLocations;
+	}
+
+	public void setActorLocations(ActorLocations actorLocations) {
+		this.actorLocations = actorLocations;
 	}
 	}
 
