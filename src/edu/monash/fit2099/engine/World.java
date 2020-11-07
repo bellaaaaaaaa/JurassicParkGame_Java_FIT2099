@@ -9,6 +9,7 @@ import java.util.*;
  * player, and the playing grid.
  */
 public class World {
+	public static int TargetTurn;
 	protected Display display;
 	protected ArrayList<GameMap> gameMaps = new ArrayList<GameMap>();
 	protected ActorLocations actorLocations = new ActorLocations();
@@ -17,7 +18,7 @@ public class World {
 
 	/**
 	 * Constructor.
-	 * 
+	 *
 	 * @param display the Display that will display this World.
 	 */
 	public World(Display display) {
@@ -27,6 +28,7 @@ public class World {
 
 	/**
 	 * Add a GameMap to the World.
+	 *
 	 * @param gameMap the GameMap to add
 	 */
 	public void addGameMap(GameMap gameMap) {
@@ -37,7 +39,7 @@ public class World {
 
 	/**
 	 * Set an actor as the player. The map is drawn just before this Actor's turn
-	 * 
+	 *
 	 * @param player   the player to add
 	 * @param location the Location where the player is to be added
 	 */
@@ -47,19 +49,76 @@ public class World {
 		actorLocations.setPlayer(player);
 	}
 
+
 	/**
 	 * Run the game.
-	 *
+	 * <p>
 	 * On each iteration the gameloop does the following: - displays the player's
 	 * map - processes the actions of every Actor in the game, regardless of map
-	 *
+	 * <p>
 	 * We could either only process the actors on the current map, which would make
 	 * time stop on the other maps, or we could process all the actors. We chose to
 	 * process all the actors.
 	 *
 	 * @throws IllegalStateException if the player doesn't exist
 	 */
+	public void runChallenge() {
+
+		if (player == null)
+			throw new IllegalStateException();
+
+		// initialize the last action map to nothing actions;
+		for (Actor actor : actorLocations) {
+			lastActionMap.put(actor, new DoNothingAction());
+		}
+		// This loop is basically the whole game
+		int turnCount = 1;
+
+
+		while (stillRunning()) {
+			String count = Integer.toString(turnCount);
+			display.println("Number of Moves: " + count);
+			GameMap playersMap = actorLocations.locationOf(player).map();
+			playersMap.draw(display);
+			// Process all the actors.
+			for (Actor actor : actorLocations) {
+				if (stillRunning()) {
+
+					processActorTurn(actor);
+
+					if (getTargetTurn() <= turnCount && actor instanceof Player) {
+						display.println("Current ecoPoints: " + Player.ecoPoints +"; Target ecoPoints: " + Player.TargetEco);
+						display.println("You have used up " + turnCount + " moves. \r\nYou lose !");
+						playersMap.removeActor(actor);
+					} else if (turnCount <= getTargetTurn() && Player.ecoPoints >= Player.TargetEco) {
+						display.println ("You have successfully earned " + Player.ecoPoints + " ecoPoints in " + turnCount + " moves.");
+						display.println("You win !");
+
+						playersMap.removeActor(actor);
+					} else {
+						if (actor instanceof Player) {
+							turnCount += 1;
+
+							continue;
+						}
+					}
+				}
+			}
+
+
+			// Tick over all the maps. For the map stuff.
+			for (GameMap gameMap : gameMaps) {
+				gameMap.tick();
+			}
+
+		}
+
+
+		display.println(endGameMessage());
+	}
+
 	public void run() {
+
 		if (player == null)
 			throw new IllegalStateException();
 
@@ -69,14 +128,17 @@ public class World {
 		}
 		// This loop is basically the whole game
 		while (stillRunning()) {
+
 			GameMap playersMap = actorLocations.locationOf(player).map();
 			playersMap.draw(display);
 			// Process all the actors.
 			for (Actor actor : actorLocations) {
 				if (stillRunning()) {
+
 					processActorTurn(actor);
 				}
 			}
+
 
 			// Tick over all the maps. For the map stuff.
 			for (GameMap gameMap : gameMaps) {
@@ -86,6 +148,7 @@ public class World {
 		}
 		display.println(endGameMessage());
 	}
+
 
 	/**
 	 * Gives an Actor its turn.
@@ -183,8 +246,12 @@ public class World {
 		lastActionMap.put(actor, action);
 
 		String result = action.execute(actor, map);
+
 		display.println(result);
+
 	}
+	public void setTargetTurn (int TargetTurn){this.TargetTurn = TargetTurn;}
+	public int getTargetTurn(){return TargetTurn;}
 
 	/**
 	 * Returns true if the game is still running.

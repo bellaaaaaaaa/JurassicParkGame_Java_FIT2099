@@ -12,8 +12,10 @@ import edu.monash.fit2099.engine.Menu;
  */
 public class Player extends Actor {
 
+
 	private Menu menu = new Menu();
-	int ecoPoints = 250; // Lets say starting ecoPooints.
+	public static int ecoPoints = 250; // Lets say starting ecoPooints.
+	public static int TargetEco;
 
 	/**
 	 * Constructor for player class
@@ -37,6 +39,7 @@ public class Player extends Actor {
 
 	/**
 	 * gets the number of EcoPoints that the player currently has
+	 *
 	 * @return ecoPoints
 	 */
 	public int getEcoPoints() {
@@ -45,9 +48,26 @@ public class Player extends Actor {
 
 	/**
 	 * Sets the number of EcoPoints that the player has
+	 *
 	 * @param ecoPoints initially the number of starting ecopoints a player will have. Then this can succeed based on occurences in the game.
 	 */
 	public void setEcoPoints(int ecoPoints) {
 		this.ecoPoints = ecoPoints;
+	}
+
+
+	public boolean sandboxEco(int targetEco) {
+		boolean state = false;
+		if (targetEco > ecoPoints)
+			state = true;
+		return state;
+	}
+
+	public void setTargetEco(int TargetEco) {
+		this.TargetEco = TargetEco;
+	}
+
+	public int getTargetEco() {
+		return TargetEco;
 	}
 }
