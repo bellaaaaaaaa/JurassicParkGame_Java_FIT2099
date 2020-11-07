@@ -117,6 +117,8 @@ public class Egg extends Food {
                 p.setEcoPoints(p.getEcoPoints() + 1000);
             } else if (e.getType().equals("agilisaur")){
                 p.setEcoPoints(p.getEcoPoints() + 500); // reward for birth of agilisaur is between that of stegosaur and allosaur
+            } else if (e.getType().equals("archaeopteryx")){
+                p.setEcoPoints(p.getEcoPoints() + 600); // reward for birth of archaeopteryx, slightly higher than agilisaur
             }
         }
     }

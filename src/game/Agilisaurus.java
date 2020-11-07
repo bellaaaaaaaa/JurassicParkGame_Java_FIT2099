@@ -19,6 +19,7 @@ public class Agilisaurus extends Dinosaur {
         this.setGender(this.randomiseGender());
         this.setCarcassFoodLvl(30);
         behaviour = new WanderBehaviour();
+        this.isCarnivorous = true;
     }
 
     /**

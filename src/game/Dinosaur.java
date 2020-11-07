@@ -26,6 +26,7 @@ public abstract class Dinosaur extends Actor {
     String stage = "adult"; // default
     int numTurnsAlive = 0; // Only needed for babies for now, assuming adult dinosaurs never die unless killed or starving.
     private int carcassFoodLvl = 50;
+    boolean isCarnivorous = false;
 
     /**
      * This calls the Actor class constructor.
@@ -183,7 +184,7 @@ public abstract class Dinosaur extends Actor {
             }
 
             // Allosaurs and Archaeopteryx are carnivores
-            if (d instanceof Allosaur || d instanceof Archaeopteryx) {
+            if (d.isCarnivorous) {
                 // Eat an egg currently on the ground
                 for (Item i : l.getItems()){
                     if (i instanceof Egg){

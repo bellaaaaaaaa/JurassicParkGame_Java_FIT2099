@@ -17,6 +17,7 @@ public class Archaeopteryx extends Dinosaur{
         this.setGender(this.randomiseGender());
         this.setStage("adult");
         this.map = map;
+        this.isCarnivorous = true;
     }
 
     /**
