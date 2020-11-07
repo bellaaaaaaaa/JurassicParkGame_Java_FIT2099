@@ -14,7 +14,7 @@ public class World {
 	protected ActorLocations actorLocations = new ActorLocations();
 	protected Actor player; // We only draw the particular map this actor is on.
 	protected Map<Actor, Action> lastActionMap = new HashMap<Actor, Action>();
-	boolean displaySecondMap = true;
+	boolean canCrossMaps = false;
 	GameMap playersMap;
 
 	/**
@@ -72,20 +72,22 @@ public class World {
 		// This loop is basically the whole game
 		while (stillRunning()) {
 			playersMap = actorLocations.locationOf(player).map();
-			//If player is at the northern border of map1, display map2
-			boolean displaySecondMap = false;
+
+			//Display both map1 and map2 if the player is at the northern border of map1 or the southern border of map2
 			if(this.gameMaps.size() == 2){
 				if((actorLocations.locationOf(player).y() == 0 && playersMap.equals(gameMaps.get(0))) || (actorLocations.locationOf(player).y() == 24 && playersMap.equals(gameMaps.get(1)))){
+					canCrossMaps = true;
 					this.gameMaps.get(1).draw(new Display());
+					System.out.println("\n");
 					this.gameMaps.get(0).draw(new Display());
 				} else {
 					playersMap.draw(display);
+					canCrossMaps = false;
 				}
 			} else {
 				playersMap.draw(display);
+				canCrossMaps = false;
 			}
-
-
 
 			// Process all the actors.
 			for (Actor actor : actorLocations) {
@@ -123,9 +125,7 @@ public class World {
 
 		Actions actions = new Actions();
 		if(actor instanceof Player){
-			boolean atNorthernBorder = actorLocations.locationOf(actor).map().equals(gameMaps.get((0))) && actorLocations.locationOf(actor).y() == 0;
-			boolean atSouthernBorder = actorLocations.locationOf(actor).map().equals(gameMaps.get((1))) && actorLocations.locationOf(actor).y() == 24;
-			if(atNorthernBorder || atSouthernBorder){
+			if(canCrossMaps){
 				crossMapsAction cma = new crossMapsAction();
 				cma.setWorld(this);
 				cma.setWorldMaps(gameMaps);

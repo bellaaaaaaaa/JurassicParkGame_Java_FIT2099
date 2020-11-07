@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/crossMapsAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/ActorLocations.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/ActorLocations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/crossMapsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/crossMapsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Agilisaurus.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Agilisaurus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Archaeopteryx.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Archaeopteryx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Egg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/crossMapsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/crossMapsAction.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -443,11 +443,17 @@
       <option name="project" value="LOCAL" />
       <updated>1604681734446</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="bella - PLAYER CAN CROSS OVER MAPS!!!!">
+      <created>1604740387533</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1604740387533</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bella testing git push again." />
     <MESSAGE value="Commented the dinosaur class." />
     <MESSAGE value="Added documentation to buyItemAction and feedDinosaurAction and some in Stegosaur." />
     <MESSAGE value="Added documentation for Food class" />
@@ -472,7 +478,8 @@
     <MESSAGE value="bella - Flying function re-factored.. more DRY" />
     <MESSAGE value="bella - all dinosaurs can breed, lay eggs, eggs can be bought from VM, Archaeopteryx are carnivorous and can attack any type of dinosaur function implemented.&#10;Refactored tick code in dinosaur class alot." />
     <MESSAGE value="bella - second map SEMI functional, needs fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="bella - second map SEMI functional, needs fixing" />
+    <MESSAGE value="bella - PLAYER CAN CROSS OVER MAPS!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="bella - PLAYER CAN CROSS OVER MAPS!!!!" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -484,34 +491,34 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1602860311636" />
-    <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603034898121">
+    <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604743517591">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1603034898121" />
-    <state x="0" y="56" key="CommitChangelistDialog2" timestamp="1604681734250">
+    <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1604743517591" />
+    <state x="0" y="56" key="CommitChangelistDialog2" timestamp="1604740387226">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="0" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1604681734250" />
+    <state x="0" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1604740387226" />
     <state x="100" y="123" width="1240" height="677" key="DiffContextDialog" timestamp="1604735659297">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1604735659297" />
-    <state width="1398" height="2" key="GridCell.Tab.0.bottom" timestamp="1604740295801">
+    <state width="1398" height="71" key="GridCell.Tab.0.bottom" timestamp="1604743517641">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="2" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604740295801" />
-    <state width="1398" height="2" key="GridCell.Tab.0.center" timestamp="1604740295798">
+    <state width="1398" height="71" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604743517641" />
+    <state width="1398" height="71" key="GridCell.Tab.0.center" timestamp="1604743517640">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="2" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604740295798" />
-    <state width="1398" height="2" key="GridCell.Tab.0.left" timestamp="1604740295798">
+    <state width="1398" height="71" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604743517640" />
+    <state width="1398" height="71" key="GridCell.Tab.0.left" timestamp="1604743517640">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="2" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604740295798" />
-    <state width="1398" height="2" key="GridCell.Tab.0.right" timestamp="1604740295799">
+    <state width="1398" height="71" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604743517640" />
+    <state width="1398" height="71" key="GridCell.Tab.0.right" timestamp="1604743517640">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="2" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604740295799" />
+    <state width="1398" height="71" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604743517640" />
     <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1604734125067">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -532,10 +539,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1604649466378" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1604681735992">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1604740399988">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604681735992" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604740399988" />
     <state x="100" y="123" width="1240" height="677" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1604735659298">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

@@ -87,8 +87,10 @@ public class Egg extends Food {
                 baby = new Stegosaur();
             } else if (this.getType().equals("allosaur")) {
                 baby = new Allosaur();
-            } else {
+            } else if (this.getType().equals("agilisaurus")) {
                 baby = new Agilisaurus(); // baby agilisaurus can be born
+            } else {
+                baby = new Archaeopteryx(map); // baby archaeopteryx can be born
             }
             baby.setStage("baby");
             baby.setFoodLvl(10);

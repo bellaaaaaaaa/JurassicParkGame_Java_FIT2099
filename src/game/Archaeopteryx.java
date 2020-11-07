@@ -4,6 +4,9 @@ import edu.monash.fit2099.engine.*;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * This is a type of carnivorous flying dinosaur which is able to traverse water.
+ */
 public class Archaeopteryx extends Dinosaur{
     /**
      * Instantiates an Archaeopteryx, abbreviation (ax) and makes use of the constructor in the super class

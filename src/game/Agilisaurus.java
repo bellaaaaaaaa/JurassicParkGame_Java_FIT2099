@@ -5,6 +5,9 @@ import edu.monash.fit2099.engine.Display;
 import edu.monash.fit2099.engine.DoNothingAction;
 import edu.monash.fit2099.engine.GameMap;
 
+/**
+ * This is a smaller omnivorous dinosaur which is too small to attack any of the larger dinosaurs.
+ */
 public class Agilisaurus extends Dinosaur {
     private Behaviour behaviour;
 
