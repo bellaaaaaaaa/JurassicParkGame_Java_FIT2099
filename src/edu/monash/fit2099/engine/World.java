@@ -14,10 +14,12 @@ public class World {
 	protected ActorLocations actorLocations = new ActorLocations();
 	protected Actor player; // We only draw the particular map this actor is on.
 	protected Map<Actor, Action> lastActionMap = new HashMap<Actor, Action>();
+	boolean displaySecondMap = true;
+	GameMap playersMap;
 
 	/**
 	 * Constructor.
-	 * 
+	 *
 	 * @param display the Display that will display this World.
 	 */
 	public World(Display display) {
@@ -69,29 +71,26 @@ public class World {
 		}
 		// This loop is basically the whole game
 		while (stillRunning()) {
-			GameMap playersMap = actorLocations.locationOf(player).map();
-			// If player is at the northern border of map1, display map2
+			playersMap = actorLocations.locationOf(player).map();
+			//If player is at the northern border of map1, display map2
 			boolean displaySecondMap = false;
 			if(this.gameMaps.size() == 2){
-				if(playersMap.equals(this.gameMaps.get(0))){
-					if(actorLocations.locationOf(player).y() == 0){
-						// Display northern map
-						this.gameMaps.get(1).draw(new Display());
-						displaySecondMap = true;
-					}
+				if((actorLocations.locationOf(player).y() == 0 && playersMap.equals(gameMaps.get(0))) || (actorLocations.locationOf(player).y() == 24 && playersMap.equals(gameMaps.get(1)))){
+					this.gameMaps.get(1).draw(new Display());
+					this.gameMaps.get(0).draw(new Display());
+				} else {
+					playersMap.draw(display);
 				}
+			} else {
+				playersMap.draw(display);
 			}
-			// draw out map1
-			playersMap.draw(display);
+
 
 
 			// Process all the actors.
 			for (Actor actor : actorLocations) {
 				if (stillRunning()) {
 					processActorTurn(actor);
-					if(displaySecondMap){
-						// add capability to move north into second map.
-					}
 				}
 			}
 
@@ -124,6 +123,15 @@ public class World {
 
 		Actions actions = new Actions();
 		if(actor instanceof Player){
+			boolean atNorthernBorder = actorLocations.locationOf(actor).map().equals(gameMaps.get((0))) && actorLocations.locationOf(actor).y() == 0;
+			boolean atSouthernBorder = actorLocations.locationOf(actor).map().equals(gameMaps.get((1))) && actorLocations.locationOf(actor).y() == 24;
+			if(atNorthernBorder || atSouthernBorder){
+				crossMapsAction cma = new crossMapsAction();
+				cma.setWorld(this);
+				cma.setWorldMaps(gameMaps);
+				actions.add(cma);
+			}
+
 			// Player can harvest grass if standing on some
 			if(here.getGround() instanceof Grass){
 				actions.add(new HarvestGrassAction());

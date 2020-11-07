@@ -44,7 +44,7 @@ public class ActorLocations implements Iterable<Actor> {
 			throw new IllegalArgumentException();
 		if(locationToActor.containsKey(location))
 			throw new IllegalArgumentException();
-		
+
 		actorToLocation.put(actor, location);
 		locationToActor.put(location, actor);
 	}

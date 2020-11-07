@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/crossMapsAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/ActorLocations.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/ActorLocations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/World.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/World.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Application.class" afterDir="false" />
     </list>
@@ -433,11 +436,17 @@
       <option name="project" value="LOCAL" />
       <updated>1604677427793</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="bella - second map SEMI functional, needs fixing">
+      <created>1604681734446</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1604681734446</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed tester file thats not needed." />
     <MESSAGE value="Bella testing git push again." />
     <MESSAGE value="Commented the dinosaur class." />
     <MESSAGE value="Added documentation to buyItemAction and feedDinosaurAction and some in Stegosaur." />
@@ -462,14 +471,15 @@
     <MESSAGE value="bella - Archaeopteryx flies over water !" />
     <MESSAGE value="bella - Flying function re-factored.. more DRY" />
     <MESSAGE value="bella - all dinosaurs can breed, lay eggs, eggs can be bought from VM, Archaeopteryx are carnivorous and can attack any type of dinosaur function implemented.&#10;Refactored tick code in dinosaur class alot." />
-    <option name="LAST_COMMIT_MESSAGE" value="bella - all dinosaurs can breed, lay eggs, eggs can be bought from VM, Archaeopteryx are carnivorous and can attack any type of dinosaur function implemented.&#10;Refactored tick code in dinosaur class alot." />
+    <MESSAGE value="bella - second map SEMI functional, needs fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="bella - second map SEMI functional, needs fixing" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1604669951031">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1604738550912">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1604669951031" />
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1604738550912" />
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602860311636">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -478,54 +488,62 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1603034898121" />
-    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1604677427381">
+    <state x="0" y="56" key="CommitChangelistDialog2" timestamp="1604681734250">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1604677427381" />
-    <state width="1398" height="329" key="GridCell.Tab.0.bottom" timestamp="1604681582703">
+    <state x="0" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1604681734250" />
+    <state x="100" y="123" width="1240" height="677" key="DiffContextDialog" timestamp="1604735659297">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604681582703" />
-    <state width="1398" height="329" key="GridCell.Tab.0.center" timestamp="1604681582702">
+    <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1604735659297" />
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom" timestamp="1604740295801">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="329" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604681582702" />
-    <state width="1398" height="329" key="GridCell.Tab.0.left" timestamp="1604681582702">
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604740295801" />
+    <state width="1398" height="2" key="GridCell.Tab.0.center" timestamp="1604740295798">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="329" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604681582702" />
-    <state width="1398" height="329" key="GridCell.Tab.0.right" timestamp="1604681582702">
+    <state width="1398" height="2" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604740295798" />
+    <state width="1398" height="2" key="GridCell.Tab.0.left" timestamp="1604740295798">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="329" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604681582702" />
-    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1604664441842">
+    <state width="1398" height="2" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604740295798" />
+    <state width="1398" height="2" key="GridCell.Tab.0.right" timestamp="1604740295799">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604664441842" />
-    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1604664441841">
+    <state width="1398" height="2" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604740295799" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1604734125067">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1604664441841" />
-    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1604664441840">
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604734125067" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1604734125060">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1604664441840" />
-    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1604664441841">
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1604734125060" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1604734125059">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1604664441841" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1604734125059" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1604734125064">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1604734125064" />
     <state x="221" y="100" key="SettingsEditor" timestamp="1604649466378">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1604649466378" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1604677432305">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1604681735992">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604677432305" />
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1604677445651">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604681735992" />
+    <state x="100" y="123" width="1240" height="677" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1604735659298">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1604677445651" />
+    <state x="100" y="123" width="1240" height="677" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.877@0.23.1440.877" timestamp="1604735659298" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1604681748980">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1604681748980" />
     <state x="97" y="65" key="new project wizard" timestamp="1603033689164">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -536,7 +554,7 @@
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1602514468917" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/src$Application.ic" NAME="Application Coverage Results" MODIFIED="1602510929213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/src$Application.ic" NAME="Application Coverage Results" MODIFIED="1604737524621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>game.*</FILTER>
     </SUITE>
   </component>

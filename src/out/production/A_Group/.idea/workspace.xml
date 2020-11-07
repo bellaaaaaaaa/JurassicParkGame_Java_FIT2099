@@ -4,24 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/game/Archaeopteryx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu/monash/fit2099/engine/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu/monash/fit2099/engine/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Allosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Allosaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Behaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Behaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Dinosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Dinosaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Egg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Stegosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Stegosaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/edu/monash/fit2099/engine/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Agilisaurus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Agilisaurus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Allosaur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Dinosaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Dinosaur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Egg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Egg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A_Group/game/Stegosaur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A_Group/game/Stegosaur.class" afterDir="false" />
-    </list>
+    <list default="true" id="18c47373-d95e-40b0-ac49-3c4db6257df0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -416,14 +399,45 @@
       <option name="project" value="LOCAL" />
       <updated>1604483837934</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="bella - Archaeopteryx flies over water !">
+      <created>1604670434408</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1604670434409</updated>
+    </task>
+    <task id="LOCAL-00045" summary="bella - Archaeopteryx flies over water !">
+      <created>1604670478086</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1604670478086</updated>
+    </task>
+    <task id="LOCAL-00046" summary="bella - Flying function re-factored.. more DRY">
+      <created>1604673061069</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1604673061069</updated>
+    </task>
+    <task id="LOCAL-00047" summary="bella - all dinosaurs can breed, lay eggs, eggs can be bought from VM, Archaeopteryx are carnivorous and can attack any type of dinosaur function implemented.&#10;Refactored tick code in dinosaur class alot.">
+      <created>1604677427793</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1604677427793</updated>
+    </task>
+    <task id="LOCAL-00048" summary="bella - second map SEMI functional, needs fixing">
+      <created>1604681734446</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1604681734446</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Player can feed food to adjacent dinosaurs. So far not buggy." />
-    <MESSAGE value="Harvest grass action works" />
-    <MESSAGE value="Player can zap stegosaur. Stegosaur will die in one or two hits." />
-    <MESSAGE value="Removed tester file thats not needed." />
     <MESSAGE value="Bella testing git push again." />
     <MESSAGE value="Commented the dinosaur class." />
     <MESSAGE value="Added documentation to buyItemAction and feedDinosaurAction and some in Stegosaur." />
@@ -445,14 +459,18 @@
     <MESSAGE value="bella - created agilisaurus&#10;agilisaurus can eat both carnivore/vegetarian mealkit&#10;added constraints to which dinosaurs can each which mealkits" />
     <MESSAGE value="bella - allosaur will attack agilisaur, kill it in 1 hit and eat it" />
     <MESSAGE value="bella - added carcass food level to dinosaurs, for agilisaurus's this will be a lower value compared to stegosaur/allosaur" />
-    <option name="LAST_COMMIT_MESSAGE" value="bella - added carcass food level to dinosaurs, for agilisaurus's this will be a lower value compared to stegosaur/allosaur" />
+    <MESSAGE value="bella - Archaeopteryx flies over water !" />
+    <MESSAGE value="bella - Flying function re-factored.. more DRY" />
+    <MESSAGE value="bella - all dinosaurs can breed, lay eggs, eggs can be bought from VM, Archaeopteryx are carnivorous and can attack any type of dinosaur function implemented.&#10;Refactored tick code in dinosaur class alot." />
+    <MESSAGE value="bella - second map SEMI functional, needs fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="bella - second map SEMI functional, needs fixing" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1604483617860">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1604669951031">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1604483617860" />
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1604669951031" />
     <state x="458" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602860311636">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -461,38 +479,54 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="461" y="192" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1603034898121" />
-    <state x="50" y="56" key="CommitChangelistDialog2" timestamp="1604483837739">
+    <state x="0" y="56" key="CommitChangelistDialog2" timestamp="1604681734250">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="50" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1604483837739" />
-    <state width="1398" height="315" key="GridCell.Tab.0.bottom" timestamp="1604651445528">
+    <state x="0" y="56" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1604681734250" />
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom" timestamp="1604681756867">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="315" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604651445528" />
-    <state width="1398" height="315" key="GridCell.Tab.0.center" timestamp="1604651445527">
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604681756867" />
+    <state width="1398" height="285" key="GridCell.Tab.0.center" timestamp="1604681756866">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="315" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604651445527" />
-    <state width="1398" height="315" key="GridCell.Tab.0.left" timestamp="1604651445526">
+    <state width="1398" height="285" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604681756866" />
+    <state width="1398" height="285" key="GridCell.Tab.0.left" timestamp="1604681756866">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="315" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604651445526" />
-    <state width="1398" height="315" key="GridCell.Tab.0.right" timestamp="1604651445527">
+    <state width="1398" height="285" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604681756866" />
+    <state width="1398" height="285" key="GridCell.Tab.0.right" timestamp="1604681756866">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="315" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604651445527" />
+    <state width="1398" height="285" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604681756866" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1604681756868">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604681756868" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1604681756867">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1604681756867" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1604681756867">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1604681756867" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1604681756868">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1604681756868" />
     <state x="221" y="100" key="SettingsEditor" timestamp="1604649466378">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1604649466378" />
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1604485523306">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1604681735992">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604485523306" />
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1604485545794">
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604681735992" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog" timestamp="1604681748980">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1604485545794" />
+    <state x="348" y="261" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1604681748980" />
     <state x="97" y="65" key="new project wizard" timestamp="1603033689164">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
