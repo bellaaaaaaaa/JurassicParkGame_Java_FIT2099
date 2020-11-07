@@ -150,7 +150,7 @@ public class Application {
 		gameMap.createPool(w.getDisplayChar(),gameMap.getXRange(),gameMap.getYRange());
 		secondGameMap.createPool(w.getDisplayChar(),gameMap.getXRange(),gameMap.getYRange());
 
-		world.run();
+		
 
 		if (choice == 1){
 		world.runChallenge();}
